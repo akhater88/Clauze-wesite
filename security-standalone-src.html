@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="ext-resource-dependency" content="assets/ai-legal.jpg" data-resource-id="securityHero" />
+<template id="__bundler_thumbnail" data-bg-color="#14100E">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#14100E"/>
+    <rect x="470" y="330" width="260" height="200" rx="18" fill="none" stroke="#D4AF37" stroke-width="14"/>
+    <path d="M540 330 v-52 a60 60 0 0 1 120 0 v52" fill="none" stroke="#D4AF37" stroke-width="14"/>
+    <circle cx="600" cy="424" r="26" fill="#6B1D2F"/>
+    <text x="600" y="640" text-anchor="middle" font-family="Georgia,serif" font-size="64" fill="#F5F0E8">Security</text>
+  </svg>
+</template>
+<script>
+// the hero image is referenced through a custom-element attribute, so lift it to the bundled blob URL
+document.addEventListener('DOMContentLoaded', function () {
+  var url = (window.__resources || {}).securityHero;
+  if (!url) return;
+  var tick = setInterval(function () {
+    var slot = document.querySelector('image-slot#security-hero');
+    if (!slot) return;
+    slot.setAttribute('src', url);
+    clearInterval(tick);
+  }, 60);
+  setTimeout(function () { clearInterval(tick); }, 8000);
+});
+</script>
+<script src="./image-slot.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#14100E;font-family:'IBM Plex Sans','Noto Kufi Arabic',sans-serif;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:#D4AF37;text-decoration:none}
+a:hover{color:#E6C558}
+</style></helmet>
+
+<div style="position:sticky;top:0;z-index:80;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:18px clamp(20px,5vw,56px);background:rgba(20,16,14,.92);border-bottom:1px solid rgba(245,240,232,.1)">
+  <a href="Clauze Website.dc.html" style="display:flex;align-items:center;flex-shrink:0">
+    <img src="assets/logo-clauze-light.png" alt="Clauze" style="height:30px;width:auto;display:block">
+  </a>
+  <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <a href="Platform.dc.html" data-en="Platform" data-ar="المنصة" style="font-size:14px;font-weight:500;color:rgba(245,240,232,.72);padding:9px 12px" style-hover="color:#F5F0E8">Platform</a>
+    <a href="Security.dc.html" data-en="Security" data-ar="الأمان" style="font-size:14px;font-weight:500;color:#D4AF37;padding:9px 12px">Security</a>
+    <a href="Jurisdictions.dc.html" data-en="Jurisdictions" data-ar="الاختصاصات" style="font-size:14px;font-weight:500;color:rgba(245,240,232,.72);padding:9px 12px" style-hover="color:#F5F0E8">Jurisdictions</a>
+    <div style="display:flex;align-items:center;gap:2px;padding:3px;background:rgba(245,240,232,.1);border-radius:7px;margin-inline-start:8px">
+      <button ref="{{ enRef }}" onClick="{{ setEn }}" style="border:none;cursor:pointer;padding:6px 11px;border-radius:5px;font:600 12px/1 'IBM Plex Sans',sans-serif;letter-spacing:.06em;background:#F5F0E8;color:#14100E">EN</button>
+      <button ref="{{ arRef }}" onClick="{{ setAr }}" style="border:none;cursor:pointer;padding:6px 11px;border-radius:5px;font:600 12px/1 'IBM Plex Sans',sans-serif;letter-spacing:.06em;background:transparent;color:rgba(245,240,232,.7)">AR</button>
+    </div>
+  </div>
+</div>
+
+<div style="position:relative;overflow:hidden;background:#14100E">
+  <div style="position:absolute;inset:0;overflow:hidden">
+    <image-slot id="security-hero" shape="rect" fit="cover" src="assets/ai-legal.jpg" placeholder="Drop a security image — data centre, in-Kingdom hosting, access control"></image-slot>
+  </div>
+  <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(180deg,rgba(20,16,14,.86) 0%,rgba(20,16,14,.78) 40%,rgba(20,16,14,.9) 88%,rgba(20,16,14,.72) 100%)"></div>
+  <div style="position:relative;z-index:2;padding:clamp(64px,10vw,120px) clamp(20px,5vw,56px) clamp(48px,7vw,80px);max-width:1240px;margin:0 auto">
+  <div data-en="SECURITY &amp; DEPLOYMENT" data-ar="الأمان والنشر" style="font-size:10.5px;font-weight:600;letter-spacing:.18em;color:#D4AF37;margin-bottom:18px">SECURITY &amp; DEPLOYMENT</div>
+  <h1 data-en="Your data stays yours." data-ar="بياناتك تبقى لك." style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(32px,6vw,72px);line-height:1.04;letter-spacing:-.025em;color:#F5F0E8;margin:0 0 26px;max-width:900px;text-wrap:pretty">Your data stays yours.</h1>
+  <p data-en="Three deployment models, one product. You decide where documents are stored and where inference runs — including entirely inside your own network." data-ar="ثلاثة نماذج نشر ومنتج واحد. أنت تحدد مكان تخزين الوثائق ومكان المعالجة — بما في ذلك داخل شبكتك بالكامل." style="font-size:clamp(16px,1.9vw,19px);line-height:1.7;color:rgba(245,240,232,.66);margin:0;max-width:660px;text-wrap:pretty">Three deployment models, one product. You decide where documents are stored and where inference runs — including entirely inside your own network.</p>
+</div>
+</div>
+
+<div style="padding:clamp(48px,7vw,80px) clamp(20px,5vw,56px) clamp(64px,9vw,104px);max-width:1240px;margin:0 auto">
+  <div style="border:1px solid rgba(245,240,232,.14);border-radius:14px;overflow:hidden">
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 20px;border-bottom:1px solid rgba(245,240,232,.14)">
+      <span data-en="Deployment · residency and inference" data-ar="النشر · إقامة البيانات والمعالجة" style="flex:1;min-width:190px;font-size:12.5px;font-weight:500;color:rgba(245,240,232,.5)">Deployment · residency and inference</span>
+      <span data-en="YOU CHOOSE" data-ar="القرار قرارك" style="padding:4px 11px;border:1px solid rgba(212,175,55,.5);border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.06em;color:#D4AF37;white-space:nowrap">YOU CHOOSE</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:rgba(245,240,232,.14)">
+      <div style="background:#14100E;padding:clamp(20px,2.4vw,26px)">
+        <div data-en="Clauze Cloud" data-ar="كلوز السحابية" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(21px,2.4vw,24px);color:#F5F0E8;margin-bottom:20px">Clauze Cloud</div>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div>
+            <div data-en="DOCUMENTS" data-ar="الوثائق" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:5px">DOCUMENTS</div>
+            <div data-en="Stored in a Clauze-managed tenant" data-ar="مخزّنة في بيئة تديرها كلوز" style="font-size:14.5px;line-height:1.55;color:rgba(245,240,232,.72)">Stored in a Clauze-managed tenant</div>
+          </div>
+          <div>
+            <div data-en="INFERENCE" data-ar="المعالجة" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:5px">INFERENCE</div>
+            <div data-en="Clauze-managed models, zero retention" data-ar="نماذج تديرها كلوز، بدون احتفاظ" style="font-size:14.5px;line-height:1.55;color:rgba(245,240,232,.72)">Clauze-managed models, zero retention</div>
+          </div>
+        </div>
+        <div data-en="In-Kingdom hosting available" data-ar="استضافة داخل المملكة متاحة" style="margin-top:22px;padding-inline-start:14px;border-inline-start:2px solid #D4AF37;font-size:14px;line-height:1.55;font-weight:500;color:#D4AF37">In-Kingdom hosting available</div>
+      </div>
+      <div style="background:#14100E;padding:clamp(20px,2.4vw,26px)">
+        <div data-en="Bring your own key" data-ar="مفتاحك الخاص" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(21px,2.4vw,24px);color:#F5F0E8;margin-bottom:20px">Bring your own key</div>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div>
+            <div data-en="DOCUMENTS" data-ar="الوثائق" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:5px">DOCUMENTS</div>
+            <div data-en="Stored in your own tenant" data-ar="مخزّنة في بيئتك" style="font-size:14.5px;line-height:1.55;color:rgba(245,240,232,.72)">Stored in your own tenant</div>
+          </div>
+          <div>
+            <div data-en="INFERENCE" data-ar="المعالجة" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:5px">INFERENCE</div>
+            <div data-en="Your Anthropic, OpenAI or Gemini account" data-ar="حسابك في Anthropic أو OpenAI أو Gemini" style="font-size:14.5px;line-height:1.55;color:rgba(245,240,232,.72)">Your Anthropic, OpenAI or Gemini account</div>
+          </div>
+        </div>
+        <div data-en="Your own data agreement applies" data-ar="اتفاقية بياناتك هي السارية" style="margin-top:22px;padding-inline-start:14px;border-inline-start:2px solid #D4AF37;font-size:14px;line-height:1.55;font-weight:500;color:#D4AF37">Your own data agreement applies</div>
+      </div>
+      <div style="background:#14100E;padding:clamp(20px,2.4vw,26px)">
+        <div data-en="On-premise" data-ar="داخل بنيتك التحتية" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(21px,2.4vw,24px);color:#F5F0E8;margin-bottom:20px">On-premise</div>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div>
+            <div data-en="DOCUMENTS" data-ar="الوثائق" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:5px">DOCUMENTS</div>
+            <div data-en="Stored on your own servers" data-ar="مخزّنة على أجهزتك" style="font-size:14.5px;line-height:1.55;color:rgba(245,240,232,.72)">Stored on your own servers</div>
+          </div>
+          <div>
+            <div data-en="INFERENCE" data-ar="المعالجة" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:5px">INFERENCE</div>
+            <div data-en="Runs inside your own perimeter" data-ar="تعمل داخل محيطك الخاص" style="font-size:14.5px;line-height:1.55;color:rgba(245,240,232,.72)">Runs inside your own perimeter</div>
+          </div>
+        </div>
+        <div data-en="No data leaves your network" data-ar="لا تغادر البيانات شبكتك" style="margin-top:22px;padding-inline-start:14px;border-inline-start:2px solid #D4AF37;font-size:14px;line-height:1.55;font-weight:500;color:#D4AF37">No data leaves your network</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:clamp(56px,8vw,88px) clamp(20px,5vw,56px);background:#1B1614;border-top:1px solid rgba(245,240,232,.1)">
+  <div style="max-width:1240px;margin:0 auto">
+    <h2 data-en="Controls" data-ar="الضوابط" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(24px,4vw,40px);line-height:1.1;color:#F5F0E8;margin:0 0 clamp(28px,4vw,44px)">Controls</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:rgba(245,240,232,.14);border-top:1px solid rgba(245,240,232,.14);border-bottom:1px solid rgba(245,240,232,.14)">
+      <div style="background:#1B1614;padding:clamp(22px,3vw,30px)">
+        <div data-en="Data residency" data-ar="إقامة البيانات" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,23px);color:#D4AF37;margin-bottom:10px">Data residency</div>
+        <div data-en="Choose the region your documents are stored and processed in, including in-Kingdom." data-ar="اختر المنطقة التي تُخزَّن وتُعالَج فيها وثائقك، بما في ذلك داخل المملكة." style="font-size:14.5px;line-height:1.65;color:rgba(245,240,232,.62)">Choose the region your documents are stored and processed in, including in-Kingdom.</div>
+      </div>
+      <div style="background:#1B1614;padding:clamp(22px,3vw,30px)">
+        <div data-en="PDPL alignment" data-ar="التوافق مع نظام حماية البيانات" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,23px);color:#D4AF37;margin-bottom:10px">PDPL alignment</div>
+        <div data-en="Data handling built to the Saudi Personal Data Protection Law, not retrofitted to it." data-ar="معالجة البيانات مبنية على نظام حماية البيانات الشخصية السعودي، لا مُكيَّفة عليه لاحقاً." style="font-size:14.5px;line-height:1.65;color:rgba(245,240,232,.62)">Data handling built to the Saudi Personal Data Protection Law, not retrofitted to it.</div>
+      </div>
+      <div style="background:#1B1614;padding:clamp(22px,3vw,30px)">
+        <div data-en="Audit trail" data-ar="سجل التدقيق" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,23px);color:#D4AF37;margin-bottom:10px">Audit trail</div>
+        <div data-en="Every question, edit, approval and citation recorded against the document." data-ar="كل سؤال وتعديل واعتماد واستشهاد مُسجَّل على الوثيقة." style="font-size:14.5px;line-height:1.65;color:rgba(245,240,232,.62)">Every question, edit, approval and citation recorded against the document.</div>
+      </div>
+      <div style="background:#1B1614;padding:clamp(22px,3vw,30px)">
+        <div data-en="Role-based access control" data-ar="التحكم بالوصول حسب الدور" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,23px);color:#D4AF37;margin-bottom:10px">Role-based access control</div>
+        <div data-en="Departments see their own matters; legal sees everything; nobody sees more than their role." data-ar="كل قسم يرى قضاياه، والقانوني يرى الكل، ولا أحد يرى أكثر من دوره." style="font-size:14.5px;line-height:1.65;color:rgba(245,240,232,.62)">Departments see their own matters; legal sees everything; nobody sees more than their role.</div>
+      </div>
+      <div style="background:#1B1614;padding:clamp(22px,3vw,30px)">
+        <div data-en="Signing authority matrix" data-ar="مصفوفة صلاحيات التوقيع" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,23px);color:#D4AF37;margin-bottom:10px">Signing authority matrix</div>
+        <div data-en="Approvals route by value and document type, so nothing is signed outside authority." data-ar="تُوجَّه الاعتمادات حسب القيمة ونوع الوثيقة، فلا يُوقَّع شيء خارج الصلاحية." style="font-size:14.5px;line-height:1.65;color:rgba(245,240,232,.62)">Approvals route by value and document type, so nothing is signed outside authority.</div>
+      </div>
+      <div style="background:#1B1614;padding:clamp(22px,3vw,30px)">
+        <div data-en="No shared-model training" data-ar="بلا تدريب على نموذج مشترك" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,23px);color:#D4AF37;margin-bottom:10px">No shared-model training</div>
+        <div data-en="Your documents never train a shared model, on any deployment." data-ar="وثائقك لا تُدرّب نموذجاً مشتركاً، في أي خيار نشر." style="font-size:14.5px;line-height:1.65;color:rgba(245,240,232,.62)">Your documents never train a shared model, on any deployment.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:clamp(72px,11vw,120px) clamp(20px,5vw,56px);background:#14100E;border-top:1px solid rgba(245,240,232,.1);text-align:center">
+  <h2 data-en="Bring us your deployment constraints." data-ar="أَحضِر لنا متطلبات النشر لديك." style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(26px,4.6vw,48px);line-height:1.1;letter-spacing:-.02em;color:#F5F0E8;margin:0 0 32px;text-wrap:pretty">Bring us your deployment constraints.</h2>
+  <a href="mailto:hello@clauze.com" data-en="Request a Demo" data-ar="اطلب عرضاً تجريبياً" style="display:inline-block;padding:16px 36px;background:#6B1D2F;color:#F5F0E8;border-radius:8px;font-size:16px;font-weight:500" style-hover="background:#8A2439;color:#F5F0E8">Request a Demo</a>
+</div>
+
+
+<div style="padding:clamp(40px,6vw,64px) clamp(20px,5vw,56px) clamp(32px,4vw,48px);background:#14100E;border-top:1px solid rgba(245,240,232,.1)">
+<div style="max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+  <img src="assets/logo-clauze-light.png" alt="Clauze" style="height:26px;width:auto;display:block;opacity:.75">
+  <div style="display:flex;align-items:center;gap:clamp(14px,2.5vw,28px);flex-wrap:wrap">
+    <a href="Platform.dc.html" data-en="Platform" data-ar="المنصة" style="font-size:13.5px;color:rgba(245,240,232,.6)">Platform</a>
+    <a href="Security.dc.html" data-en="Security" data-ar="الأمان" style="font-size:13.5px;color:rgba(245,240,232,.6)">Security</a>
+    <a href="Jurisdictions.dc.html" data-en="Jurisdictions" data-ar="الاختصاصات" style="font-size:13.5px;color:rgba(245,240,232,.6)">Jurisdictions</a>
+    <span data-en="Riyadh · Amman" data-ar="الرياض · عمّان" style="font-size:13.5px;color:rgba(245,240,232,.4)">Riyadh · Amman</span>
+  </div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.enRef = React.createRef();
+    this.arRef = React.createRef();
+  }
+
+  componentDidMount() { this.applyLang('en'); }
+
+  applyLang(lang) {
+    document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    document.body.querySelectorAll('[data-en][data-ar]').forEach(el => {
+      const v = el.getAttribute('data-' + lang);
+      if (v != null && v !== '') el.innerHTML = v;
+    });
+    const on = { background: '#F5F0E8', color: '#14100E' };
+    const off = { background: 'transparent', color: 'rgba(245,240,232,.7)' };
+    if (this.enRef.current) Object.assign(this.enRef.current.style, lang === 'en' ? on : off);
+    if (this.arRef.current) Object.assign(this.arRef.current.style, lang === 'ar' ? on : off);
+  }
+
+  renderVals() {
+    return {
+      enRef: this.enRef,
+      arRef: this.arRef,
+      setEn: () => this.applyLang('en'),
+      setAr: () => this.applyLang('ar')
+    };
+  }
+}
+
+</script>
+</body>
+</html>

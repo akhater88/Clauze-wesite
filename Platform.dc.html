@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#14100E;font-family:'IBM Plex Sans','Noto Kufi Arabic',sans-serif;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:#D4AF37;text-decoration:none}
+a:hover{color:#E6C558}
+@keyframes clz-drift{0%{transform:scale(1.06) translate3d(0,0,0)}100%{transform:scale(1.16) translate3d(-1.5%,-1.5%,0)}}
+</style></helmet>
+
+<div style="position:sticky;top:0;z-index:80;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:18px clamp(20px,5vw,56px);background:rgba(20,16,14,.92);border-bottom:1px solid rgba(245,240,232,.1)">
+  <a href="Clauze Website.dc.html" style="display:flex;align-items:center;flex-shrink:0">
+    <img src="assets/logo-clauze-light.png" alt="Clauze" style="height:30px;width:auto;display:block">
+  </a>
+  <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <a href="Platform.dc.html" data-en="Platform" data-ar="المنصة" style="font-size:14px;font-weight:500;color:#D4AF37;padding:9px 12px">Platform</a>
+    <a href="Security.dc.html" data-en="Security" data-ar="الأمان" style="font-size:14px;font-weight:500;color:rgba(245,240,232,.72);padding:9px 12px" style-hover="color:#F5F0E8">Security</a>
+    <a href="Jurisdictions.dc.html" data-en="Jurisdictions" data-ar="الاختصاصات" style="font-size:14px;font-weight:500;color:rgba(245,240,232,.72);padding:9px 12px" style-hover="color:#F5F0E8">Jurisdictions</a>
+    <div style="display:flex;align-items:center;gap:2px;padding:3px;background:rgba(245,240,232,.1);border-radius:7px;margin-inline-start:8px">
+      <button ref="{{ enRef }}" onClick="{{ setEn }}" style="border:none;cursor:pointer;padding:6px 11px;border-radius:5px;font:600 12px/1 'IBM Plex Sans',sans-serif;letter-spacing:.06em;background:#F5F0E8;color:#14100E">EN</button>
+      <button ref="{{ arRef }}" onClick="{{ setAr }}" style="border:none;cursor:pointer;padding:6px 11px;border-radius:5px;font:600 12px/1 'IBM Plex Sans',sans-serif;letter-spacing:.06em;background:transparent;color:rgba(245,240,232,.7)">AR</button>
+    </div>
+  </div>
+</div>
+
+<div style="position:relative;overflow:hidden;background:#14100E">
+  <div style="position:absolute;inset:0;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:url('assets/ai-legal.jpg');background-size:cover;background-position:center 38%;opacity:.3;animation:clz-drift 26s ease-in-out infinite alternate"></div>
+  </div>
+  <div style="position:absolute;inset:0;background-image:linear-gradient(180deg,rgba(20,16,14,.8) 0%,rgba(20,16,14,.66) 40%,rgba(20,16,14,.97) 100%)"></div>
+  <div style="position:relative;z-index:2;padding:clamp(64px,10vw,120px) clamp(20px,5vw,56px) clamp(48px,7vw,80px);max-width:1240px;margin:0 auto">
+  <div data-en="PLATFORM" data-ar="المنصة" style="font-size:10.5px;font-weight:600;letter-spacing:.18em;color:#D4AF37;margin-bottom:18px">PLATFORM</div>
+  <h1 data-en="A model that must cite its source." data-ar="نموذج يلزمه الاستشهاد بمصدره." style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(32px,6vw,72px);line-height:1.04;letter-spacing:-.025em;color:#F5F0E8;margin:0 0 26px;max-width:900px;text-wrap:pretty">A model that must cite its source.</h1>
+  <p data-en="The knowledge base is searched before the model writes. Every answer carries the passages it was built from, and Clauze declines rather than guesses." data-ar="تُبحث قاعدة المعرفة قبل أن يكتب النموذج. وكل إجابة تحمل المقاطع التي بُنيت عليها، وتعتذر كلوز بدل أن تخمّن." style="font-size:clamp(16px,1.9vw,19px);line-height:1.7;color:rgba(245,240,232,.66);margin:0;max-width:660px;text-wrap:pretty">The knowledge base is searched before the model writes. Every answer carries the passages it was built from, and Clauze declines rather than guesses.</p>
+</div>
+</div>
+
+<div style="padding:clamp(48px,7vw,80px) clamp(20px,5vw,56px) clamp(64px,9vw,104px);max-width:1240px;margin:0 auto">
+  <div style="border:1px solid rgba(245,240,232,.14);border-radius:14px;overflow:hidden">
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 20px;border-bottom:1px solid rgba(245,240,232,.14)">
+      <span data-en="Ask Clauze · Horizon Technologies · M&amp;A project" data-ar="اسأل كلوز · هورايزن للتقنية · مشروع استحواذ" style="flex:1;min-width:190px;font-size:12.5px;font-weight:500;color:rgba(245,240,232,.5)">Ask Clauze · Horizon Technologies · M&amp;A project</span>
+      <span data-en="RETRIEVAL ON · KSA" data-ar="الاستخراج مُفعَّل · السعودية" style="padding:4px 11px;border:1px solid rgba(212,175,55,.5);border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.06em;color:#D4AF37;white-space:nowrap">RETRIEVAL ON · KSA</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1px;background:rgba(245,240,232,.14)">
+      <div style="background:#14100E;padding:clamp(20px,2.6vw,26px);display:flex;flex-direction:column;gap:12px">
+        <div style="align-self:flex-end;background:#6B1D2F;border-radius:10px;padding:12px 15px;max-width:84%">
+          <p data-en="Does this acquisition need a board resolution?" data-ar="هل يحتاج هذا الاستحواذ إلى قرار من مجلس الإدارة؟" style="font-size:13.5px;line-height:1.5;color:#F5F0E8;margin:0">Does this acquisition need a board resolution?</p>
+        </div>
+        <div style="border:1px solid rgba(245,240,232,.14);border-radius:10px;padding:14px 16px">
+          <div style="font-size:10.5px;font-weight:600;letter-spacing:.1em;color:#D4AF37;margin-bottom:6px">CLAUZE</div>
+          <p data-en="Yes. Acquiring 60% of the shares crosses the threshold in Companies Law 2022, so a board resolution is a precondition to closing. I can raise it bilingually now." data-ar="نعم. الاستحواذ على ٦٠٪ من الأسهم يتجاوز الحد المنصوص عليه في نظام الشركات 2022، فيكون قرار المجلس شرطاً سابقاً للإتمام. أستطيع إنشاؤه بالعربية والإنجليزية الآن." style="font-size:13.5px;line-height:1.65;color:rgba(245,240,232,.82);margin:0">Yes. Acquiring 60% of the shares crosses the threshold in Companies Law 2022, so a board resolution is a precondition to closing. I can raise it bilingually now.</p>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <span data-en="Raise the resolution" data-ar="أنشئ القرار" style="padding:7px 13px;background:#6B1D2F;border-radius:6px;font-size:12px;font-weight:500;color:#F5F0E8">Raise the resolution</span>
+          <span data-en="Show the article" data-ar="اعرض المادة" style="padding:7px 13px;border:1px solid rgba(245,240,232,.2);border-radius:6px;font-size:12px;color:rgba(245,240,232,.7)">Show the article</span>
+        </div>
+        <div style="align-self:flex-end;background:#6B1D2F;border-radius:10px;padding:12px 15px;max-width:84%">
+          <p data-en="And the ZATCA wording for the price clause?" data-ar="وما صيغة هيئة الزكاة والضريبة لبند الثمن؟" style="font-size:13.5px;line-height:1.5;color:#F5F0E8;margin:0">And the ZATCA wording for the price clause?</p>
+        </div>
+        <div style="border:1px solid rgba(245,240,232,.14);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:6px">
+          <span style="width:6px;height:6px;border-radius:50%;background:#D4AF37;display:block"></span>
+          <span style="width:6px;height:6px;border-radius:50%;background:rgba(245,240,232,.2);display:block"></span>
+          <span style="width:6px;height:6px;border-radius:50%;background:rgba(245,240,232,.2);display:block"></span>
+          <span data-en="retrieving from the KSA knowledge base" data-ar="يستخرج من قاعدة المعرفة السعودية" style="font-size:11.5px;color:rgba(245,240,232,.5);margin-inline-start:8px">retrieving from the KSA knowledge base</span>
+        </div>
+      </div>
+      <div style="background:#1B1614;padding:clamp(20px,2.6vw,26px)">
+        <div data-en="GROUNDED IN" data-ar="مستندة إلى" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:8px">GROUNDED IN</div>
+        <div style="padding:12px 0;border-bottom:1px solid rgba(245,240,232,.1)">
+          <div style="font-size:13.5px;font-weight:500;color:#F5F0E8;margin-bottom:3px">Companies Law 2022</div>
+          <div data-en="Shareholder thresholds · 2 passages" data-ar="حدود ملكية الشركاء · مقطعان" style="font-size:11.5px;color:rgba(245,240,232,.45)">Shareholder thresholds · 2 passages</div>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid rgba(245,240,232,.1)">
+          <div style="font-size:13.5px;font-weight:500;color:#F5F0E8;margin-bottom:3px">ZATCA</div>
+          <div data-en="Invoicing and price-clause requirements · 3 passages" data-ar="متطلبات الفوترة وبند الثمن · ٣ مقاطع" style="font-size:11.5px;color:rgba(245,240,232,.45)">Invoicing and price-clause requirements · 3 passages</div>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid rgba(245,240,232,.1)">
+          <div style="font-size:13.5px;font-weight:500;color:#F5F0E8;margin-bottom:3px">SAMA</div>
+          <div data-en="Payment and settlement rules · 1 passage" data-ar="قواعد المدفوعات والتسوية · مقطع واحد" style="font-size:11.5px;color:rgba(245,240,232,.45)">Payment and settlement rules · 1 passage</div>
+        </div>
+        <div style="padding:12px 0;border-bottom:1px solid rgba(245,240,232,.1)">
+          <div data-en="Your own policy library" data-ar="مكتبة سياساتك الخاصة" style="font-size:13.5px;font-weight:500;color:#F5F0E8;margin-bottom:3px">Your own policy library</div>
+          <div data-en="Uploaded delegation of authority · 1 passage" data-ar="مصفوفة الصلاحيات المرفوعة · مقطع واحد" style="font-size:11.5px;color:rgba(245,240,232,.45)">Uploaded delegation of authority · 1 passage</div>
+        </div>
+        <div data-en="No passage, no answer. Every citation opens to the source text." data-ar="لا مقطع، لا إجابة. وكل استشهاد يفتح على نص المصدر." style="font-size:12.5px;line-height:1.65;color:#D4AF37;margin-top:16px;padding-inline-start:14px;border-inline-start:2px solid #D4AF37">No passage, no answer. Every citation opens to the source text.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:clamp(64px,9vw,104px) clamp(20px,5vw,56px);background:#1B1614;border-top:1px solid rgba(245,240,232,.1)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div data-en="HOW IT WORKS" data-ar="طريقة العمل" style="font-size:10.5px;font-weight:600;letter-spacing:.18em;color:#D4AF37;margin-bottom:16px">HOW IT WORKS</div>
+    <h2 data-en="One path replaces four weeks" data-ar="مسار واحد يحلّ محل أربعة أسابيع" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(26px,4.6vw,46px);line-height:1.1;letter-spacing:-.02em;color:#F5F0E8;margin:0 0 clamp(32px,4vw,48px);max-width:700px;text-wrap:pretty">One path replaces four weeks</h2>
+
+    <div style="border:1px solid rgba(245,240,232,.14);border-radius:14px;overflow:hidden">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 20px;border-bottom:1px solid rgba(245,240,232,.14)">
+        <span style="flex:1;min-width:190px;font-size:12.5px;font-weight:500;color:rgba(245,240,232,.5)">SPA — Horizon Technologies · M&amp;A project</span>
+        <span data-en="KSA · ARABIC PREVAILS" data-ar="السعودية · العربية حاكمة" style="padding:4px 11px;border:1px solid rgba(212,175,55,.5);border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.06em;color:#D4AF37;white-space:nowrap">KSA · ARABIC PREVAILS</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1px;background:rgba(245,240,232,.14)">
+        <div style="background:#1B1614;padding:clamp(20px,2.4vw,26px)">
+          <div data-en="STAGE" data-ar="المرحلة" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:18px">STAGE</div>
+          <div style="position:relative;display:flex;flex-direction:column">
+            <div style="position:absolute;inset-inline-start:13px;top:12px;bottom:12px;width:2px;background:rgba(245,240,232,.14)"></div>
+            <div style="position:absolute;inset-inline-start:13px;top:12px;height:57%;width:2px;background:#D4AF37"></div>
+            <div style="position:relative;display:flex;align-items:center;gap:16px;padding:9px 0">
+              <span style="width:28px;height:28px;border-radius:50%;background:#D4AF37;display:flex;align-items:center;justify-content:center;font-size:14px;color:#14100E;flex:none">✓</span>
+              <span data-en="Request" data-ar="طلب" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,21px);color:#F5F0E8">Request</span>
+            </div>
+            <div style="position:relative;display:flex;align-items:center;gap:16px;padding:9px 0">
+              <span style="width:28px;height:28px;border-radius:50%;background:#D4AF37;display:flex;align-items:center;justify-content:center;font-size:14px;color:#14100E;flex:none">✓</span>
+              <span data-en="Intake" data-ar="استلام" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,21px);color:#F5F0E8">Intake</span>
+            </div>
+            <div style="position:relative;display:flex;align-items:center;gap:16px;padding:9px 0">
+              <span style="width:28px;height:28px;border-radius:50%;background:#D4AF37;display:flex;align-items:center;justify-content:center;font-size:14px;color:#14100E;flex:none">✓</span>
+              <span data-en="Generate" data-ar="إنشاء" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,21px);color:#F5F0E8">Generate</span>
+            </div>
+            <div style="position:relative;display:flex;align-items:center;gap:16px;padding:9px 0">
+              <span style="width:28px;height:28px;border-radius:50%;background:#D4AF37;display:flex;align-items:center;justify-content:center;font-size:14px;color:#14100E;flex:none">✓</span>
+              <span data-en="Review" data-ar="مراجعة" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,21px);color:#F5F0E8">Review</span>
+            </div>
+            <div style="position:relative;display:flex;align-items:center;gap:16px;padding:9px 0">
+              <span style="width:28px;height:28px;border-radius:50%;background:#F5F0E8;box-shadow:0 0 0 5px rgba(212,175,55,.2);flex:none"></span>
+              <span data-en="Approve" data-ar="اعتماد" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,21px);color:#F5F0E8">Approve</span>
+              <span data-en="now" data-ar="الآن" style="font-size:10.5px;font-weight:600;letter-spacing:.1em;color:#D4AF37;border:1px solid rgba(212,175,55,.5);border-radius:999px;padding:2px 8px">now</span>
+            </div>
+            <div style="position:relative;display:flex;align-items:center;gap:16px;padding:9px 0">
+              <span style="width:28px;height:28px;border-radius:50%;border:2px solid rgba(245,240,232,.22);flex:none"></span>
+              <span data-en="Sign" data-ar="توقيع" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,21px);color:rgba(245,240,232,.45)">Sign</span>
+            </div>
+            <div style="position:relative;display:flex;align-items:center;gap:16px;padding:9px 0">
+              <span style="width:28px;height:28px;border-radius:50%;border:2px solid rgba(245,240,232,.22);flex:none"></span>
+              <span data-en="Register" data-ar="تسجيل" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(19px,2.2vw,21px);color:rgba(245,240,232,.45)">Register</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#1B1614;padding:clamp(20px,2.4vw,26px)">
+          <div data-en="WHAT REGISTRATION SETS IN MOTION" data-ar="ما يبدأ عند التسجيل" style="font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(245,240,232,.4);margin-bottom:18px">WHAT REGISTRATION SETS IN MOTION</div>
+          <div style="border:1px solid rgba(212,175,55,.45);border-radius:10px;padding:clamp(18px,2.2vw,24px);margin-bottom:18px">
+            <div data-en="notice deadline" data-ar="موعد الإشعار" style="font-size:11px;font-weight:600;letter-spacing:.14em;color:#D4AF37;margin-bottom:14px">notice deadline</div>
+            <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:'Newsreader','Noto Kufi Arabic',serif;color:#F5F0E8">
+              <span data-en="expiry" data-ar="تاريخ الانتهاء" style="font-size:clamp(24px,3vw,30px)">expiry</span>
+              <span style="font-size:clamp(24px,3vw,30px);color:#D4AF37">−</span>
+              <span data-en="notice period" data-ar="مهلة الإشعار" style="font-size:clamp(24px,3vw,30px)">notice period</span>
+            </div>
+            <div style="height:1px;background:rgba(212,175,55,.45);margin:16px 0 14px"></div>
+            <div data-en="31 Dec 2027 − 90 days = 2 Oct 2027" data-ar="٣١ ديسمبر ٢٠٢٧ − ٩٠ يوماً = ٢ أكتوبر ٢٠٢٧" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(17px,2vw,20px);color:#D4AF37">31 Dec 2027 − 90 days = 2 Oct 2027</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div data-en="Assigned to a named owner, not a shared inbox" data-ar="يُسند إلى مسؤول بالاسم لا إلى بريد مشترك" style="font-size:14.5px;line-height:1.6;color:rgba(245,240,232,.62);padding-inline-start:14px;border-inline-start:2px solid rgba(212,175,55,.5)">Assigned to a named owner, not a shared inbox</div>
+            <div data-en="Alerted before the window closes, without chasing" data-ar="يُنبَّه قبل انقضاء المهلة دون متابعة" style="font-size:14.5px;line-height:1.6;color:rgba(245,240,232,.62);padding-inline-start:14px;border-inline-start:2px solid rgba(212,175,55,.5)">Alerted before the window closes, without chasing</div>
+            <div data-en="Recorded in the audit trail with every prior step" data-ar="مُسجَّل في سجل التدقيق مع كل خطوة سابقة" style="font-size:14.5px;line-height:1.6;color:rgba(245,240,232,.62);padding-inline-start:14px;border-inline-start:2px solid rgba(212,175,55,.5)">Recorded in the audit trail with every prior step</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:clamp(64px,9vw,104px) clamp(20px,5vw,56px);background:#14100E;border-top:1px solid rgba(245,240,232,.1)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div data-en="WHAT CLAUZE DOES" data-ar="ما تفعله كلوز" style="font-size:10.5px;font-weight:600;letter-spacing:.18em;color:#D4AF37;margin-bottom:16px">WHAT CLAUZE DOES</div>
+    <h2 data-en="Six capabilities, one workspace" data-ar="ست إمكانيات، مساحة عمل واحدة" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(26px,4.6vw,46px);line-height:1.1;letter-spacing:-.02em;color:#F5F0E8;margin:0 0 clamp(32px,4vw,48px);max-width:700px;text-wrap:pretty">Six capabilities, one workspace</h2>
+    <div style="position:relative;width:100%;max-width:640px;margin:0 auto;aspect-ratio:1/1">
+      <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74%;aspect-ratio:1/1;border-radius:50%;border:2px solid rgba(212,175,55,.5)"></div>
+      <div style="position:absolute;left:68.50%;top:17.96%;transform:translate(-50%,-50%) rotate(120deg);width:clamp(11px,1.9vw,18px);aspect-ratio:1/1;background:#D4AF37;clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+      <div style="position:absolute;left:87.00%;top:50.00%;transform:translate(-50%,-50%) rotate(180deg);width:clamp(11px,1.9vw,18px);aspect-ratio:1/1;background:#D4AF37;clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+      <div style="position:absolute;left:68.50%;top:82.04%;transform:translate(-50%,-50%) rotate(240deg);width:clamp(11px,1.9vw,18px);aspect-ratio:1/1;background:#D4AF37;clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+      <div style="position:absolute;left:31.50%;top:82.04%;transform:translate(-50%,-50%) rotate(300deg);width:clamp(11px,1.9vw,18px);aspect-ratio:1/1;background:#D4AF37;clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+      <div style="position:absolute;left:13.00%;top:50.00%;transform:translate(-50%,-50%) rotate(360deg);width:clamp(11px,1.9vw,18px);aspect-ratio:1/1;background:#D4AF37;clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+      <div style="position:absolute;left:31.50%;top:17.96%;transform:translate(-50%,-50%) rotate(420deg);width:clamp(11px,1.9vw,18px);aspect-ratio:1/1;background:#D4AF37;clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+      <div style="position:absolute;left:50.00%;top:13.00%;transform:translate(-50%,-50%);width:27%;aspect-ratio:1/1;border-radius:50%;background:#14100E;border:1.5px solid rgba(245,240,232,.28);display:flex;align-items:center;justify-content:center;padding:6%;text-align:center">
+        <span data-en="Create" data-ar="الإنشاء" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(13px,3.4vw,26px);line-height:1.15;color:#F5F0E8">Create</span>
+      </div>
+      <div style="position:absolute;left:82.04%;top:31.50%;transform:translate(-50%,-50%);width:27%;aspect-ratio:1/1;border-radius:50%;background:#14100E;border:1.5px solid rgba(245,240,232,.28);display:flex;align-items:center;justify-content:center;padding:6%;text-align:center">
+        <span data-en="Review" data-ar="المراجعة" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(13px,3.4vw,26px);line-height:1.15;color:#F5F0E8">Review</span>
+      </div>
+      <div style="position:absolute;left:82.04%;top:68.50%;transform:translate(-50%,-50%);width:27%;aspect-ratio:1/1;border-radius:50%;background:#14100E;border:1.5px solid rgba(245,240,232,.28);display:flex;align-items:center;justify-content:center;padding:6%;text-align:center">
+        <span data-en="Move" data-ar="التحريك" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(13px,3.4vw,26px);line-height:1.15;color:#F5F0E8">Move</span>
+      </div>
+      <div style="position:absolute;left:50.00%;top:87.00%;transform:translate(-50%,-50%);width:27%;aspect-ratio:1/1;border-radius:50%;background:#14100E;border:1.5px solid rgba(245,240,232,.28);display:flex;align-items:center;justify-content:center;padding:6%;text-align:center">
+        <span data-en="Govern" data-ar="الإدارة" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(13px,3.4vw,26px);line-height:1.15;color:#F5F0E8">Govern</span>
+      </div>
+      <div style="position:absolute;left:17.96%;top:68.50%;transform:translate(-50%,-50%);width:27%;aspect-ratio:1/1;border-radius:50%;background:#14100E;border:1.5px solid rgba(245,240,232,.28);display:flex;align-items:center;justify-content:center;padding:6%;text-align:center">
+        <span data-en="Understand" data-ar="الفهم" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(13px,3.4vw,26px);line-height:1.15;color:#F5F0E8">Understand</span>
+      </div>
+      <div style="position:absolute;left:17.96%;top:31.50%;transform:translate(-50%,-50%);width:27%;aspect-ratio:1/1;border-radius:50%;background:#14100E;border:1.5px solid rgba(245,240,232,.28);display:flex;align-items:center;justify-content:center;padding:6%;text-align:center">
+        <span data-en="Prove" data-ar="الإثبات" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(13px,3.4vw,26px);line-height:1.15;color:#F5F0E8">Prove</span>
+      </div>
+      <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:32%;aspect-ratio:1/1;border-radius:50%;border:1px solid rgba(245,240,232,.18);display:flex;align-items:center;justify-content:center;padding:5%;text-align:center">
+        <span data-en="One workspace" data-ar="مساحة عمل واحدة" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(12px,2.6vw,22px);line-height:1.2;color:#D4AF37">One workspace</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:clamp(64px,9vw,104px) clamp(20px,5vw,56px);background:#1B1614;border-top:1px solid rgba(245,240,232,.1)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div data-en="CATEGORY POSITIONING" data-ar="الموقع بين الفئات" style="font-size:10.5px;font-weight:600;letter-spacing:.18em;color:#D4AF37;margin-bottom:16px">CATEGORY POSITIONING</div>
+    <h2 data-en="What the categories were built to do" data-ar="ما بُنيت كل فئة لتفعله" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(26px,4.6vw,46px);line-height:1.1;letter-spacing:-.02em;color:#F5F0E8;margin:0 0 12px;max-width:700px;text-wrap:pretty">What the categories were built to do</h2>
+    <p data-en="Compared as categories, not as named products." data-ar="مقارنة بين الفئات لا بين منتجات بالاسم." style="font-size:16px;line-height:1.7;color:rgba(245,240,232,.55);margin:0 0 clamp(32px,4vw,48px)">Compared as categories, not as named products.</p>
+
+    <div style="border-top:1px solid rgba(245,240,232,.14)">
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:clamp(10px,2vw,24px);padding:16px 0;border-bottom:1px solid rgba(245,240,232,.14)">
+        <span></span>
+        <span data-en="Clauze" data-ar="كلوز" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(14px,1.7vw,18px);color:#D4AF37;text-align:center">Clauze</span>
+        <span data-en="Global CLM platforms" data-ar="منصات إدارة العقود العالمية" style="font-size:clamp(11.5px,1.4vw,13.5px);line-height:1.4;color:rgba(245,240,232,.6);text-align:center">Global CLM platforms</span>
+        <span data-en="US AI legal tools" data-ar="أدوات الذكاء الاصطناعي القانونية" style="font-size:clamp(11.5px,1.4vw,13.5px);line-height:1.4;color:rgba(245,240,232,.6);text-align:center">US AI legal tools</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:clamp(10px,2vw,24px);align-items:center;padding:18px 0;border-bottom:1px solid rgba(245,240,232,.14)">
+        <span data-en="Arabic-prevailing generation" data-ar="إنشاء بأولوية العربية" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(15px,1.9vw,20px);color:#F5F0E8">Arabic-prevailing generation</span>
+        <span style="justify-self:center;width:14px;height:14px;border-radius:50%;background:#D4AF37;display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);display:block"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:clamp(10px,2vw,24px);align-items:center;padding:18px 0;border-bottom:1px solid rgba(245,240,232,.14)">
+        <span data-en="KSA and Jordan knowledge base" data-ar="قاعدة معرفة للسعودية والأردن" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(15px,1.9vw,20px);color:#F5F0E8">KSA and Jordan knowledge base</span>
+        <span style="justify-self:center;width:14px;height:14px;border-radius:50%;background:#D4AF37;display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);display:block"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:clamp(10px,2vw,24px);align-items:center;padding:18px 0;border-bottom:1px solid rgba(245,240,232,.14)">
+        <span data-en="On-premise deployment option" data-ar="خيار النشر الداخلي" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(15px,1.9vw,20px);color:#F5F0E8">On-premise deployment option</span>
+        <span style="justify-self:center;width:14px;height:14px;border-radius:50%;background:#D4AF37;display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);background-image:linear-gradient(to right,transparent 50%,rgba(245,240,232,.55) 50%);display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);display:block"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:clamp(10px,2vw,24px);align-items:center;padding:18px 0;border-bottom:1px solid rgba(245,240,232,.14)">
+        <span data-en="Bilingual two-column output" data-ar="إخراج ثنائي اللغة بعمودين" style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-size:clamp(15px,1.9vw,20px);color:#F5F0E8">Bilingual two-column output</span>
+        <span style="justify-self:center;width:14px;height:14px;border-radius:50%;background:#D4AF37;display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);background-image:linear-gradient(to right,transparent 50%,rgba(245,240,232,.55) 50%);display:block"></span>
+        <span style="justify-self:center;width:13px;height:13px;border-radius:50%;border:2px solid rgba(245,240,232,.4);display:block"></span>
+      </div>
+      <div style="display:flex;gap:clamp(16px,3vw,32px);flex-wrap:wrap;padding-top:20px">
+        <span style="display:flex;align-items:center;gap:9px;font-size:13px;color:rgba(245,240,232,.55)"><span style="width:12px;height:12px;border-radius:50%;background:#D4AF37;display:block"></span><span data-en="Core to the product" data-ar="أساسي في المنتج">Core to the product</span></span>
+        <span style="display:flex;align-items:center;gap:9px;font-size:13px;color:rgba(245,240,232,.55)"><span style="width:11px;height:11px;border-radius:50%;border:2px solid rgba(245,240,232,.4);background-image:linear-gradient(to right,transparent 50%,rgba(245,240,232,.55) 50%);display:block"></span><span data-en="Varies by vendor" data-ar="يختلف حسب المزوّد">Varies by vendor</span></span>
+        <span style="display:flex;align-items:center;gap:9px;font-size:13px;color:rgba(245,240,232,.55)"><span style="width:11px;height:11px;border-radius:50%;border:2px solid rgba(245,240,232,.4);display:block"></span><span data-en="Not typical of the category" data-ar="غير معتاد في هذه الفئة">Not typical of the category</span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:clamp(72px,11vw,120px) clamp(20px,5vw,56px);background:#14100E;border-top:1px solid rgba(245,240,232,.1);text-align:center">
+  <h2 data-en="See it on your own documents." data-ar="جرّبها على وثائقك أنت." style="font-family:'Newsreader','Noto Kufi Arabic',serif;font-weight:400;font-size:clamp(26px,4.6vw,48px);line-height:1.1;letter-spacing:-.02em;color:#F5F0E8;margin:0 0 32px;text-wrap:pretty">See it on your own documents.</h2>
+  <a href="mailto:hello@clauze.com" data-en="Request a Demo" data-ar="اطلب عرضاً تجريبياً" style="display:inline-block;padding:16px 36px;background:#6B1D2F;color:#F5F0E8;border-radius:8px;font-size:16px;font-weight:500" style-hover="background:#8A2439;color:#F5F0E8">Request a Demo</a>
+</div>
+
+
+<div style="padding:clamp(40px,6vw,64px) clamp(20px,5vw,56px) clamp(32px,4vw,48px);background:#14100E;border-top:1px solid rgba(245,240,232,.1)">
+<div style="max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+  <img src="assets/logo-clauze-light.png" alt="Clauze" style="height:26px;width:auto;display:block;opacity:.75">
+  <div style="display:flex;align-items:center;gap:clamp(14px,2.5vw,28px);flex-wrap:wrap">
+    <a href="Platform.dc.html" data-en="Platform" data-ar="المنصة" style="font-size:13.5px;color:rgba(245,240,232,.6)">Platform</a>
+    <a href="Security.dc.html" data-en="Security" data-ar="الأمان" style="font-size:13.5px;color:rgba(245,240,232,.6)">Security</a>
+    <a href="Jurisdictions.dc.html" data-en="Jurisdictions" data-ar="الاختصاصات" style="font-size:13.5px;color:rgba(245,240,232,.6)">Jurisdictions</a>
+    <span data-en="Riyadh · Amman" data-ar="الرياض · عمّان" style="font-size:13.5px;color:rgba(245,240,232,.4)">Riyadh · Amman</span>
+  </div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.enRef = React.createRef();
+    this.arRef = React.createRef();
+    this.lang = 'en';
+  }
+
+  componentDidMount() { this.applyLang('en'); }
+
+  applyLang(lang) {
+    this.lang = lang;
+    document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    document.body.querySelectorAll('[data-en][data-ar]').forEach(el => {
+      const v = el.getAttribute('data-' + lang);
+      if (v != null && v !== '') el.innerHTML = v;
+    });
+    const on = { background: '#F5F0E8', color: '#14100E' };
+    const off = { background: 'transparent', color: 'rgba(245,240,232,.7)' };
+    if (this.enRef.current) Object.assign(this.enRef.current.style, lang === 'en' ? on : off);
+    if (this.arRef.current) Object.assign(this.arRef.current.style, lang === 'ar' ? on : off);
+  }
+
+  renderVals() {
+    return {
+      enRef: this.enRef,
+      arRef: this.arRef,
+      setEn: () => this.applyLang('en'),
+      setAr: () => this.applyLang('ar')
+    };
+  }
+}
+
+</script>
+</body>
+</html>
