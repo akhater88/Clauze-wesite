@@ -7,7 +7,8 @@
 </head>
 <body>
 <x-dc>
-<helmet data-dc-atomics=""><link rel="preconnect" href="https://fonts.googleapis.com">
+<helmet data-dc-atomics=""><script src="./image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <title>Clauze — Legal review at the speed of the business</title>
@@ -18,14 +19,14 @@
 <meta property="og:site_name" content="Clauze">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ar_SA">
-<meta property="og:image" content="assets/og-clauze.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="assets/og-clauze-sm.png">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="473">
 <meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Clauze — Legal review at the speed of the business">
 <meta name="twitter:description" content="The first Arabic-native VDR and AI legal workspace built for Saudi Arabia.">
-<meta name="twitter:image" content="assets/og-clauze.png">
+<meta name="twitter:image" content="assets/og-clauze-sm.png">
 <meta name="twitter:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
 <meta name="theme-color" content="#26235A">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
@@ -87,9 +88,9 @@ button,input,select,textarea{font:inherit;color:inherit}
   </header>
 
   <section id="top" style="position:relative;display:flex;align-items:center;min-height:min(88vh,900px);overflow:hidden;background:#26235A">
-    <div ref="{{ heroArtRef }}" style="position:absolute;top:0;inset-inline-end:0;width:min(66%,1150px);height:100%;opacity:.7;background:linear-gradient(135deg,#1A1840 0%,#2F308C 30%,#2E7EBE 55%,#6BB0E0 80%,#AFD6EE 100%)">
-      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 24% 26%,rgba(20,18,50,.92) 0%,transparent 62%),radial-gradient(ellipse 48% 52% at 78% 22%,rgba(139,190,224,.5) 0%,transparent 60%),radial-gradient(ellipse 60% 55% at 62% 84%,rgba(14,20,48,.9) 0%,transparent 64%),radial-gradient(circle at 40% 58%,rgba(107,176,224,.42) 0%,transparent 46%);filter:blur(2px)"></div>
-      <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(244,246,252,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(244,246,252,.045) 1px,transparent 1px);background-size:44px 44px"></div>
+    <div ref="{{ heroArtRef }}" style="position:absolute;top:0;inset-inline-end:0;width:min(66%,1150px);height:100%">
+      <img src="uploads/Screenshot 2026-08-17 at 10.27.55 AM.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,24,64,.35) 0%,rgba(47,48,140,.15) 40%,transparent 70%)"></div>
     </div>
     <div ref="{{ heroWashRef }}" style="position:absolute;inset:0;background:linear-gradient(90deg,#26235A 0%,#26235A 32%,rgba(6,11,24,.86) 52%,rgba(6,11,24,.40) 100%)"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,11,24,.72) 0%,transparent 34%,rgba(6,11,24,.6) 100%)"></div>
@@ -136,7 +137,7 @@ button,input,select,textarea{font:inherit;color:inherit}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><circle cx="12" cy="12" r="8.6"></circle><path d="M3.4 12h17.2"></path><path d="M12 3.4c2.3 2.5 3.4 5.4 3.4 8.6s-1.1 6.1-3.4 8.6c-2.3-2.5-3.4-5.4-3.4-8.6s1.1-6.1 3.4-8.6Z"></path></svg>
         </span>
         <h3 data-en="Built for Saudi law" data-ar="مبني للنظام السعودي" style="margin:0;font-size:17.5px;font-weight:600">Built for Saudi law</h3>
-        <p data-en="ZATCA, GOSI, Nitaqat, PDPL  in the knowledge base." data-ar="الزكاة والضريبة، والتأمينات، ونطاقات، وحماية البيانات في قاعدة المعرفة." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">ZATCA, GOSI, Nitaqat, PDPL, in the knowledge base.</p>
+        <p data-en="ZATCA, GOSI, Nitaqat, PDPL — in the knowledge base." data-ar="الزكاة والضريبة، والتأمينات، ونطاقات، وحماية البيانات — في قاعدة المعرفة." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">ZATCA, GOSI, Nitaqat, PDPL, in the knowledge base.</p>
       </div>
       <div style="display:flex;flex-direction:column">
         <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
@@ -153,20 +154,26 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,44px) clamp(76px,9vw,124px)">
       <h2 ref="{{ deptHeadlineRef }}" data-en="Built around how your organization works." data-ar="مصمّم بما يتناسب مع طريقة عمل مؤسستك." style="margin:0;max-width:none;white-space:nowrap;font-size:clamp(20px,3vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Built around how your organization works.</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.2vw,26px);margin-top:clamp(34px,4vw,54px)">
-        <article style="display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
-          <span data-en="Legal" data-ar="القانونية" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Legal</span>
-          <h3 data-en="Stop reading what you have already read." data-ar="كفى قراءةً لما قرأته من قبل." style="margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em">Stop reading what you have already read.</h3>
-          <p data-en="Documents arrive pre-reviewed. You see the deviations, not the boilerplate." data-ar="تصل إليك المستندات مراجَعة. ترى ما خرج عن المألوف، لا ما تكرر ألف مرة." style="margin:0;font-size:15px;line-height:1.55;color:#6B7390">Documents arrive pre-reviewed. You see the deviations, not the boilerplate.</p>
+        <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
+          <image-slot id="dept-legal-bg" shape="rect" src="uploads/Screenshot 2026-08-17 at 10.27.55 AM-d4c47648.png" placeholder="Drop a legal-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.55) 0%,#FFFFFF 78%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="Legal" data-ar="القانونية">Legal</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Stop reading what you have already read." data-ar="كفى قراءةً لما قرأته من قبل.">Stop reading what you have already read.</h3>
+          <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Documents arrive pre-reviewed. You see the deviations, not the boilerplate." data-ar="تصل إليك المستندات مراجَعة. ترى ما خرج عن المألوف، لا ما تكرر ألف مرة.">Documents arrive pre-reviewed. You see the deviations, not the boilerplate.</p>
         </article>
-        <article style="display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
-          <span data-en="COMPLIANCE" data-ar="الامتثال" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">COMPLIANCE</span>
-          <h3 data-en="Contracts that comply before you sign." data-ar="عقود توظيف متوافقة قبل التوقيع." style="margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em">Contracts that comply before you sign.</h3>
-          <p data-en="Standard positions applied automatically." data-ar="تُطبَّق مواقفك المعتمدة تلقائيًا." style="margin:0;font-size:15px;line-height:1.55;color:#6B7390">Standard positions applied automatically.</p>
+        <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
+          <image-slot id="dept-compliance-bg" shape="rect" src="uploads/Screenshot 2026-08-17 at 10.28.13 AM-87bea391.png" placeholder="Drop a compliance-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.55) 0%,#FFFFFF 78%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Contracts that comply before you sign." data-ar="عقود توظيف متوافقة قبل التوقيع.">Contracts that comply before you sign.</h3>
+          <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Standard positions applied automatically." data-ar="تُطبَّق مواقفك المعتمدة تلقائيًا.">Standard positions applied automatically.</p>
         </article>
-        <article style="display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
-          <span data-en="Procurement" data-ar="المشتريات" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Procurement</span>
-          <h3 data-en="Agreements reviewed before the conversation ends." data-ar="اتفاقيات الموردين مراجَعة قبل أن ينتهي الاجتماع." style="margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em">Agreements reviewed before the conversation ends.</h3>
-          <p data-en="Risk flagged. Deviations noted." data-ar="المخاطر مرصودة، والانحرافات مسجَّلة." style="margin:0;font-size:15px;line-height:1.55;color:#6B7390">Risk flagged. Deviations noted.</p>
+        <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
+          <image-slot id="dept-procurement-bg" shape="rect" src="uploads/Screenshot 2026-08-17 at 10.28.26 AM-6e5dcbe0.png" placeholder="Drop a procurement-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.55) 0%,#FFFFFF 78%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="Procurement" data-ar="المشتريات">Procurement</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Agreements reviewed before the conversation ends." data-ar="اتفاقيات الموردين مراجَعة قبل أن ينتهي الاجتماع.">Agreements reviewed before the conversation ends.</h3>
+          <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Risk flagged. Deviations noted." data-ar="المخاطر مرصودة، والانحرافات مسجَّلة.">Risk flagged. Deviations noted.</p>
         </article>
       </div>
     </div>
@@ -962,6 +969,10 @@ class Component extends DCLogic {
     this.sw(n, 'borderBottomColor', past ? 'rgba(244, 246, 252, 0.1)' : 'rgba(244, 246, 252, 0)');
   }
 
+  // a late-loading hero photo can't shift the section height (it's absolutely positioned),
+  // but re-run once anyway as a safety net against any transient layout timing
+  onHeroArtLoad = () => this.layoutVideo();
+
   // the player straddles the rounded boundary; the hero reserves matching clearance
   layoutVideo() {
     const f = this.figureRef.current;
@@ -1260,7 +1271,7 @@ class Component extends DCLogic {
       navRef: this.navRef, navLinksRef: this.navLinksRef, burgerRef: this.burgerRef,
       navDemoRef: this.navDemoRef, langRef: this.langRef, heroArtRef: this.heroArtRef, heroWashRef: this.heroWashRef,
       heroInnerRef: this.heroInnerRef, figureRef: this.figureRef,
-      videoRef: this.videoRef, pillarsRef: this.pillarsRef, deptHeadlineRef: this.deptHeadlineRef, vdrGridRef: this.vdrGridRef,
+      videoRef: this.videoRef, onHeroArtLoad: this.onHeroArtLoad, pillarsRef: this.pillarsRef, deptHeadlineRef: this.deptHeadlineRef, vdrGridRef: this.vdrGridRef,
       jurisRef: this.jurisRef, securityGridRef: this.securityGridRef, footerGridRef: this.footerGridRef,
       modalRef: this.modalRef, formRef: this.formRef, formWrapRef: this.formWrapRef,
       formErrRef: this.formErrRef, doneRef: this.doneRef, doneMsgRef: this.doneMsgRef,
