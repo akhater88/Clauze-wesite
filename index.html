@@ -21,8 +21,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ar_SA">
 <meta property="og:image" content="assets/og-clauze-sm.png">
-<meta property="og:image:width" content="984">
-<meta property="og:image:height" content="517">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Clauze — Legal review at the speed of the business">
@@ -32,6 +32,7 @@
 <meta name="twitter:site" content="@clauze_ai">
 <meta name="theme-color" content="#26235A">
 <link rel="canonical" href="https://www.clauze.ai">
+<link rel="manifest" href="assets/site.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-64.png">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/favicon-512.png">
@@ -94,7 +95,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 
   <section id="top" style="position:relative;display:flex;align-items:center;min-height:min(88vh,900px);overflow:hidden;background:#26235A">
     <div ref="{{ heroArtRef }}" style="position:absolute;top:0;inset-inline-end:0;width:min(66%,1150px);height:100%">
-      <img src="uploads/Screenshot 2026-08-17 at 10.27.55 AM.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center"/>
+      <img ref="{{ heroPhotoRef }}" src="uploads/Screenshot 2026-08-17 at 10.27.55 AM.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center"/>
       <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,24,64,.35) 0%,rgba(47,48,140,.15) 40%,transparent 70%)"></div>
     </div>
     <div ref="{{ heroWashRef }}" style="position:absolute;inset:0;background:linear-gradient(90deg,#26235A 0%,#26235A 32%,rgba(6,11,24,.86) 52%,rgba(6,11,24,.40) 100%)"></div>
@@ -683,7 +684,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    ['navRef','navLinksRef','burgerRef','navDemoRef','langRef','heroArtRef','heroWashRef','heroInnerRef',
+    ['navRef','navLinksRef','burgerRef','navDemoRef','langRef','heroArtRef','heroPhotoRef','heroWashRef','heroInnerRef',
      'figureRef','videoRef','pillarsRef','deptHeadlineRef','vdrGridRef','jurisRef','securityGridRef',
      'footerGridRef','modalRef','formRef','formWrapRef','formErrRef','doneRef','doneMsgRef',
      'showcaseRef','showcaseLayoutRef','tabListRef','panelAreaRef','chromeTitleRef','chromePlatformRef',
@@ -1123,6 +1124,7 @@ class Component extends DCLogic {
   applyLang(lang) {
     this.lang = lang;
     document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    if (this.heroPhotoRef.current) this.sw(this.heroPhotoRef.current, 'transform', lang === 'ar' ? 'scaleX(-1)' : 'none');
     document.body.querySelectorAll('[data-en][data-ar]').forEach(el => {
       const v = el.getAttribute('data-' + lang);
       if (v != null && v !== '') el.innerHTML = v;
@@ -1274,7 +1276,7 @@ class Component extends DCLogic {
   renderVals() {
     return {
       navRef: this.navRef, navLinksRef: this.navLinksRef, burgerRef: this.burgerRef,
-      navDemoRef: this.navDemoRef, langRef: this.langRef, heroArtRef: this.heroArtRef, heroWashRef: this.heroWashRef,
+      navDemoRef: this.navDemoRef, langRef: this.langRef, heroArtRef: this.heroArtRef, heroPhotoRef: this.heroPhotoRef, heroWashRef: this.heroWashRef,
       heroInnerRef: this.heroInnerRef, figureRef: this.figureRef,
       videoRef: this.videoRef, onHeroArtLoad: this.onHeroArtLoad, pillarsRef: this.pillarsRef, deptHeadlineRef: this.deptHeadlineRef, vdrGridRef: this.vdrGridRef,
       jurisRef: this.jurisRef, securityGridRef: this.securityGridRef, footerGridRef: this.footerGridRef,

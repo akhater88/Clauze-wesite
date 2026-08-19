@@ -1,0 +1,20 @@
+{
+  "name": "Clauze",
+  "short_name": "Clauze",
+  "start_url": "https://www.clauze.ai",
+  "display": "standalone",
+  "background_color": "#26235A",
+  "theme_color": "#26235A",
+  "icons": [
+    {
+      "src": "favicon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
