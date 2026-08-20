@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<script src="./support.js"></script>
+</head>
+<body>
+@verbatim
+<x-dc>
+<helmet data-dc-atomics=""><script src="./image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<title>Clauze — Legal review at the speed of the business</title>
+<meta name="description" content="Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law — before they reach your legal team.">
+<meta property="og:title" content="Clauze — Legal review at the speed of the business">
+<meta property="og:description" content="The first Arabic-native VDR and AI legal workspace built for Saudi Arabia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.clauze.ai">
+<meta property="og:site_name" content="Clauze">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clauze — Legal review at the speed of the business">
+<meta name="twitter:description" content="The first Arabic-native VDR and AI legal workspace built for Saudi Arabia.">
+<meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<meta name="twitter:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
+<meta name="twitter:site" content="@clauze_ai">
+<meta name="theme-color" content="#26235A">
+<link rel="canonical" href="https://www.clauze.ai">
+<link rel="manifest" href="assets/site.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-64.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/favicon-512.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Clauze — Legal review at the speed of the business","description":"Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law — before they reach your legal team.","url":"https://www.clauze.ai","publisher":{"@type":"Organization","name":"Clauze"}}</script>
+<style>
+@font-face{font-family:'Zalando Sans';src:url('assets/fonts/ZalandoSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Zalando Sans';src:url('assets/fonts/ZalandoSans-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#26235A;color:#F4F6FC;font-family:'Zalando Sans','Noto Kufi Arabic',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+a{color:#6BB0E0;text-decoration:none}
+a:hover{color:#AFD6EE}
+button,input,select,textarea{font:inherit;color:inherit}
+[dir="rtl"] body{font-family:'Noto Kufi Arabic','Zalando Sans',system-ui,sans-serif}
+[dir="rtl"] header nav{gap:2px !important}
+[dir="rtl"] header nav a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
+::selection{background:#2E7EBE;color:#fff}
+@keyframes clzUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes clzTrace{to{stroke-dashoffset:-100}}
+@keyframes clzWake{0%,100%{border-color:rgba(107,176,224,.22);box-shadow:none}
+6%{border-color:#6BB0E0;box-shadow:0 0 0 1px rgba(107,176,224,.5),0 0 26px -4px rgba(46,126,190,.9)}
+26%{border-color:rgba(107,176,224,.22);box-shadow:none}}
+@keyframes clzWakeText{0%,100%{color:rgba(244,246,252,.5)}6%{color:#FFFFFF}26%{color:rgba(244,246,252,.5)}}
+@keyframes clzScan{0%{top:6%;opacity:0}8%{opacity:1}92%{opacity:1}100%{top:94%;opacity:0}}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#26235A}
+::-webkit-scrollbar-thumb{background:#2E7EBE;border-radius:3px}
+@keyframes clzProgress{from{width:0%}to{width:100%}}
+@keyframes clzDraw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes clzRowIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+@keyframes clzDropIn{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
+@keyframes clzRiseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes clzFadeIn{from{opacity:0}to{opacity:1}}
+@keyframes clzFadeOut{from{opacity:1}to{opacity:0}}
+@keyframes clzGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes clzWakeDot{0%,100%{opacity:.3;transform:scale(1)}50%{opacity:1;transform:scale(1.35)}}
+</style>
+</helmet>
+
+<div style="overflow-x:clip;background:#26235A">
+
+  <header ref="{{ navRef }}" style="position:fixed;top:0;inset-inline:0;z-index:1000;height:76px;background:transparent;border-bottom:1px solid rgba(244,246,252,0);transition:background .3s ease,border-color .3s ease,backdrop-filter .3s ease">
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,44px);height:76px;display:flex;align-items:center;gap:clamp(14px,3vw,38px)">
+      <a href="#top" style="display:flex;align-items:center;flex:none"><img src="assets/sm-clauze-wordmark-white.png" alt="Clauze" style="height:21px;width:auto;display:block"></a>
+      <nav ref="{{ navLinksRef }}" style="display:flex;align-items:center;gap:8px;margin-inline-start:clamp(28px,5vw,64px);margin-inline-end:auto">
+        <a href="#product" data-en="Product" data-ar="المنتج" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Product</a>
+        <a href="#features" data-en="Features" data-ar="الإمكانات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Features</a>
+        <a href="#vdr" data-en="VDR" data-ar="غرفة البيانات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">VDR</a>
+        <a href="#security" data-en="Enterprise" data-ar="المؤسسات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Enterprise</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:12px;flex:none;margin-inline-start:auto">
+        <button ref="{{ langRef }}" onClick="{{ toggleLang }}" style="padding:10px 6px;min-height:40px;background:transparent;border:none;font-size:14.5px;color:rgba(244,246,252,.82);cursor:pointer;transition:color .2s ease" style-hover="color:#F4F6FC">العربية</button>
+        <a ref="{{ navDemoRef }}" href="#demo" onClick="{{ openDemo }}" data-en="Request a demo" data-ar="اطلب عرضًا" style="padding:12px 22px;background:#2E7EBE;border-radius:8px;color:#FFFFFF;font-size:14px;font-weight:600;white-space:nowrap;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo</a>
+        <button ref="{{ burgerRef }}" onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="false" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;background:transparent;border:1.5px solid rgba(244,246,252,.26);border-radius:9px;cursor:pointer">
+          <span style="display:block;width:18px;height:1.5px;background:#F4F6FC;box-shadow:0 -6px 0 #F4F6FC,0 6px 0 #F4F6FC"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="top" style="position:relative;display:flex;align-items:center;min-height:min(88vh,900px);overflow:hidden;background:#26235A">
+    <div ref="{{ heroArtRef }}" style="position:absolute;bottom:36px;inset-inline-end:0;width:min(100%);height:100%">
+      <img ref="{{ heroPhotoRef }}" src="assets/hero-header-02.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:100% center"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,24,64,.35) 0%,rgba(47,48,140,.15) 40%,transparent 134%)"></div>
+    </div>
+    <div ref="{{ heroWashRef }}" style="position:absolute;inset:0;background:linear-gradient(90deg,#26235A 0%,#26235A 32%,rgba(6,11,24,.86) 52%,rgba(6,11,24,.40) 100%)"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,11,24,.72) 0%,transparent 34%,rgba(6,11,24,.6) 100%)"></div>
+
+    <div ref="{{ heroInnerRef }}" style="position:relative;z-index:5;width:100%;max-width:1280px;margin:0 auto;padding:clamp(140px,14vw,180px) clamp(20px,4vw,44px) 200px">
+      <h1 style="margin:0;max-width:19ch;font-size:clamp(34px,5.4vw,68px);font-weight:700;line-height:1.08;letter-spacing:-.03em;color:#F4F6FC;animation:clzUp .6s ease both">
+        <span data-en="Legal intelligence" data-ar="ذكاء قانوني" style="display:block">Legal intelligence</span>
+        <span data-en="that understands your business" data-ar="يفهم أعمالك" style="display:block">that understands your business</span>
+      </h1>
+      <p style="margin:30px 0 0;max-width:64ch;font-size:clamp(17px,2vw,20px);line-height:1.6;color:rgba(244,246,252,.76);animation:clzUp .6s .08s ease both">
+        <span data-en="Legal AI trained on your agreements, your playbook, and the " data-ar="ذكاء اصطناعي قانوني مُدرَّب على عقودك، وسياساتك، و">Legal AI trained on your agreements, your playbook, and the </span><span data-en="Saudi law." data-ar="النظام السعودي." style="font-weight:700;font-size:1.15em;color:#FFFFFF">Saudi law.</span>
+      </p>
+      <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo" data-ar="اطلب عرضًا" style="display:inline-block;margin-top:40px;padding:17px 34px;background:#2E7EBE;color:#fff;border-radius:9px;font-size:16px;font-weight:600;animation:clzUp .6s .14s ease both;transition:background .2s ease" style-hover="background:#4A9AD1;color:#fff">Request a demo</a>
+    </div>
+  </section>
+
+  <section id="product" style="scroll-margin-top:84px;position:relative;margin-top:calc(-1 * clamp(28px,4vw,56px));background:#EEEFF4;color:#2F308C;border-start-start-radius:clamp(28px,4vw,56px);border-start-end-radius:clamp(28px,4vw,56px)">
+    <figure ref="{{ figureRef }}" style="position:relative;z-index:4;bottom:36px;margin:0 auto;width:min(880px,calc(100% - clamp(40px,8vw,88px)));border-radius:23px;overflow:hidden;background:#1C1A44 url('assets/video-poster.png') center/cover no-repeat;aspect-ratio:16/9;box-shadow:0 46px 100px -46px rgba(3,7,20,.85)">
+      <video ref="{{ videoRef }}" data-src="assets/Clauze DemoVideo-5eb4f736.mp4" poster="assets/video-poster.png" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="none" disablepictureinpicture="disablepictureinpicture" style="display:block;width:100%;height:100%;object-fit:cover;pointer-events:none"></video>
+    </figure>
+
+    <div ref="{{ pillarsRef }}" style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,44px) clamp(76px,9vw,124px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(22px,2.6vw,36px)">
+      <div style="display:flex;flex-direction:column">
+        <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M12 4.5c-2 0-3.2 1.3-3.4 2.8-1.4.4-2.3 1.7-2.1 3.1-.9.7-1.3 1.9-.9 3 .3.9.6 1.9.6 2.9 0 1.7 1.4 3.2 3.2 3.2h.4"></path><path d="M12 4.5c2 0 3.2 1.3 3.4 2.8 1.4.4 2.3 1.7 2.1 3.1.9.7 1.3 1.9.9 3-.3.9-.6 1.9-.6 2.9 0 1.7-1.4 3.2-3.2 3.2h-.4"></path><path d="M12 4.5v15"></path><path d="M9.2 10.2h1.6"></path><path d="M13.2 10.2h1.6"></path><path d="M8.6 14.2h1.9"></path><path d="M13.5 14.2h1.9"></path></svg>
+        </span>
+        <h3 data-en="Understands your organization" data-ar="تفهم مؤسستك" style="margin:0;font-size:17.5px;font-weight:600">Understands your organization</h3>
+        <p data-en="Clauze starts informed." data-ar="كلوز يبدأ وهو ملمّ بك." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Clauze starts informed.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M9 5H6.5v14H9"></path><path d="M15 5h2.5v14H15"></path><path d="M12 9v6"></path><circle cx="12" cy="7" r=".6" fill="currentColor" stroke="none"></circle></svg>
+        </span>
+        <h3 data-en="Every answer cited" data-ar="كل إجابة موثّقة" style="margin:0;font-size:17.5px;font-weight:600">Every answer cited</h3>
+        <p data-en="No unsupported legal response." data-ar="لا رأي دون سند." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">No unsupported legal response.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <span style="display:flex;align-items:center;height:44px;margin-bottom:12px;font-size:22px;line-height:1;color:#2E7EBE">ع<span style="opacity:.5;margin:0 3px">/</span>A</span>
+        <h3 data-en="Bilingual by design" data-ar="ثنائي اللغة بالتصميم" style="margin:0;font-size:17.5px;font-weight:600">Bilingual by design</h3>
+        <p data-en="Arabic governs. English mirrors." data-ar="العربية هي المعتمدة، والإنجليزية تطابقها." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Arabic governs. English mirrors.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><circle cx="12" cy="12" r="8.6"></circle><path d="M3.4 12h17.2"></path><path d="M12 3.4c2.3 2.5 3.4 5.4 3.4 8.6s-1.1 6.1-3.4 8.6c-2.3-2.5-3.4-5.4-3.4-8.6s1.1-6.1 3.4-8.6Z"></path></svg>
+        </span>
+        <h3 data-en="Built for Saudi law" data-ar="مبني للنظام السعودي" style="margin:0;font-size:17.5px;font-weight:600">Built for Saudi law</h3>
+        <p data-en="ZATCA, GOSI, Nitaqat, PDPL — in the knowledge base." data-ar="الزكاة والضريبة، والتأمينات، ونطاقات، وحماية البيانات — في قاعدة المعرفة." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">ZATCA, GOSI, Nitaqat, PDPL, in the knowledge base.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M12 3.5 19 6v6c0 4-3 6.8-7 8.5-4-1.7-7-4.5-7-8.5V6Z"></path><path d="M9.2 12.2l2 2 3.6-4"></path></svg>
+        </span>
+        <h3 data-en="Audit every decision" data-ar="دقّق كل قرار" style="margin:0;font-size:17.5px;font-weight:600">Audit every decision</h3>
+        <p data-en="Every AI response cites its source." data-ar="كل استجابة تعود إلى مصدرها." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Every AI response cites its source.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="departments" style="scroll-margin-top:84px;background:#EEEFF4;color:#2F308C">
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,44px) clamp(76px,9vw,124px)">
+      <h2 ref="{{ deptHeadlineRef }}" data-en="Built around how your organization works." data-ar="مصمّم بما يتناسب مع طريقة عمل مؤسستك." style="margin:0;max-width:none;white-space:nowrap;font-size:clamp(20px,3vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Built around how your organization works.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.2vw,26px);margin-top:clamp(34px,4vw,54px)">
+        <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
+          <image-slot id="dept-legal-bg" shape="rect" src="assets/dept-legal.png" placeholder="Drop a legal-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="Legal" data-ar="القانونية">Legal</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Stop reading what you have already read." data-ar="كفى قراءةً لما قرأته من قبل.">Stop reading what you have already read.</h3>
+          <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Documents arrive pre-reviewed. You see the deviations, not the boilerplate." data-ar="تصل إليك المستندات مراجَعة. ترى ما خرج عن المألوف، لا ما تكرر ألف مرة.">Documents arrive pre-reviewed. You see the deviations, not the boilerplate.</p>
+        </article>
+        <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
+          <image-slot id="dept-compliance-bg" shape="rect" src="assets/dept-compliance.png" placeholder="Drop a compliance-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Contracts that comply before you sign." data-ar="عقود توظيف متوافقة قبل التوقيع.">Contracts that comply before you sign.</h3>
+          <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Standard positions applied automatically." data-ar="تُطبَّق مواقفك المعتمدة تلقائيًا.">Standard positions applied automatically.</p>
+        </article>
+        <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
+          <image-slot id="dept-procurement-bg" shape="rect" src="assets/dept-procurement.png" placeholder="Drop a procurement-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="Procurement" data-ar="المشتريات">Procurement</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Agreements reviewed before the conversation ends." data-ar="اتفاقيات الموردين مراجَعة قبل أن ينتهي الاجتماع.">Agreements reviewed before the conversation ends.</h3>
+          <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Risk flagged. Deviations noted." data-ar="المخاطر مرصودة، والانحرافات مسجَّلة.">Risk flagged. Deviations noted.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" ref="{{ showcaseRef }}" style="scroll-margin-top:84px;position:relative;background:#2F308C;color:#F4F6FC;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.16"></div>
+    <div ref="{{ showcaseInnerRef }}" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px);overflow-x:hidden">
+      <div ref="{{ showcaseHeaderRef }}" style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:clamp(40px,5vw,64px)">
+        <p data-en="Platform overview" data-ar="نظرة على المنصة" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Platform overview</p>
+        <h2 data-en="See Clauze in action" data-ar="شاهد كلوز أثناء العمل" style="margin:16px 0 0;font-size:clamp(28px,4vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.025em;color:#F4F6FC">See Clauze in action</h2>
+        <p data-en="Six core capabilities. One AI legal workspace." data-ar="ست إمكانات أساسية. مساحة عمل قانونية واحدة." style="margin:16px 0 0;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Six core capabilities. One AI legal workspace.</p>
+      </div>
+
+      <div ref="{{ showcaseLayoutRef }}" style="display:flex;gap:48px;align-items:flex-start">
+        <div ref="{{ tabListRef }}" style="flex:none;width:260px;display:flex;flex-direction:column;gap:4px">
+          <button data-tab="0" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:#2E7EBE">✦</span>
+              <span data-tab-name="1" data-en="Intelligence" data-ar="الذكاء" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Intelligence</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
+          <button data-tab="1" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">◫</span>
+              <span data-tab-name="1" data-en="Virtual Data Room" data-ar="غرفة البيانات" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Virtual Data Room</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
+          <button data-tab="2" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⧉</span>
+              <span data-tab-name="1" data-en="IRL-Driven DD" data-ar="الفحص وفق قائمة المشتري" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">IRL-Driven DD</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
+          <button data-tab="3" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⬡</span>
+              <span data-tab-name="1" data-en="Knowledge Graph" data-ar="شبكة المعرفة" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Knowledge Graph</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
+          <button data-tab="4" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">▤</span>
+              <span data-tab-name="1" data-en="Enterprise Onboarding" data-ar="تهيئة المؤسسة" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Enterprise Onboarding</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
+          <button data-tab="5" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⚡</span>
+              <span data-tab-name="1" data-en="Conflict Detection" data-ar="كشف التعارض" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Conflict Detection</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
+        </div>
+
+        <div style="flex:1;min-width:0;background:rgba(6,11,24,.8);border:1px solid rgba(244,246,252,.1);border-radius:18px;overflow:hidden;min-height:520px">
+          <div style="display:flex;align-items:center;gap:6px;height:40px;padding:0 16px;background:rgba(0,0,0,.3);border-bottom:1px solid rgba(244,246,252,.08)">
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#EF4444"></span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#F59E0B"></span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#22C55E"></span>
+            <span ref="{{ chromeTitleRef }}" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:13px;color:rgba(244,246,252,.55)">Intelligence</span>
+            <span ref="{{ chromePlatformRef }}" style="flex:none;font-size:12px;color:rgba(244,246,252,.3)">Clauze Platform</span>
+          </div>
+
+          <div ref="{{ panelAreaRef }}" style="position:relative;height:480px;overflow:hidden;width:100%;min-width:0">
+
+            <div data-panel="0" style="position:absolute;inset:0;background:#1C1A44;opacity:1;transition:opacity .3s ease">
+              <video ref="{{ showcaseVideoRef }}" data-src="assets/clauze-demo-en.mp4" poster="assets/video-poster.png" muted="muted" loop="loop" playsinline="playsinline" preload="none" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></video>
+              <div style="position:absolute;inset-inline:0;bottom:0;display:flex;align-items:center;gap:10px;padding:26px 20px 16px;background:linear-gradient(to top,rgba(0,0,0,.7),transparent)">
+                <span style="flex:none;font-size:12px;color:#2E7EBE">✦</span>
+                <span style="flex:none;font-size:12px;font-weight:600;color:#F4F6FC">Intelligence</span>
+                <span style="font-size:12px;color:rgba(244,246,252,.8)">· AI-powered bilingual legal drafting and review</span>
+              </div>
+            </div>
+
+            <div data-panel="1" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <div ref="{{ vdrPanelRef }}" style="display:flex;height:100%">
+                <div style="flex:none;width:40%;padding:16px 14px;border-inline-end:1px solid rgba(244,246,252,.08);background:rgba(0,0,0,.2)">
+                  <p style="margin:0 0 12px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Entities</p>
+                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px;border-inline-start:3px solid #2E7EBE;border-radius:0 8px 8px 0;background:rgba(46,126,190,.14)">
+                    <span style="font-size:13px">🏢</span>
+                    <span style="font-size:12.5px;font-weight:600;color:#F4F6FC">Falcon Holding</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px 9px 26px;margin-top:4px">
+                    <span style="font-size:12px">🏗</span>
+                    <span style="font-size:12px;color:rgba(244,246,252,.6)">Falcon Tech LLC</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px 9px 26px">
+                    <span style="font-size:12px">🤝</span>
+                    <span style="font-size:12px;color:rgba(244,246,252,.6)">Falcon-NEOM Partners</span>
+                  </div>
+                </div>
+                <div style="position:relative;flex:1;min-width:0;padding:16px 0 0">
+                  <p style="margin:0 14px 10px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,246,252,.5)">DD Index</p>
+                  <div data-anim="clzRowIn .3s ease .2s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">01 Corporate Governance</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">8 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease .4s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">02 Financial Information</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">12 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease .6s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">06 Tax &amp; Regulatory (ZATCA, MISA)</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">7 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#B45309"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease .8s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">07 Legal &amp; Litigation</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">3 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease 1s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:rgba(244,246,252,.6)">08 IT &amp; Technology (PDPL)</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">0 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:rgba(244,246,252,.34)"></span>
+                  </div>
+                  <div data-anim="clzDropIn .4s ease 2.5s both" style="position:absolute;top:14px;inset-inline-end:14px;padding:10px 14px;border-radius:8px;background:rgba(46,126,190,.9);font-size:13px;color:#F4F6FC">Bidder Group A — NDA Accepted ✓</div>
+                  <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;padding:12px 14px;background:rgba(107,176,224,.2);border-top:1px solid rgba(107,176,224,.4);font-size:12.5px;color:#F4F6FC">Phase 2 unlocked — 47 documents now visible</div>
+                </div>
+              </div>
+            </div>
+
+            <div data-panel="2" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <div style="position:relative;height:100%;padding:20px">
+                <div data-anim="clzFadeOut .4s ease 1.8s both" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px;border:1.5px dashed rgba(46,126,190,.5);border-radius:12px;background:rgba(46,126,190,.06)">
+                  <span style="font-size:14px;color:#6BB0E0">📋 Drop IRL here</span>
+                  <span style="font-size:12px;color:rgba(244,246,252,.5)">Excel · Word · PDF — any language</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease .8s both" style="margin-top:12px;padding:10px 12px;border:1px solid rgba(244,246,252,.14);border-radius:8px;background:rgba(255,255,255,.06)">
+                  <span style="font-size:12.5px;color:#F4F6FC">✓ GS_DD_Checklist_v3.xlsx · 67 items detected</span>
+                  <span style="display:block;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .8s ease 1s both" style="display:block;height:100%;width:100%;transform-origin:left center;background:#2E7EBE"></span></span>
+                </div>
+                <p data-anim="clzFadeIn .3s ease 1.8s both" style="margin:16px 0 8px;font-size:12px;font-style:italic;color:rgba(244,246,252,.55)">Matching 67 items against Company Data Room…</p>
+                <div data-anim="clzRowIn .3s ease 2s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#16A34A">✓</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">1.1</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Certificate of Incorporation</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#DCFCE7;font-size:10.5px;font-weight:600;color:#16A34A">matched</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease 2.15s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#16A34A">✓</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">2.1</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Audited Financial Statements</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#DCFCE7;font-size:10.5px;font-weight:600;color:#16A34A">matched</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease 2.3s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#B45309">~</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">2.3</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Aged debtors list as at most recent month end</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#FEF3C7;font-size:10.5px;font-weight:600;color:#B45309">partial</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease 2.45s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#DC2626">✗</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">7.1</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">ZATCA clearance certificate</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#FEF2F2;font-size:10.5px;font-weight:600;color:#DC2626">missing</span>
+                </div>
+                <div data-anim="clzWake 4s linear 3s infinite both" style="display:flex;align-items:center;gap:10px;height:34px;margin-top:2px;padding:0 10px;border:1px solid rgba(107,176,224,.22);border-radius:8px">
+                  <span style="flex:none;font-size:12px;color:#2E7EBE">✦</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">4.3</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Shareholder agreement</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:rgba(46,126,190,.25);font-size:10.5px;font-weight:600;color:#AFD6EE">generate</span>
+                </div>
+                <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;display:flex;align-items:center;gap:12px;padding:12px 20px;background:rgba(46,126,190,.15);border-top:1px solid rgba(46,126,190,.4)">
+                  <span style="font-size:12.5px;color:#F4F6FC">67 items organized · 38 matched · 23 missing</span>
+                  <a href="#demo" onClick="{{ openDemo }}" style="margin-inline-start:auto;flex:none;padding:8px 14px;border-radius:8px;background:#2E7EBE;font-size:11px;font-weight:600;color:#fff" style-hover="background:#4A9AD1;color:#fff">Share with buyer →</a>
+                </div>
+              </div>
+            </div>
+
+            <div data-panel="3" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <div ref="{{ graphPanelRef }}" style="display:flex;height:100%">
+                <div style="flex:none;width:38%;display:flex;flex-direction:column;padding:12px;border-inline-end:1px solid rgba(244,246,252,.08)">
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+                    <div style="display:flex;align-items:center;gap:8px;height:40px;padding:0 10px;background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.1);border-radius:6px">
+                      <span style="flex:none;display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(37,99,235,.25);font-size:9px;font-weight:600;color:#93B4FF">01</span>
+                      <span style="flex:1;min-width:0;font-size:11px;color:#F4F6FC">Corporate<span style="display:block;height:3px;margin-top:4px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .7s ease .2s both" style="display:block;height:100%;width:100%;transform-origin:left center;background:#16A34A"></span></span></span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;height:40px;padding:0 10px;background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.1);border-radius:6px">
+                      <span style="flex:none;display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(234,88,12,.25);font-size:9px;font-weight:600;color:#FDBA74">05</span>
+                      <span style="flex:1;min-width:0;font-size:11px;color:#F4F6FC">Commercial<span style="display:block;height:3px;margin-top:4px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .7s ease .35s both" style="display:block;height:100%;width:65%;transform-origin:left center;background:#B45309"></span></span></span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;height:40px;padding:0 10px;background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.1);border-radius:6px">
+                      <span style="flex:none;display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(234,88,12,.25);font-size:9px;font-weight:600;color:#FDBA74">06</span>
+                      <span style="flex:1;min-width:0;font-size:11px;color:#F4F6FC">Financing<span style="display:block;height:3px;margin-top:4px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .7s ease .5s both" style="display:block;height:100%;width:100%;transform-origin:left center;background:#16A34A"></span></span></span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;height:40px;padding:0 10px;background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.1);border-radius:6px">
+                      <span style="flex:none;display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(220,38,38,.25);font-size:9px;font-weight:600;color:#FCA5A5">09</span>
+                      <span style="flex:1;min-width:0;font-size:11px;color:#F4F6FC">Regulatory<span style="display:block;height:3px;margin-top:4px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .7s ease .65s both" style="display:block;height:100%;width:70%;transform-origin:left center;background:#B45309"></span></span></span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;height:40px;padding:0 10px;background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.1);border-radius:6px">
+                      <span style="flex:none;display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(107,176,224,.25);font-size:9px;font-weight:600;color:#AFD6EE">14</span>
+                      <span style="flex:1;min-width:0;font-size:11px;color:#F4F6FC">M&amp;A<span style="display:block;height:3px;margin-top:4px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .7s ease .8s both" style="display:block;height:100%;width:80%;transform-origin:left center;background:#B45309"></span></span></span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;height:40px;padding:0 10px;background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.1);border-radius:6px">
+                      <span style="flex:none;display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(244,246,252,.12);font-size:9px;font-weight:600;color:rgba(244,246,252,.7)">15</span>
+                      <span style="flex:1;min-width:0;font-size:11px;color:#F4F6FC">Policies<span style="display:block;height:3px;margin-top:4px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .7s ease .95s both" style="display:block;height:100%;width:20%;transform-origin:left center;background:rgba(244,246,252,.42)"></span></span></span>
+                    </div>
+                  </div>
+                  <p data-anim="clzFadeIn .4s ease 1.2s both" style="margin:auto 0 0;font-size:11px;color:#6BB0E0">✦ 147 knowledge objects · 43 graph links</p>
+                </div>
+
+                <div style="position:relative;flex:1;min-width:0">
+                  <svg data-graph-edges="1" viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%">
+                    <line data-anim="clzDraw .8s ease .4s both" x1="50" y1="41" x2="50" y2="27" pathLength="100" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="100" stroke-dashoffset="100" vector-effect="non-scaling-stroke"></line>
+                    <line data-anim="clzDraw .8s ease .8s both" x1="59" y1="50" x2="76" y2="50" pathLength="100" stroke="#EA580C" stroke-width="1.6" stroke-dasharray="100" stroke-dashoffset="100" vector-effect="non-scaling-stroke"></line>
+                    <line data-anim="clzDraw .8s ease 1.2s both" x1="50" y1="59" x2="50" y2="73" pathLength="100" stroke="#2563EB" stroke-width="1.6" stroke-dasharray="100" stroke-dashoffset="100" vector-effect="non-scaling-stroke"></line>
+                    <line data-anim="clzDraw .8s ease 2s both" x1="41" y1="50" x2="24" y2="50" pathLength="100" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="100" stroke-dashoffset="100" vector-effect="non-scaling-stroke"></line>
+                  </svg>
+                  <span data-anim="clzFadeIn .3s ease .6s both" style="position:absolute;left:53%;top:29%;font-size:10px;color:#16A34A">approved_by</span>
+                  <span data-anim="clzFadeIn .3s ease 1s both" style="position:absolute;left:67.5%;top:40%;transform:translateX(-50%);white-space:nowrap;font-size:10px;color:#EA580C">creates_obligation</span>
+                  <span data-anim="clzFadeIn .3s ease 1.4s both" style="position:absolute;left:53%;top:64%;font-size:10px;color:#2563EB">references</span>
+                  <span data-anim="clzFadeIn .3s ease 2.2s both" style="position:absolute;left:32.5%;top:40%;transform:translateX(-50%);white-space:nowrap;font-size:10px;color:#DC2626">may_conflict_with</span>
+                  <span style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:50%;background:#FFFFFF;border:2px solid #2E7EBE;font-size:9.5px;font-weight:600;line-height:1.15;text-align:center;color:#2F308C;padding:5px">Distribution Agmt X</span>
+                  <span style="position:absolute;left:50%;top:19%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#FFFFFF;border:2px solid #16A34A;font-size:9px;font-weight:600;line-height:1.15;text-align:center;color:#2F308C;padding:5px">Board Res. BR-014</span>
+                  <span style="position:absolute;left:82.5%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#FFFFFF;border:2px solid #EA580C;font-size:9px;font-weight:600;line-height:1.15;text-align:center;color:#2F308C;padding:5px">Min. Purchase 2.5M</span>
+                  <span style="position:absolute;left:50%;top:81%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#FFFFFF;border:2px solid #2563EB;font-size:9px;font-weight:600;line-height:1.15;text-align:center;color:#2F308C;padding:5px">Framework 2022</span>
+                  <span style="position:absolute;left:17.5%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#FFFFFF;border:2px dashed #DC2626;font-size:9px;font-weight:600;line-height:1.15;text-align:center;color:#2F308C;padding:5px">Falcon Tech Sub.</span>
+                  <span data-anim="clzFadeIn .3s ease 2.4s both" style="position:absolute;left:32.5%;top:59%;transform:translateX(-50%);white-space:nowrap;font-size:10px;font-weight:600;color:#DC2626">⚡ Potential conflict</span>
+                </div>
+              </div>
+            </div>
+
+            <div data-panel="4" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <div ref="{{ chatPanelRef }}" style="display: flex; height: 100%; position: absolute; width: 100%">
+                <div ref="{{ phaseListRef }}" style="flex:none;width:35%;padding:12px;border-inline-end:1px solid rgba(244,246,252,.08);overflow:hidden">
+                  <p style="margin:0 0 8px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Onboarding</p>
+                </div>
+                <div style="position:relative;flex:1;min-width:0;display:flex;flex-direction:column;padding:12px 16px 0">
+                  <div data-anim="clzRowIn .3s ease .2s both" style="max-width:92%;padding:10px 12px;border-radius:8px;border-inline-start:3px solid rgba(46,126,190,.8);background:rgba(255,255,255,.06)">
+                    <span ref="{{ chat1Ref }}" style="font-size:12px;line-height:1.6;color:#F4F6FC;white-space:pre-line"></span>
+                  </div>
+                  <div ref="{{ chat2WrapRef }}" style="align-self:flex-end;max-width:70%;margin-top:10px;padding:10px 12px;border-radius:8px;background:#2E7EBE;opacity:0;transition:opacity .3s ease">
+                    <span ref="{{ chat2Ref }}" style="font-size:12px;line-height:1.6;color:#fff"></span>
+                  </div>
+                  <div ref="{{ chat3WrapRef }}" style="max-width:92%;margin-top:10px;padding:10px 12px;border-radius:8px;border-inline-start:3px solid #F59E0B;background:rgba(245,158,11,.08);opacity:0;transition:opacity .3s ease">
+                    <span ref="{{ chat3Ref }}" style="font-size:12px;line-height:1.6;color:#F4F6FC;white-space:pre-line"></span>
+                  </div>
+                  <div style="margin-top:auto;margin-inline:-16px;padding:10px 16px;background:rgba(46,126,190,.15);border-top:1px solid rgba(46,126,190,.3)">
+                    <span style="font-size:11.5px;color:#F4F6FC">Phase 5 of 16 · Knowledge Extraction · 38% complete</span>
+                    <span style="display:block;height:3px;margin-top:7px;border-radius:2px;background:rgba(244,246,252,.12);overflow:hidden"><span data-anim="clzGrow .8s ease .4s both" style="display:block;height:100%;width:38%;transform-origin:left center;background:#2E7EBE"></span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-panel="5" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <div style="position:relative;height:100%;padding:20px">
+                <p style="margin:0;font-size:12px;color:rgba(244,246,252,.5)">Clauze Prompts → Draft Distribution Agreement</p>
+                <div data-anim="clzFadeOut .4s ease .8s both" style="width:min(280px,100%);margin:26px auto 0;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(244,246,252,.14);border-radius:10px">
+                  <p style="margin:0;font-size:13px;color:#F4F6FC">Document type: Distribution Agreement</p>
+                  <p style="margin:6px 0 12px;font-size:12px;color:rgba(244,246,252,.6)">Entity: Falcon Tech LLC</p>
+                  <span data-anim="clzWake 3s linear infinite both" style="display:inline-block;padding:8px 16px;border:1px solid rgba(107,176,224,.22);border-radius:8px;background:#2E7EBE;font-size:12px;font-weight:600;color:#fff">Start →</span>
+                </div>
+                <div data-anim="clzRiseIn .5s ease 1.2s both" style="position:absolute;inset-inline:20px;bottom:20px;max-width:480px;margin:0 auto;padding:16px 20px;background:rgba(6,11,24,.95);border:1px solid rgba(244,246,252,.14);border-top:3px solid #DC2626;border-radius:12px">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+                    <span style="font-size:14px">⛔</span>
+                    <span style="font-size:14px;font-weight:600;color:#DC2626">Conflict detected before drafting</span>
+                    <span style="margin-inline-start:auto;flex:none;font-size:11px;color:rgba(244,246,252,.5)">✦ Checked 3 entities · 147 objects</span>
+                  </div>
+                  <div style="margin-bottom:12px;padding:10px 12px;background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.3);border-radius:8px">
+                    <p style="margin:0 0 5px;font-size:12px;font-weight:600;color:#DC2626">⚡ Blocking — Exclusive territory conflict</p>
+                    <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:rgba(252,165,165,.95)">Falcon Holding holds an exclusive distribution arrangement with Company X covering Saudi Arabia until 31 Dec 2028.</p>
+                    <p style="margin:0;font-size:11px;color:rgba(244,246,252,.6)">Source: Distribution Agreement · Section 05 · cl.4.2 · Validated ✓</p>
+                  </div>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px">
+                    <span data-anim="clzWake 3s linear 3.5s infinite both" style="padding:8px 14px;border:1px solid rgba(107,176,224,.22);border-radius:8px;background:#2E7EBE;font-size:11px;font-weight:600;color:#fff">Review conflicting document →</span>
+                    <span style="padding:8px 14px;border:1px solid rgba(245,158,11,.4);border-radius:8px;background:rgba(245,158,11,.15);font-size:11px;font-weight:600;color:#FBBF24">Acknowledge and proceed</span>
+                    <span style="padding:8px 14px;border:1px solid rgba(244,246,252,.2);border-radius:8px;font-size:11px;color:rgba(244,246,252,.6)">Cancel</span>
+                  </div>
+                  <p data-anim="clzFadeIn .4s ease 4s both" style="margin:10px 0 0;font-size:11px;font-style:italic;color:#16A34A">✓ Saved from a potential breach of cl.4.2</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vdr" style="scroll-margin-top:84px;position:relative;background:#26235A;color:#F4F6FC;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.16"></div>
+    <div ref="{{ vdrGridRef }}" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+      <div>
+        <p data-en="Due diligence" data-ar="الفحص القانوني" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Due diligence</p>
+        <h2 data-en="One workflow, from request list to data room." data-ar="مسار عمل واحد، من قائمة الطلبات إلى غرفة البيانات." style="margin:16px 0 0;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">One workflow, from request list to data room.</h2>
+        <p data-en="Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room — with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in." data-ar="يطابق كلوز قائمة الطلبات الواردة مع غرفة بيانات شركتك، ويرصد الناقص، وينظم الجاهز منها في غرفة بيانات عربية وإنجليزية مبنية لهذا الغرض — بتصنيفات سعودية مدمجة مثل شهادة الزكاة والضريبة، وشهادات التأمينات، وامتثال نطاقات، وموافقات الاستثمار." style="margin:20px 0 0;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room, with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in.</p>
+        <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="display:inline-block;margin-top:32px;padding:17px 34px;background:#2E7EBE;border-radius:9px;color:#FFFFFF;font-size:16px;font-weight:600;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo →</a>
+      </div>
+
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:16px;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:12px;min-height:44px;padding:10px 16px;background:#1C1A44;border-bottom:1px solid rgba(244,246,252,.14)">
+          <span data-en="Horizon Technologies Acquisition — VDR" data-ar="استحواذ هورايزون للتقنية — غرفة البيانات" style="font-size:13px;color:rgba(244,246,252,.76)">Horizon Technologies Acquisition — VDR</span>
+          <span data-en="Phase 2 · 3 bidder groups" data-ar="المرحلة ٢ · ٣ مجموعات" style="margin-inline-start:auto;flex:none;font-size:11px;color:rgba(244,246,252,.5)">Phase 2 · 3 bidder groups</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;padding:16px">
+          <div style="display:flex;align-items:center;gap:12px;height:36px;padding:0 12px;border:1px solid rgba(107,176,224,.22);border-radius:9px;animation:clzWake 5.4s linear infinite both">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6BB0E0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex:none"><path d="M3.5 6.5h6l1.6 2h9.4v9H3.5Z"></path></svg>
+            <span data-en="01 Corporate Governance" data-ar="٠١ الحوكمة المؤسسية" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both">01 Corporate Governance</span>
+            <span data-en="8 docs" data-ar="٨ مستندات" style="margin-inline-start:auto;flex:none;font-size:12px;color:rgba(244,246,252,.5)">8 docs</span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#16A34A"></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;height:36px;padding:0 12px;border:1px solid rgba(107,176,224,.22);border-radius:9px;animation:clzWake 5.4s linear infinite both;animation-delay:.9s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6BB0E0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex:none"><path d="M3.5 6.5h6l1.6 2h9.4v9H3.5Z"></path></svg>
+            <span data-en="02 Financial" data-ar="٠٢ المالية" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both;animation-delay:.9s">02 Financial</span>
+            <span data-en="12 docs" data-ar="١٢ مستندًا" style="margin-inline-start:auto;flex:none;font-size:12px;color:rgba(244,246,252,.5)">12 docs</span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#16A34A"></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;height:36px;padding:0 12px;border:1px solid rgba(107,176,224,.22);border-radius:9px;animation:clzWake 5.4s linear infinite both;animation-delay:1.8s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6BB0E0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex:none"><path d="M3.5 6.5h6l1.6 2h9.4v9H3.5Z"></path></svg>
+            <span data-en="06 Tax &amp; Regulatory" data-ar="٠٦ الضرائب والتنظيم" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both;animation-delay:1.8s">06 Tax &amp; Regulatory</span>
+            <span data-en="7 docs" data-ar="٧ مستندات" style="margin-inline-start:auto;flex:none;font-size:12px;color:rgba(244,246,252,.5)">7 docs</span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#B45309"></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;height:36px;padding:0 12px;border:1px solid rgba(107,176,224,.22);border-radius:9px;animation:clzWake 5.4s linear infinite both;animation-delay:2.7s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6BB0E0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex:none"><path d="M3.5 6.5h6l1.6 2h9.4v9H3.5Z"></path></svg>
+            <span data-en="07 Legal &amp; Litigation" data-ar="٠٧ القانونية والتقاضي" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both;animation-delay:2.7s">07 Legal &amp; Litigation</span>
+            <span data-en="3 docs" data-ar="٣ مستندات" style="margin-inline-start:auto;flex:none;font-size:12px;color:rgba(244,246,252,.5)">3 docs</span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#16A34A"></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;height:36px;padding:0 12px;border:1px solid rgba(107,176,224,.22);border-radius:9px;animation:clzWake 5.4s linear infinite both;animation-delay:3.6s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6BB0E0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex:none"><path d="M3.5 6.5h6l1.6 2h9.4v9H3.5Z"></path></svg>
+            <span data-en="08 IT &amp; Technology (PDPL)" data-ar="٠٨ التقنية وحماية البيانات" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both;animation-delay:3.6s">08 IT &amp; Technology (PDPL)</span>
+            <span data-en="0 docs" data-ar="٠ مستندات" style="margin-inline-start:auto;flex:none;font-size:12px;color:rgba(244,246,252,.5)">0 docs</span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:rgba(244,246,252,.34)"></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;height:36px;padding:0 12px;border:1px solid rgba(107,176,224,.22);border-radius:9px;animation:clzWake 5.4s linear infinite both;animation-delay:4.5s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#6BB0E0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex:none"><path d="M3.5 6.5h6l1.6 2h9.4v9H3.5Z"></path></svg>
+            <span data-en="09 Q&amp;A Working Papers" data-ar="٠٩ أوراق الأسئلة والأجوبة" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both;animation-delay:4.5s">09 Q&amp;A Working Papers</span>
+            <span data-en="14 questions" data-ar="١٤ سؤالًا" style="margin-inline-start:auto;flex:none;font-size:12px;color:rgba(244,246,252,.5)">14 questions</span>
+            <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#2E7EBE"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="knowledge" style="scroll-margin-top:84px;background:#26235A;color:#F4F6FC">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
+      <h2 data-en="Legal reasoning you can audit." data-ar="استدلال قانوني قابل للتدقيق." style="margin:0;max-width:20ch;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Legal reasoning you can audit.</h2>
+      <p data-en="Clauze's knowledge base is versioned. Sources are labelled — verified by counsel, or automatically monitored. When the law behind an active contract changes, you are told which contracts are affected." data-ar="قاعدة معرفة كلوز مُصدَرة، ومصادرها موسومة — إما موثّقة من مستشار قانوني، أو مرصودة آليًا. وحين يتغيّر النظام الذي يقوم عليه عقد سارٍ، تعرف أي عقودك تأثّرت." style="margin:24px 0 0;max-width:60ch;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">قاعدة معرفة كلوز مُصدَرة، ومصادرها موسومة، إما موثّقة من مستشار قانوني، أو مرصودة آليًا. وحين يتغيّر النظام الذي يقوم عليه عقد سارٍ، تعرف أي عقودك تأثّرت.</p>
+      <div ref="{{ jurisRef }}" style="display:flex;flex-wrap:wrap;gap:28px;margin-top:38px;padding-top:30px;border-top:1px solid rgba(244,246,252,.14)">
+        <div style="display:flex;flex-direction:column;gap:6px;min-width:200px">
+          <span data-en="KSA" data-ar="السعودية" style="font-size:21px;font-weight:600;color:#F4F6FC">KSA</span>
+          <span data-en="VAT · PDPL · Nitaqat · MISA" data-ar="ضريبة القيمة المضافة · حماية البيانات · نطاقات · الاستثمار" style="font-size:14px;line-height:1.55;color:rgba(244,246,252,.5)">VAT · PDPL · Nitaqat · MISA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="security" style="scroll-margin-top:84px;position:relative;background:#2F308C;color:#F4F6FC;border-top:1px solid rgba(244,246,252,.1);overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.16"></div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
+      <p data-en="Security and residency" data-ar="الأمان وموقع البيانات" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Security and residency</p>
+      <h2 data-en="Deployed where your data has to stay." data-ar="نشر في المكان الذي يجب أن تبقى فيه بياناتك." style="margin:16px 0 0;max-width:24ch;font-size:clamp(26px,3.8vw,46px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Deployed where your data has to stay.</h2>
+      <div ref="{{ securityGridRef }}" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,20px);margin-top:clamp(34px,4vw,54px)">
+        <article style="display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.6vw,30px);background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:14px;transition:border-color .25s ease,background .25s ease" style-hover="border-color:rgba(107,176,224,.7);background:rgba(46,126,190,.1)">
+          <span style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;border:1px solid rgba(107,176,224,.4);border-radius:10px;color:#6BB0E0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><path d="M3 7.5 12 3l9 4.5-9 4.5Z"></path><path d="M3 12l9 4.5 9-4.5"></path><path d="M3 16.5 12 21l9-4.5"></path></svg>
+          </span>
+          <h3 data-en="Saudi-hosted" data-ar="مستضافة في السعودية" style="margin:0;font-size:16.5px;font-weight:600">Saudi-hosted</h3>
+          <p data-en="Data never leaves Saudi Arabia infrastructure." data-ar="لا تغادر البيانات البنية التحتية في السعودية." style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(244,246,252,.76)">Data never leaves KSA or Jordan infrastructure.</p>
+        </article>
+        <article style="display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.6vw,30px);background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:14px;transition:border-color .25s ease,background .25s ease" style-hover="border-color:rgba(107,176,224,.7);background:rgba(46,126,190,.1)">
+          <span style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;border:1px solid rgba(107,176,224,.4);border-radius:10px;color:#6BB0E0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><rect x="4" y="10.5" width="16" height="10" rx="2"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path><path d="M12 14v3"></path></svg>
+          </span>
+          <h3 data-en="Encrypted at rest and in transit" data-ar="مشفّرة في التخزين والنقل" style="margin:0;font-size:16.5px;font-weight:600">Encrypted at rest and in transit</h3>
+          <p data-en="AES-256 at rest, TLS 1.3 in transit." data-ar="تشفير AES-256 عند التخزين، وTLS 1.3 عند النقل." style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(244,246,252,.76)">AES-256 at rest, TLS 1.3 in transit.</p>
+        </article>
+        <article style="display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.6vw,30px);background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:14px;transition:border-color .25s ease,background .25s ease" style-hover="border-color:rgba(107,176,224,.7);background:rgba(46,126,190,.1)">
+          <span style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;border:1px solid rgba(107,176,224,.4);border-radius:10px;color:#6BB0E0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><circle cx="9" cy="8.4" r="3"></circle><path d="M3.8 19c.6-3 2.7-4.6 5.2-4.6 1 0 1.9.3 2.7.7"></path><path d="M14.5 14.5h6v5.5h-6Z"></path><path d="M16 14.5v-1.8a1.5 1.5 0 0 1 3 0v1.8"></path></svg>
+          </span>
+          <h3 data-en="Role-based access" data-ar="صلاحيات حسب الدور" style="margin:0;font-size:16.5px;font-weight:600">Role-based access</h3>
+          <p data-en="Document-level permissions, enforced per team." data-ar="صلاحيات على مستوى المستند، تُطبَّق لكل فريق." style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(244,246,252,.76)">Document-level permissions, enforced per team.</p>
+        </article>
+        <article style="display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.6vw,30px);background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:14px;transition:border-color .25s ease,background .25s ease" style-hover="border-color:rgba(107,176,224,.7);background:rgba(46,126,190,.1)">
+          <span style="display:flex;align-items:center;width:40px;height:40px;color:#2E7EBE">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M9 9h6v6H9Z"></path><path d="M9 2v2"></path><path d="M15 2v2"></path><path d="M9 20v2"></path><path d="M15 20v2"></path><path d="M2 9h2"></path><path d="M2 15h2"></path><path d="M20 9h2"></path><path d="M20 15h2"></path></svg>
+          </span>
+          <h3 data-en="On-premise available" data-ar="متاح للنشر داخل مقرك" style="margin:0;font-size:16.5px;font-weight:600">On-premise available</h3>
+          <p data-en="Deployed entirely inside your own infrastructure, for organizations that require it." data-ar="يُنشر بالكامل داخل بنيتك التحتية الخاصة، للمؤسسات التي تتطلب ذلك." style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(244,246,252,.76)">Deployed entirely inside your own infrastructure, for organizations that require it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;background:#26235A;text-align:center;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.28"></div>
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 40% at 50% 50%,rgba(46,126,190,.25) 0%,transparent 70%),linear-gradient(180deg,#26235A 0%,transparent 30%,transparent 70%,#26235A 100%)"></div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
+      <h2 data-en="Ready to give your legal team an AI layer?" data-ar="جاهز لتزويد فريقك القانوني بطبقة ذكاء اصطناعي؟" style="margin:0 auto;max-width:28ch;font-size:clamp(28px,4vw,52px);font-weight:600;line-height:1.1;letter-spacing:-.025em;color:#F4F6FC">Ready to give your legal team an AI layer?</h2>
+      <p data-en="Join the Saudi enterprises running their legal work on Clauze." data-ar="انضم إلى المؤسسات السعودية التي تدير عملها القانوني على كلوز." style="margin:20px auto 0;max-width:56ch;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Join the Saudi enterprises running their legal work on Clauze.</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:40px">
+        <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="padding:17px 34px;background:#2E7EBE;border-radius:9px;color:#FFFFFF;font-size:16px;font-weight:600;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo →</a>
+        <a href="#product" data-en="See the platform ↓" data-ar="شاهد المنصة ↓" style="padding:16px 32px;background:transparent;border:1.5px solid rgba(244,246,252,.26);border-radius:9px;color:#F4F6FC;font-size:15px;font-weight:500;transition:border-color .2s ease,background .2s ease" style-hover="border-color:rgba(244,246,252,.5);background:rgba(244,246,252,.05);color:#F4F6FC">See the platform ↓</a>
+      </div>
+      <p data-en="Available for Saudi Arabia · PDPL compliant · Arabic and English" data-ar="متاح في السعودية · متوافق مع حماية البيانات · بالعربية والإنجليزية" style="margin:32px 0 0;font-size:13px;color:rgba(244,246,252,.5)">Available for KSA and Jordan · PDPL compliant · Arabic and English</p>
+    </div>
+  </section>
+
+  <footer style="position:relative;background:#26235A;border-top:1px solid rgba(244,246,252,.1);overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.22"></div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:48px clamp(20px,4vw,44px) 32px">
+      <div ref="{{ footerGridRef }}" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px">
+        <div>
+          <img src="assets/sm-clauze-wordmark-white.png" alt="Clauze" loading="lazy" width="86" height="18" style="height:18px;width:auto;display:block">
+          <p data-en="AI Legal Workspace for Saudi Enterprises" data-ar="مساحة عمل قانونية ذكية للمؤسسات السعودية" style="margin:10px 0 0;font-size:13px;line-height:1.6;color:rgba(244,246,252,.6)">AI Legal Workspace for GCC Enterprises</p>
+        </div>
+        <div>
+          <p data-en="Product" data-ar="المنتج" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Product</p>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <a href="#product" data-en="Intelligence" data-ar="الذكاء" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Intelligence</a>
+            <a href="#vdr" data-en="VDR" data-ar="غرفة البيانات" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">VDR</a>
+            <a href="#knowledge" data-en="Company Data Room" data-ar="غرفة بيانات الشركة" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Company Data Room</a>
+            <a href="#security" data-en="Onboarding" data-ar="التهيئة" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Onboarding</a>
+          </div>
+        </div>
+        <div>
+          <p data-en="Jurisdictions" data-ar="الاختصاصات" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Jurisdictions</p>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <span data-en="Saudi Arabia" data-ar="السعودية" style="font-size:13.5px;color:rgba(244,246,252,.6)">Saudi Arabia</span>
+          </div>
+        </div>
+        <div>
+          <p data-en="Company" data-ar="الشركة" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Company</p>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <a href="#top" data-en="About" data-ar="من نحن" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">About</a>
+            <a href="#top" data-en="Careers" data-ar="الوظائف" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Careers</a>
+            <a href="#top" data-en="Privacy" data-ar="الخصوصية" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Privacy</a>
+            <a href="#top" data-en="Terms" data-ar="الشروط" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Terms</a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:32px;padding-top:24px;border-top:1px solid rgba(244,246,252,.08)">
+        <span style="font-size:13px;color:rgba(244,246,252,.5)">© 2026 Clauze</span>
+        <span style="font-size:13px;color:rgba(244,246,252,.5)">Saudi Arabia</span>
+      </div>
+    </div>
+  </footer>
+
+  <div ref="{{ modalRef }}" id="demo" style="display:none;position:fixed;inset:0;z-index:130;background:rgba(6,11,24,.7);backdrop-filter:blur(5px);align-items:center;justify-content:center;padding:20px;overflow:auto">
+    <div style="width:100%;max-width:560px;background:#FFFFFF;color:#2F308C;border-radius:18px;padding:clamp(24px,3.4vw,34px);box-shadow:0 40px 90px -40px rgba(3,7,20,.7)">
+      <div style="display:flex;align-items:flex-start;gap:16px">
+        <h3 data-en="Request a demo" data-ar="اطلب عرضًا" style="margin:0;font-size:clamp(23px,3.2vw,30px);font-weight:600;letter-spacing:-.015em">Request a demo</h3>
+        <button onClick="{{ closeDemo }}" aria-label="Close" style="margin-inline-start:auto;width:40px;height:40px;flex:none;background:transparent;border:1px solid #E1E4EE;border-radius:9px;font-size:16px;color:#6B7390;cursor:pointer;transition:border-color .2s ease,color .2s ease" style-hover="border-color:#2E7EBE;color:#2E7EBE">✕</button>
+      </div>
+      <div ref="{{ formWrapRef }}">
+        <p data-en="Tell us who you are and our team will arrange a session on your own documents." data-ar="أخبرنا من أنت وسيرتّب فريقنا جلسة على وثائقك." style="margin:12px 0 22px;font-size:15px;line-height:1.55;color:#6B7390">Tell us who you are and our team will arrange a session on your own documents.</p>
+        <form ref="{{ formRef }}" novalidate="novalidate" onSubmit="{{ submitDemo }}" style="display:flex;flex-direction:column;gap:14px">
+          <label style="display:flex;flex-direction:column;gap:6px">
+            <span data-en="Full name" data-ar="الاسم الكامل" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Full name</span>
+            <input id="lp1-name" type="text" autocomplete="name" style="padding:13px 14px;min-height:46px;background:#F5F6FA;border:1px solid #DADEE9;border-radius:9px;font-size:15px;color:#2F308C">
+          </label>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+            <label style="display:flex;flex-direction:column;gap:6px">
+              <span data-en="Work email" data-ar="البريد المهني" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Work email</span>
+              <input id="lp1-email" type="email" autocomplete="email" style="padding:13px 14px;min-height:46px;background:#F5F6FA;border:1px solid #DADEE9;border-radius:9px;font-size:15px;color:#2F308C">
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px">
+              <span data-en="Phone" data-ar="رقم الهاتف" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Phone</span>
+              <input id="lp1-phone" type="tel" autocomplete="tel" style="padding:13px 14px;min-height:46px;background:#F5F6FA;border:1px solid #DADEE9;border-radius:9px;font-size:15px;color:#2F308C">
+            </label>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+            <label style="display:flex;flex-direction:column;gap:6px">
+              <span data-en="Company" data-ar="جهة العمل" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Company</span>
+              <input id="lp1-company" type="text" autocomplete="organization" style="padding:13px 14px;min-height:46px;background:#F5F6FA;border:1px solid #DADEE9;border-radius:9px;font-size:15px;color:#2F308C">
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px">
+              <span data-en="Jurisdiction" data-ar="الاختصاص" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Jurisdiction</span>
+              <select id="lp1-jurisdiction" style="padding:13px 14px;min-height:46px;background:#F5F6FA;border:1px solid #DADEE9;border-radius:9px;font-size:15px;color:#2F308C">
+                <option value="KSA">KSA</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+          </div>
+          <label style="display:flex;flex-direction:column;gap:6px">
+            <span data-en="What would you like to see?" data-ar="ما الذي تود رؤيته؟" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">What would you like to see?</span>
+            <textarea id="lp1-notes" rows="3" style="padding:13px 14px;background:#F5F6FA;border:1px solid #DADEE9;border-radius:9px;font-size:15px;color:#2F308C;resize:vertical"></textarea>
+          </label>
+          <p ref="{{ formErrRef }}" style="display:none;margin:0;padding:11px 13px;background:#FEF2F2;border:1px solid rgba(220,38,38,.4);border-radius:8px;font-size:13.5px;color:#DC2626"></p>
+          <button type="submit" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="margin-top:4px;padding:15px 30px;min-height:48px;background:#2E7EBE;border:none;border-radius:9px;font-size:16px;font-weight:600;color:#FFFFFF;cursor:pointer;transition:background .2s ease" style-hover="background:#4A9AD1">Request a demo →</button>
+        </form>
+      </div>
+      <div ref="{{ doneRef }}" style="display:none;padding:22px 0 6px">
+        <p data-en="Request received." data-ar="تم استلام طلبك." style="margin:0;font-size:22px;font-weight:600">Request received.</p>
+        <p ref="{{ doneMsgRef }}" style="margin:10px 0 22px;font-size:15px;line-height:1.55;color:#6B7390"></p>
+        <button onClick="{{ closeDemo }}" data-en="Close" data-ar="إغلاق" style="padding:14px 28px;min-height:46px;background:#2E7EBE;border:none;border-radius:9px;font-size:15px;font-weight:600;color:#FFFFFF;cursor:pointer;transition:background .2s ease" style-hover="background:#4A9AD1">Close</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startLang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;en&quot;,&quot;ar&quot;],&quot;default&quot;:&quot;en&quot;,&quot;tsType&quot;:&quot;'en'|'ar'&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;demoEmail&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;hello@clauze.com&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Demo form&quot;},&quot;formEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;/api/demo-request&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Demo form&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    ['navRef','navLinksRef','burgerRef','navDemoRef','langRef','heroArtRef','heroPhotoRef','heroWashRef','heroInnerRef',
+     'figureRef','videoRef','pillarsRef','deptHeadlineRef','vdrGridRef','jurisRef','securityGridRef',
+     'footerGridRef','modalRef','formRef','formWrapRef','formErrRef','doneRef','doneMsgRef',
+     'showcaseRef','showcaseLayoutRef','tabListRef','panelAreaRef','chromeTitleRef','chromePlatformRef',
+     'showcaseVideoRef','phaseListRef','chat1Ref','chat2Ref','chat3Ref','chat2WrapRef','chat3WrapRef',
+     'vdrPanelRef','graphPanelRef','chatPanelRef','showcaseInnerRef','showcaseHeaderRef']
+      .forEach(k => { this[k] = React.createRef(); });
+    this.tab = -1;
+    this.typeTimers = [];
+    this.lang = props.startLang === 'ar' ? 'ar' : 'en';
+    this.menuOpen = false;
+  }
+
+  componentDidMount() {
+    // listeners first: a throw in the init block must never leave the page unscrolled
+    this.onScroll = () => this.layoutNavBar();
+    this.onResize = () => { this.layoutNav(); this.layoutGrids(); this.layoutVideo(); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    try { this.mountInit(); } catch (err) { console.error('LP1 init failed', err); }
+  }
+
+  mountInit() {
+    this.applyLang(this.lang);
+    this.layoutNavBar();
+    this.layoutNav();
+    this.layoutGrids();
+    this.layoutVideo();
+    requestAnimationFrame(() => this.layoutVideo());
+    this.startVideo();
+    this.observeReveals();
+    this.buildPhaseList();
+    this.setTab(0);
+    this.startTabTimer();
+    const sc = this.showcaseRef.current;
+    if (sc) {
+      sc.addEventListener('mouseenter', () => this.stopTabTimer());
+      sc.addEventListener('mouseleave', () => this.startTabTimer());
+    }
+    if (this.navLinksRef.current) {
+      this.navLinksRef.current.addEventListener('click', e => {
+        if (e.target.closest('a') && this.menuOpen) this.toggleMenu();
+      });
+    }
+    if (this.modalRef.current) {
+      this.modalRef.current.addEventListener('mousedown', ev => {
+        if (ev.target === this.modalRef.current) this.closeDemo();
+      });
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.onScroll) window.removeEventListener('scroll', this.onScroll);
+    if (this.onResize) window.removeEventListener('resize', this.onResize);
+    if (this.onKey) document.removeEventListener('keydown', this.onKey);
+    this.stopTabTimer();
+    this.clearTyping();
+    if (this.revealIo) this.revealIo.disconnect();
+  }
+
+  // headlines and pillar/department/security cards fade+rise in on first view; cards get a stagger
+  observeReveals() {
+    if (!('IntersectionObserver' in window)) return;
+    const targets = document.querySelectorAll(
+      'section h2, #product h3, #security article, #departments article');
+    let groupEl = null, i = 0;
+    targets.forEach(t => {
+      if (t.parentElement !== groupEl) { groupEl = t.parentElement; i = 0; } else { i++; }
+      t.style.opacity = '0';
+      t.style.transform = 'translateY(16px)';
+      t.style.transitionDelay = Math.min(i * 80, 320) + 'ms';
+    });
+    this.revealIo = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.style.transition = 'opacity .6s ease, transform .6s ease';
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        this.revealIo.unobserve(e.target);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    targets.forEach(t => this.revealIo.observe(t));
+
+    // the hero video card fades+scales in once it enters view, independent of tab autoplay
+    const fig = this.figureRef.current;
+    if (fig) {
+      fig.style.opacity = '0';
+      fig.style.transform = 'scale(0.97)';
+      fig.style.transition = 'opacity .8s ease, transform .8s ease';
+      const figIo = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          fig.style.opacity = '1';
+          fig.style.transform = 'scale(1)';
+          figIo.unobserve(e.target);
+        });
+      }, { threshold: 0.2 });
+      figIo.observe(fig);
+    }
+  }
+
+  get tabTitles() {
+    return ['Intelligence', 'Virtual Data Room', 'IRL-Driven DD', 'Knowledge Graph',
+            'Enterprise Onboarding', 'Conflict Detection'];
+  }
+
+  // 16 phases: 1–4 done, 5 active and pulsing, 6–16 pending
+  buildPhaseList() {
+    const host = this.phaseListRef.current;
+    if (!host || host.dataset.built) return;
+    const names = ['Document Intake', 'Language Detection', 'Classification', 'Repository Build',
+      'Knowledge Extraction', 'Entity Resolution', 'Obligation Mapping', 'Cross-Reference',
+      'Validation Interview', 'Gap Analysis', 'Signatory Authority', 'Regulatory Check',
+      'Legal Health Check', 'Confidence Scoring', 'Action List', 'Handover'];
+    names.forEach((n, i) => {
+      const row = document.createElement('div');
+      row.style.cssText = 'display:flex;align-items:center;gap:8px;height:24px;padding:0 10px';
+      const dot = document.createElement('span');
+      const label = document.createElement('span');
+      if (i < 4) {
+        dot.style.cssText = 'flex:none;display:flex;align-items:center;justify-content:center;width:11px;height:11px;border-radius:50%;background:#16A34A;font-size:7px;color:#2F308C';
+        dot.textContent = '✓';
+        label.style.cssText = 'font-size:11px;color:#16A34A';
+      } else if (i === 4) {
+        dot.style.cssText = 'flex:none;width:11px;height:11px;border-radius:50%;background:#2E7EBE;animation:clzWakeDot 4s ease-in-out infinite';
+        label.style.cssText = 'font-size:11px;font-weight:600;color:#F4F6FC';
+      } else {
+        dot.style.cssText = 'flex:none;width:11px;height:11px;border-radius:50%;border:1px solid rgba(244,246,252,.3)';
+        label.style.cssText = 'font-size:11px;color:rgba(244,246,252,.4)';
+      }
+      label.textContent = n;
+      row.appendChild(dot);
+      row.appendChild(label);
+      host.appendChild(row);
+    });
+    host.dataset.built = '1';
+  }
+
+  clearTyping() {
+    this.typeTimers.forEach(t => clearTimeout(t));
+    this.typeTimers = [];
+  }
+
+  typeInto(ref, text, startDelay, done) {
+    const el = ref.current;
+    if (!el) return;
+    el.textContent = '';
+    let i = 0;
+    const step = () => {
+      if (!ref.current) return;
+      i += 1;
+      el.textContent = text.slice(0, i);
+      // the whole exchange has to land inside the 5s tab dwell
+      if (i < text.length) this.typeTimers.push(setTimeout(step, 12));
+      else if (done) this.typeTimers.push(setTimeout(done, 300));
+    };
+    this.typeTimers.push(setTimeout(step, startDelay));
+  }
+
+  runChat() {
+    this.clearTyping();
+    this.sw(this.chat2WrapRef.current, 'opacity', '0');
+    this.sw(this.chat3WrapRef.current, 'opacity', '0');
+    if (this.chat2Ref.current) this.chat2Ref.current.textContent = '';
+    if (this.chat3Ref.current) this.chat3Ref.current.textContent = '';
+    this.typeInto(this.chat1Ref,
+      'From 2,000 documents I understand:\n· Shareholders: Rami 60% · Talal 25% · Investor A 15%\n· Signatory: CEO to USD 500,000 solo\nIs this correct?',
+      200, () => {
+        this.sw(this.chat2WrapRef.current, 'opacity', '1');
+        this.typeInto(this.chat2Ref, 'Rami now owns 70%.', 0, () => {
+          this.typeTimers.push(setTimeout(() => {
+            this.sw(this.chat3WrapRef.current, 'opacity', '1');
+            this.typeInto(this.chat3Ref,
+              '⚠ The Register of Members (14 Mar 2025) records Rami as 60%. Upload the updated register or I\'ll record 70% as Unverified.',
+              0);
+          }, 150));
+        });
+      });
+  }
+
+  // re-trigger every declarative animation inside a panel so it replays on each visit
+  restartAnims(panel) {
+    if (!panel) return;
+    panel.querySelectorAll('[data-anim]').forEach(el => {
+      const a = el.getAttribute('data-anim');
+      el.style.animation = 'none';
+      void el.offsetWidth;
+      el.style.animation = a;
+    });
+  }
+
+  // a re-render restores the authored inline styles, so this must be re-appliable —
+  // never guarded as a no-op, and every write compares first
+  componentDidUpdate() {
+    if (this._reapplyQueued) return;
+    this._reapplyQueued = true;
+    requestAnimationFrame(() => {
+      this._reapplyQueued = false;
+      if (this.tab >= 0) this.setTab(this.tab);
+    });
+  }
+
+  setTab(n) {
+    const changed = this.tab !== n;
+    this.tab = n;
+    const list = this.tabListRef.current, area = this.panelAreaRef.current;
+    if (!list || !area) return;
+
+    list.querySelectorAll('[data-tab]').forEach(b => {
+      const on = Number(b.getAttribute('data-tab')) === n;
+      this.sw(b, 'background', on ? 'rgba(255, 255, 255, 0.04)' : 'transparent');
+      this.sw(b, 'borderColor', on ? 'rgba(244, 246, 252, 0.14)' : 'transparent');
+      const icon = b.querySelector('[data-tab-icon]');
+      // tab 1's ✦ is the Clauze mark and stays gold in both states
+      if (icon && icon.textContent.trim() !== '✦') {
+        this.sw(icon, 'color', on ? '#6BB0E0' : 'rgba(244, 246, 252, 0.55)');
+      }
+      const name = b.querySelector('[data-tab-name]');
+      this.sw(name, 'color', on ? '#F4F6FC' : 'rgba(244, 246, 252, 0.55)');
+      this.sw(name, 'fontWeight', on ? '600' : '400');
+      const track = b.querySelector('[data-tab-track]');
+      this.sw(track, 'display', on ? 'block' : 'none');
+      const fill = b.querySelector('[data-tab-fill]');
+      if (fill) {
+        if (changed) {
+          fill.style.animation = 'none';
+          void fill.offsetWidth;
+          fill.style.animation = on ? 'clzProgress 5s linear forwards' : 'none';
+        } else {
+          this.sw(fill, 'animation', on ? 'clzProgress 5s linear forwards' : 'none');
+        }
+      }
+      // on the mobile horizontal strip, bring the newly active pill into view (centered)
+      if (on && changed && list.scrollWidth > list.clientWidth) {
+        const target = b.offsetLeft - (list.clientWidth - b.offsetWidth) / 2;
+        list.scrollTo({ left: Math.max(0, target), behavior: 'smooth' });
+      }
+    });
+
+    area.querySelectorAll('[data-panel]').forEach(p => {
+      const on = Number(p.getAttribute('data-panel')) === n;
+      // the incoming panel must sit above the outgoing one, or its still-fading
+      // content shows through underneath during the .3s crossfade
+      this.sw(p, 'zIndex', on ? '2' : '1');
+      if (on) {
+        this.sw(p, 'display', 'block');
+        void p.offsetWidth;
+        this.sw(p, 'opacity', '1');
+        if (changed) {
+          this.restartAnims(p);
+          if (n === 4) this.runChat();
+        }
+      } else {
+        this.sw(p, 'opacity', '0');
+        setTimeout(() => {
+          if (Number(p.getAttribute('data-panel')) !== this.tab) this.sw(p, 'display', 'none');
+        }, 220);
+      }
+    });
+    if (changed && n !== 4) this.clearTyping();
+
+    const v = this.showcaseVideoRef.current;
+    if (v && changed) {
+      if (n === 0) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+      else v.pause();
+    }
+    this.stx(this.chromeTitleRef.current, this.tabTitles[n]);
+  }
+
+  stx(el, val) { if (el && el.textContent !== val) el.textContent = val; }
+
+  startTabTimer() {
+    this.stopTabTimer();
+    this.tabTimer = setInterval(() => this.setTab((this.tab + 1) % 6), 5000);
+  }
+
+  stopTabTimer() {
+    if (this.tabTimer) { clearInterval(this.tabTimer); this.tabTimer = null; }
+  }
+
+  sw(el, prop, val) { if (el && el.style[prop] !== val) el.style[prop] = val; }
+
+  layoutNavBar() {
+    const n = this.navRef.current;
+    if (!n) return;
+    const past = window.scrollY > 80;
+    this.sw(n, 'background', past ? 'rgba(6, 11, 24, 0.92)' : 'transparent');
+    this.sw(n, 'backdropFilter', past ? 'blur(12px)' : 'none');
+    this.sw(n, 'borderBottomColor', past ? 'rgba(244, 246, 252, 0.1)' : 'rgba(244, 246, 252, 0)');
+  }
+
+  // a late-loading hero photo can't shift the section height (it's absolutely positioned),
+  // but re-run once anyway as a safety net against any transient layout timing
+  onHeroArtLoad = () => this.layoutVideo();
+
+  // the player straddles the rounded boundary; the hero reserves matching clearance
+  layoutVideo() {
+    const f = this.figureRef.current;
+    if (!f) return;
+    let h = f.getBoundingClientRect().height;
+    if (!h) h = (f.getBoundingClientRect().width || 880) * 9 / 16;
+    const lip = Math.round(h * 0.62);
+    this.sw(f, 'marginTop', -lip + 'px');
+    this.sw(f, 'marginBottom', Math.round(Math.min(72, window.innerWidth * 0.045)) + 'px');
+    const inner = this.heroInnerRef.current;
+    if (inner) {
+      const gap = Math.round(Math.max(40, Math.min(80, window.innerWidth * 0.05)));
+      // the figure's relative `bottom` lifts it without affecting layout
+      const rise = parseFloat(getComputedStyle(f).bottom) || 0;
+      this.sw(inner, 'paddingBottom', (lip + gap + rise) + 'px');
+    }
+  }
+
+  layoutGrids() {
+    const w = window.innerWidth;
+    this.sw(this.deptHeadlineRef.current, 'whiteSpace', w < 640 ? 'normal' : 'nowrap');
+    this.sw(this.pillarsRef.current, 'gridTemplateColumns',
+      w < 560 ? 'minmax(0,1fr)' : w < 1000 ? 'repeat(2,minmax(0,1fr))' : w < 1240 ? 'repeat(3,minmax(0,1fr))' : 'repeat(5,minmax(0,1fr))');
+    const vdr = this.vdrGridRef.current;
+    if (vdr) {
+      this.sw(vdr, 'gridTemplateColumns', w < 940 ? 'minmax(0,1fr)' : '1fr 1fr');
+      this.sw(vdr, 'gap', w < 940 ? '40px' : '80px');
+    }
+    this.sw(this.securityGridRef.current, 'gridTemplateColumns',
+      w < 620 ? 'minmax(0,1fr)' : w < 1000 ? 'repeat(2,minmax(0,1fr))' : 'repeat(4,minmax(0,1fr))');
+    this.sw(this.footerGridRef.current, 'gridTemplateColumns',
+      w < 640 ? 'minmax(0,1fr)' : w < 940 ? 'repeat(2,minmax(0,1fr))' : '1.4fr 1fr 1fr 1fr');
+    // the tab rail sits beside the card on desktop and becomes a scrolling row below it
+    const sl = this.showcaseLayoutRef.current, tl = this.tabListRef.current;
+    if (sl && tl) {
+      const stack = w < 900;
+      this.sw(sl, 'flexDirection', stack ? 'column' : 'row');
+      this.sw(sl, 'alignItems', stack ? 'stretch' : 'flex-start');
+      this.sw(sl, 'gap', stack ? '20px' : '48px');
+      this.sw(tl, 'width', stack ? '100%' : '260px');
+      this.sw(tl, 'flexDirection', stack ? 'row' : 'column');
+      this.sw(tl, 'overflowX', stack ? 'auto' : 'visible');
+      this.sw(tl, 'order', '0');
+      this.sw(tl, 'paddingBottom', stack ? '12px' : '0');
+      // the demo card stays centered with side margins on phones — tabs render above it (DOM order)
+      const inner = this.showcaseInnerRef.current, header = this.showcaseHeaderRef.current;
+      const bleed = w < 640;
+      if (inner) this.sw(inner, 'padding', bleed ? 'clamp(56px,9vw,76px) clamp(20px,5vw,32px)' : 'clamp(76px,9vw,124px) clamp(20px,4vw,44px)');
+      if (header) this.sw(header, 'padding', '0');
+      this.sw(tl, 'paddingInline', '0');
+      // "Clauze Platform" is the first thing that crowds the chrome bar on a narrow phone
+      this.sw(this.chromePlatformRef.current, 'display', w < 380 ? 'none' : 'block');
+      tl.querySelectorAll('[data-tab]').forEach(b => {
+        this.sw(b, 'flex', stack ? '0 0 auto' : '');
+        this.sw(b, 'height', stack ? '32px' : '64px');
+        this.sw(b, 'padding', stack ? '0 14px' : '14px 16px');
+        this.sw(b, 'borderRadius', stack ? '20px' : '10px');
+        this.sw(b, 'justifyContent', stack ? 'center' : '');
+        const track = b.querySelector('[data-tab-track]');
+        if (track) this.sw(track, 'display', 'none');
+      });
+    }
+    // the three internal split panels (VDR/graph/onboarding) stack top-to-bottom on phones,
+    // and the card grows tall enough to hold the stacked content instead of clipping it
+    const splitStack = w < 620;
+    [this.vdrPanelRef.current, this.graphPanelRef.current, this.chatPanelRef.current].forEach(p => {
+      if (!p) return;
+      this.sw(p, 'flexDirection', splitStack ? 'column' : 'row');
+      this.sw(p, 'overflowY', splitStack ? 'auto' : '');
+      const sidebar = p.firstElementChild;
+      if (sidebar) {
+        this.sw(sidebar, 'width', splitStack ? '100%' : '');
+        this.sw(sidebar, 'borderInlineEnd', splitStack ? 'none' : '');
+        this.sw(sidebar, 'borderBottom', splitStack ? '1px solid rgba(244,246,252,.08)' : '');
+        this.sw(sidebar, 'flexShrink', splitStack ? '0' : '');
+      }
+    });
+    this.sw(this.panelAreaRef.current, 'height', splitStack ? '640px' : w < 900 ? '520px' : '480px');
+    this.sw(this.panelAreaRef.current, 'overflowY', splitStack ? 'auto' : 'hidden');
+    // final CTA buttons and the demo modal go full-bleed on phones
+    const narrow = w <= 480;
+    document.querySelectorAll('a[href="#demo"][onclick], a[href="#product"]').forEach(a => {
+      if (a.closest('#cta') || a.closest('nav')) return;
+    });
+    const ctaRow = document.querySelector('#cta > div > div[style*="justify-content:center"]');
+    if (ctaRow) {
+      this.sw(ctaRow, 'flexDirection', narrow ? 'column' : 'row');
+      ctaRow.querySelectorAll('a').forEach(a => {
+        this.sw(a, 'width', narrow ? '100%' : '');
+        this.sw(a, 'textAlign', narrow ? 'center' : '');
+      });
+    }
+    const modalCard = this.modalRef.current && this.modalRef.current.firstElementChild;
+    if (modalCard) {
+      Object.assign(modalCard.style, narrow
+        ? { borderRadius: '18px 18px 0 0', maxHeight: '88vh', overflowY: 'auto' }
+        : { borderRadius: '18px', maxHeight: '', overflowY: '' });
+      this.sw(this.modalRef.current, 'alignItems', narrow ? 'flex-end' : 'center');
+    }
+  }
+
+  layoutNav() {
+    const links = this.navLinksRef.current, burger = this.burgerRef.current;
+    if (!links || !burger) return;
+    const mobile = window.innerWidth <= 720;
+    this.sw(burger, 'display', mobile ? 'flex' : 'none');
+    this.sw(this.navDemoRef.current, 'display', mobile ? 'none' : 'inline-block');
+    links.querySelectorAll('a').forEach(a => {
+      this.sw(a, 'minHeight', mobile ? '48px' : '');
+      this.sw(a, 'display', mobile ? 'flex' : '');
+      this.sw(a, 'alignItems', mobile ? 'center' : '');
+      this.sw(a, 'fontSize', mobile ? '16px' : '13.5px');
+      this.sw(a, 'padding', mobile ? '11px 4px' : '10px 16px');
+    });
+    if (!mobile) {
+      this.menuOpen = false;
+      burger.setAttribute('aria-expanded', 'false');
+      Object.assign(links.style, {
+        position: 'absolute', insetInlineStart: '50%',
+        transform: this.lang === 'ar' ? 'translateX(50%)' : 'translateX(-50%)',
+        display: 'flex', flexDirection: 'row', alignItems: 'center',
+        insetInlineEnd: '', top: '', padding: '', background: '',
+        backdropFilter: '', borderTop: '', gap: '8px', marginInlineStart: '', marginInlineEnd: ''
+      });
+      return;
+    }
+    Object.assign(links.style, {
+      position: 'absolute', top: '100%', insetInlineStart: '0', insetInlineEnd: '0', transform: '',
+      marginInlineEnd: '0', flexDirection: 'column', alignItems: 'stretch', gap: '2px',
+      padding: '10px clamp(20px,4vw,44px) 18px', background: 'rgba(6,11,24,.97)',
+      backdropFilter: 'blur(12px)', borderTop: '1px solid rgba(244,246,252,.1)',
+      display: this.menuOpen ? 'flex' : 'none'
+    });
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    const b = this.burgerRef.current;
+    if (b) b.setAttribute('aria-expanded', this.menuOpen ? 'true' : 'false');
+    this.layoutNav();
+  }
+
+  applyLang(lang) {
+    this.lang = lang;
+    document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    if (this.heroPhotoRef.current) this.sw(this.heroPhotoRef.current, 'transform', lang === 'ar' ? 'scaleX(-1)' : 'none');
+    document.body.querySelectorAll('[data-en][data-ar]').forEach(el => {
+      const v = el.getAttribute('data-' + lang);
+      if (v != null && v !== '') el.innerHTML = v;
+    });
+    // the hero photo sits on inset-inline-end, so its horizontal wash must turn too
+    this.sw(this.heroWashRef.current, 'backgroundImage',
+      'linear-gradient(' + (lang === 'ar' ? '270deg' : '90deg') +
+      ',#26235A 0%,#26235A 32%,rgba(6,11,24,.86) 52%,rgba(6,11,24,.40) 100%)');
+    const b = this.langRef.current;
+    if (b) b.textContent = lang === 'ar' ? 'English' : 'العربية';
+    this.layoutNav();
+  }
+
+  toggleLang() { this.applyLang(this.lang === 'en' ? 'ar' : 'en'); }
+
+  // the hero video is the one thing near ~16MB on this page; keep it fully deferred
+  // until it's about to be seen so it never competes with first paint
+  startVideo() {
+    const v = this.videoRef.current;
+    if (!v) return;
+    v.muted = true;
+    v.setAttribute('controlslist', 'nodownload nofullscreen noremoteplayback');
+    const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+    const attach = () => {
+      if (v.src) return;
+      const src = (window.__resources && window.__resources.demoVideo) || v.getAttribute('data-src');
+      if (src) v.src = src;
+      play();
+    };
+    v.addEventListener('loadeddata', () => { play(); this.layoutVideo(); });
+    if ('IntersectionObserver' in window) {
+      this.videoIo = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { attach(); play(); }
+          else if (v.src) v.pause();
+        });
+      }, { threshold: 0.15 });
+      this.videoIo.observe(v);
+    } else {
+      setTimeout(attach, 400);
+    }
+
+    // the showcase panel reuses the same file; defer its fetch until that section
+    // is actually scrolled into view so it never competes with the hero's own load
+    const sv = this.showcaseVideoRef.current;
+    if (sv) {
+      sv.muted = true;
+      const attachShowcase = () => {
+        if (sv.src) return;
+        const s = (window.__resources && window.__resources.demoVideo) || sv.getAttribute('data-src');
+        if (s) sv.src = s;
+        if (this.tab === 0) { const p = sv.play(); if (p && p.catch) p.catch(() => {}); }
+      };
+      if ('IntersectionObserver' in window && this.showcaseRef.current) {
+        const scIo = new IntersectionObserver(entries => {
+          entries.forEach(e => { if (e.isIntersecting) { attachShowcase(); scIo.disconnect(); } });
+        }, { threshold: 0.1, rootMargin: '600px 0px' });
+        scIo.observe(this.showcaseRef.current);
+      } else {
+        setTimeout(attachShowcase, 700);
+      }
+    }
+  }
+
+  openDemo(e) {
+    if (e) e.preventDefault();
+    const m = this.modalRef.current;
+    if (!m) return;
+    m.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    this.sw(this.formWrapRef.current, 'display', 'block');
+    this.sw(this.doneRef.current, 'display', 'none');
+    this.sw(this.formErrRef.current, 'display', 'none');
+    const first = document.getElementById('lp1-name');
+    if (first) setTimeout(() => first.focus(), 30);
+    this.onKey = ev => { if (ev.key === 'Escape') this.closeDemo(); };
+    document.addEventListener('keydown', this.onKey);
+  }
+
+  closeDemo(e) {
+    if (e) e.preventDefault();
+    if (this.modalRef.current) this.modalRef.current.style.display = 'none';
+    document.body.style.overflow = '';
+    if (this.onKey) document.removeEventListener('keydown', this.onKey);
+  }
+
+  collect() {
+    const val = id => { const el = document.getElementById('lp1-' + id); return el ? el.value.trim() : ''; };
+    return {
+      name: val('name'), email: val('email'), phone: val('phone'), company: val('company'),
+      jurisdiction: val('jurisdiction'), notes: val('notes'),
+      submittedAt: new Date().toISOString(), page: location.href
+    };
+  }
+
+  mailtoFor(entry) {
+    const to = this.props.demoEmail || 'hello@clauze.com';
+    const lines = ['Name: ' + entry.name, 'Work email: ' + entry.email, 'Phone: ' + entry.phone,
+      'Company: ' + entry.company, 'Jurisdiction: ' + entry.jurisdiction,
+      'Notes: ' + (entry.notes || '—'), 'Submitted: ' + entry.submittedAt].join('\n');
+    return 'mailto:' + to + '?subject=' + encodeURIComponent('Demo request — ' + entry.company) + '&body=' + encodeURIComponent(lines);
+  }
+
+  submitDemo(e) {
+    if (e) e.preventDefault();
+    const entry = this.collect();
+    const err = this.formErrRef.current;
+    const missing = ['name', 'email', 'phone', 'company'].filter(k => !entry[k]);
+    if (missing.length || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(entry.email)) {
+      if (err) {
+        err.style.display = 'block';
+        err.textContent = this.lang === 'ar'
+          ? 'يرجى إكمال الاسم والبريد المهني ورقم الهاتف وجهة العمل.'
+          : 'Please complete your name, work email, phone and company.';
+      }
+      return;
+    }
+    if (err) err.style.display = 'none';
+    try {
+      const list = JSON.parse(localStorage.getItem('clauze.demoRequests') || '[]');
+      list.push(entry);
+      localStorage.setItem('clauze.demoRequests', JSON.stringify(list));
+    } catch (e2) {}
+    const done = mailFallback => {
+      this.sw(this.formWrapRef.current, 'display', 'none');
+      this.sw(this.doneRef.current, 'display', 'block');
+      const msg = this.doneMsgRef.current;
+      if (msg) {
+        const en = mailFallback
+          ? 'Your email app has opened with the details — send it and our team will contact you.'
+          : 'Our team will contact you to arrange the session.';
+        const ar = mailFallback
+          ? 'فتح تطبيق البريد لديك بالتفاصيل — أرسله وسيتواصل معك فريقنا.'
+          : 'سيتواصل معك فريقنا لترتيب الجلسة.';
+        msg.setAttribute('data-en', en); msg.setAttribute('data-ar', ar);
+        msg.textContent = this.lang === 'ar' ? ar : en;
+      }
+      if (this.formRef.current) this.formRef.current.reset();
+    };
+    const endpoint = this.props.formEndpoint || '/api/demo-request';
+    fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.content || '' },
+      body: JSON.stringify(entry)
+    }).then(r => { if (!r.ok) throw new Error('Server error'); return r.json(); })
+      .then(() => done(false))
+      .catch(() => { window.location.href = this.mailtoFor(entry); done(true); });
+  }
+
+  renderVals() {
+    return {
+      navRef: this.navRef, navLinksRef: this.navLinksRef, burgerRef: this.burgerRef,
+      navDemoRef: this.navDemoRef, langRef: this.langRef, heroArtRef: this.heroArtRef, heroPhotoRef: this.heroPhotoRef, heroWashRef: this.heroWashRef,
+      heroInnerRef: this.heroInnerRef, figureRef: this.figureRef,
+      videoRef: this.videoRef, onHeroArtLoad: this.onHeroArtLoad, pillarsRef: this.pillarsRef, deptHeadlineRef: this.deptHeadlineRef, vdrGridRef: this.vdrGridRef,
+      jurisRef: this.jurisRef, securityGridRef: this.securityGridRef, footerGridRef: this.footerGridRef,
+      modalRef: this.modalRef, formRef: this.formRef, formWrapRef: this.formWrapRef,
+      formErrRef: this.formErrRef, doneRef: this.doneRef, doneMsgRef: this.doneMsgRef,
+      showcaseRef: this.showcaseRef, showcaseLayoutRef: this.showcaseLayoutRef,
+      tabListRef: this.tabListRef, panelAreaRef: this.panelAreaRef,
+      showcaseInnerRef: this.showcaseInnerRef, showcaseHeaderRef: this.showcaseHeaderRef,
+      vdrPanelRef: this.vdrPanelRef, graphPanelRef: this.graphPanelRef, chatPanelRef: this.chatPanelRef,
+      chromeTitleRef: this.chromeTitleRef, chromePlatformRef: this.chromePlatformRef, showcaseVideoRef: this.showcaseVideoRef,
+      phaseListRef: this.phaseListRef, chat1Ref: this.chat1Ref, chat2Ref: this.chat2Ref,
+      chat3Ref: this.chat3Ref, chat2WrapRef: this.chat2WrapRef, chat3WrapRef: this.chat3WrapRef,
+      pickTab: e => {
+        const b = e && e.currentTarget && e.currentTarget.closest('[data-tab]');
+        if (!b) return;
+        this.stopTabTimer();
+        this.setTab(Number(b.getAttribute('data-tab')));
+        this.startTabTimer();
+      },
+      toggleMenu: () => this.toggleMenu(),
+      toggleLang: () => this.toggleLang(),
+      openDemo: e => this.openDemo(e),
+      closeDemo: e => this.closeDemo(e),
+      submitDemo: e => this.submitDemo(e)
+    };
+  }
+}
+</script>
+@endverbatim
+</body>
+</html>
