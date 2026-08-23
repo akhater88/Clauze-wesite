@@ -30,13 +30,46 @@
 <meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
 <meta name="twitter:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
 <meta name="twitter:site" content="@clauze_ai">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#26235A">
 <link rel="canonical" href="https://www.clauze.ai">
+<link rel="alternate" hreflang="en" href="https://www.clauze.ai/" />
+<link rel="alternate" hreflang="x-default" href="https://www.clauze.ai/" />
 <link rel="manifest" href="assets/site.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-64.png">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/favicon-512.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Clauze — Legal review at the speed of the business","description":"Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law — before they reach your legal team.","url":"https://www.clauze.ai","publisher":{"@type":"Organization","name":"Clauze"}}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Clauze",
+      "url": "https://www.clauze.ai",
+      "logo": "https://www.clauze.ai/assets/logo-clauze.png",
+      "description": "The first Arabic-native AI legal workspace and virtual data room built for Saudi Arabia.",
+      "sameAs": ["https://www.linkedin.com/company/clauze-ai", "https://x.com/clauze_ai"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Clauze",
+      "url": "https://www.clauze.ai",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law — before they reach your legal team.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Request a demo"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Clauze"
+      }
+    }
+  ]
+}</script>
 <style>
 @font-face{font-family:'Zalando Sans';src:url('assets/fonts/ZalandoSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:'Zalando Sans';src:url('assets/fonts/ZalandoSans-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
@@ -95,7 +128,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 
   <section id="top" style="position:relative;display:flex;align-items:center;min-height:min(88vh,900px);overflow:hidden;background:#26235A">
     <div ref="{{ heroArtRef }}" style="position:absolute;bottom:36px;inset-inline-end:0;width:min(100%);height:100%">
-      <img ref="{{ heroPhotoRef }}" src="assets/hero-header-02.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:100% center"/>
+      <img ref="{{ heroPhotoRef }}" src="assets/hero-header-02.png" alt="Legal professional reviewing contracts on the Clauze AI platform" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:100% center"/>
       <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,24,64,.35) 0%,rgba(47,48,140,.15) 40%,transparent 134%)"></div>
     </div>
     <div ref="{{ heroWashRef }}" style="position:absolute;inset:0;background:linear-gradient(90deg,#26235A 0%,#26235A 32%,rgba(6,11,24,.86) 52%,rgba(6,11,24,.40) 100%)"></div>
