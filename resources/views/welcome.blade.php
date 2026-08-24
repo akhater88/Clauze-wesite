@@ -649,7 +649,7 @@ button,input,select,textarea{font:inherit;color:inherit}
           <div style="display:flex;flex-direction:column;gap:9px">
             <a href="#top" data-en="About" data-ar="من نحن" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">About</a>
             <a href="#top" data-en="Careers" data-ar="الوظائف" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Careers</a>
-            <a href="#top" data-en="Privacy" data-ar="الخصوصية" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Privacy</a>
+            <a href="/privacy-policy" data-en="Privacy" data-ar="الخصوصية" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Privacy</a>
             <a href="#top" data-en="Terms" data-ar="الشروط" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Terms</a>
           </div>
         </div>
