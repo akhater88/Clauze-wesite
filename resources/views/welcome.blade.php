@@ -13,9 +13,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<title>Clauze — Legal review at the speed of the business</title>
-<meta name="description" content="Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law — before they reach your legal team.">
-<meta property="og:title" content="Clauze — Legal review at the speed of the business">
+<title>Clauze, Legal review at the speed of the business</title>
+<meta name="description" content="Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law, before they reach your legal team.">
+<meta property="og:title" content="Clauze, Legal review at the speed of the business">
 <meta property="og:description" content="The first Arabic-native VDR and AI legal workspace built for Saudi Arabia.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.clauze.ai">
@@ -25,12 +25,12 @@
 <meta property="og:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
+<meta property="og:image:alt" content="Clauze, AI legal workspace for Saudi enterprises">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clauze — Legal review at the speed of the business">
+<meta name="twitter:title" content="Clauze, Legal review at the speed of the business">
 <meta name="twitter:description" content="The first Arabic-native VDR and AI legal workspace built for Saudi Arabia.">
 <meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
-<meta name="twitter:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
+<meta name="twitter:image:alt" content="Clauze, AI legal workspace for Saudi enterprises">
 <meta name="twitter:site" content="@clauze_ai">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#26235A">
@@ -58,7 +58,7 @@
       "url": "https://www.clauze.ai",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "description": "Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law — before they reach your legal team.",
+      "description": "Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law, before they reach your legal team.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -142,7 +142,7 @@ button,input,select,textarea{font:inherit;color:inherit}
         <span data-en="that understands your business" data-ar="يفهم أعمالك" style="display:block">that understands your business</span>
       </h1>
       <p style="margin:30px 0 0;max-width:64ch;font-size:clamp(17px,2vw,20px);line-height:1.6;color:rgba(244,246,252,.76);animation:clzUp .6s .08s ease both">
-        <span data-en="Legal AI trained on your agreements, your playbook, and the " data-ar="ذكاء اصطناعي قانوني مُدرَّب على عقودك، وسياساتك، و">Legal AI trained on your agreements, your playbook, and the </span><span data-en="Saudi law." data-ar="النظام السعودي." style="font-weight:700;font-size:1.15em;color:#FFFFFF">Saudi law.</span>
+        <span data-en="Legal AI trained on your agreements, your playbook, and the " data-ar="ذكاء اصطناعي قانوني مُدرَّب على عقودك، وسياساتك، و">Legal AI trained on your agreements, your playbook, and the </span><span data-en="Saudi law" data-ar="النظام السعودي" style="font-weight:700;font-size:1.15em;color:#FFFFFF">Saudi law</span>
       </p>
       <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo" data-ar="اطلب عرضًا" style="display:inline-block;margin-top:40px;padding:17px 34px;background:#2E7EBE;color:#fff;border-radius:9px;font-size:16px;font-weight:600;animation:clzUp .6s .14s ease both;transition:background .2s ease" style-hover="background:#4A9AD1;color:#fff">Request a demo</a>
     </div>
@@ -158,15 +158,15 @@ button,input,select,textarea{font:inherit;color:inherit}
         <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M12 4.5c-2 0-3.2 1.3-3.4 2.8-1.4.4-2.3 1.7-2.1 3.1-.9.7-1.3 1.9-.9 3 .3.9.6 1.9.6 2.9 0 1.7 1.4 3.2 3.2 3.2h.4"></path><path d="M12 4.5c2 0 3.2 1.3 3.4 2.8 1.4.4 2.3 1.7 2.1 3.1.9.7 1.3 1.9.9 3-.3.9-.6 1.9-.6 2.9 0 1.7-1.4 3.2-3.2 3.2h-.4"></path><path d="M12 4.5v15"></path><path d="M9.2 10.2h1.6"></path><path d="M13.2 10.2h1.6"></path><path d="M8.6 14.2h1.9"></path><path d="M13.5 14.2h1.9"></path></svg>
         </span>
-        <h3 data-en="Understands your organization" data-ar="تفهم مؤسستك" style="margin:0;font-size:17.5px;font-weight:600">Understands your organization</h3>
-        <p data-en="Clauze starts informed." data-ar="كلوز يبدأ وهو ملمّ بك." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Clauze starts informed.</p>
+        <h3 data-en="Understands your organization" data-ar="يفهم مؤسستك" style="margin:0;font-size:17.5px;font-weight:600">Understands your organization</h3>
+        <p data-en="Clauze starts informed." data-ar="يبدأ كلوز وهو مُلم بمؤسستك وسياق عملها" style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Clauze starts informed.</p>
       </div>
       <div style="display:flex;flex-direction:column">
         <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M9 5H6.5v14H9"></path><path d="M15 5h2.5v14H15"></path><path d="M12 9v6"></path><circle cx="12" cy="7" r=".6" fill="currentColor" stroke="none"></circle></svg>
         </span>
         <h3 data-en="Every answer cited" data-ar="كل إجابة موثّقة" style="margin:0;font-size:17.5px;font-weight:600">Every answer cited</h3>
-        <p data-en="No unsupported legal response." data-ar="لا رأي دون سند." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">No unsupported legal response.</p>
+        <p data-en="No unsupported legal response." data-ar="لا إجابات قانونية بلا مصادر." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">No unsupported legal response.</p>
       </div>
       <div style="display:flex;flex-direction:column">
         <span style="display:flex;align-items:center;height:44px;margin-bottom:12px;font-size:22px;line-height:1;color:#2E7EBE">ع<span style="opacity:.5;margin:0 3px">/</span>A</span>
@@ -177,15 +177,15 @@ button,input,select,textarea{font:inherit;color:inherit}
         <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><circle cx="12" cy="12" r="8.6"></circle><path d="M3.4 12h17.2"></path><path d="M12 3.4c2.3 2.5 3.4 5.4 3.4 8.6s-1.1 6.1-3.4 8.6c-2.3-2.5-3.4-5.4-3.4-8.6s1.1-6.1 3.4-8.6Z"></path></svg>
         </span>
-        <h3 data-en="Built for Saudi law" data-ar="مبني للنظام السعودي" style="margin:0;font-size:17.5px;font-weight:600">Built for Saudi law</h3>
-        <p data-en="ZATCA, GOSI, Nitaqat, PDPL — in the knowledge base." data-ar="الزكاة والضريبة، والتأمينات، ونطاقات، وحماية البيانات — في قاعدة المعرفة." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">ZATCA, GOSI, Nitaqat, PDPL, in the knowledge base.</p>
+        <h3 data-en="Built for Saudi law" data-ar="مصمّم ليتوافق مع الأنظمة السعودية" style="margin:0;font-size:17.5px;font-weight:600">Built for Saudi law</h3>
+        <p data-en="ZATCA, GOSI, Nitaqat, PDPL, in the knowledge base." data-ar="قاعدة معرفية متكاملة تشمل الزكاة والضريبة، والتأمينات، ونطاقات، وحماية البيانات" style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">ZATCA, GOSI, Nitaqat, PDPL, in the knowledge base.</p>
       </div>
       <div style="display:flex;flex-direction:column">
         <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M12 3.5 19 6v6c0 4-3 6.8-7 8.5-4-1.7-7-4.5-7-8.5V6Z"></path><path d="M9.2 12.2l2 2 3.6-4"></path></svg>
         </span>
-        <h3 data-en="Audit every decision" data-ar="دقّق كل قرار" style="margin:0;font-size:17.5px;font-weight:600">Audit every decision</h3>
-        <p data-en="Every AI response cites its source." data-ar="كل استجابة تعود إلى مصدرها." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Every AI response cites its source.</p>
+        <h3 data-en="Audit every decision" data-ar="تتبّع كل قرار" style="margin:0;font-size:17.5px;font-weight:600">Audit every decision</h3>
+        <p data-en="Every AI response cites its source." data-ar="كل استجابة من الذكاء الاصطناعي موثَّقة بمصدرها." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Every AI response cites its source.</p>
       </div>
     </div>
   </section>
@@ -193,27 +193,27 @@ button,input,select,textarea{font:inherit;color:inherit}
 
   <section id="departments" style="scroll-margin-top:84px;background:#EEEFF4;color:#2F308C">
     <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,44px) clamp(76px,9vw,124px)">
-      <h2 ref="{{ deptHeadlineRef }}" data-en="Built around how your organization works." data-ar="مصمّم بما يتناسب مع طريقة عمل مؤسستك." style="margin:0;max-width:none;white-space:nowrap;font-size:clamp(20px,3vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Built around how your organization works.</h2>
+      <h2 ref="{{ deptHeadlineRef }}" data-en="Built around how your organization works" data-ar="مصمّم بما يتناسب مع طريقة عمل مؤسستك" style="margin:0;max-width:none;white-space:nowrap;font-size:clamp(20px,3vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Built around how your organization works</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.2vw,26px);margin-top:clamp(34px,4vw,54px)">
         <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
           <image-slot id="dept-legal-bg" shape="rect" src="assets/dept-legal.png" placeholder="Drop a legal-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
           <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
-          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="Legal" data-ar="القانونية">Legal</span>
-          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Stop reading what you have already read." data-ar="كفى قراءةً لما قرأته من قبل.">Stop reading what you have already read.</h3>
+          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#2E7EBE" data-en="Legal" data-ar="القانونية">Legal</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Stop reading what you have already read" data-ar="كفى قراءةً لما قرأته من قبل">Stop reading what you have already read</h3>
           <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Documents arrive pre-reviewed. You see the deviations, not the boilerplate." data-ar="تصل إليك المستندات مراجَعة. ترى ما خرج عن المألوف، لا ما تكرر ألف مرة.">Documents arrive pre-reviewed. You see the deviations, not the boilerplate.</p>
         </article>
         <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
           <image-slot id="dept-compliance-bg" shape="rect" src="assets/dept-compliance.png" placeholder="Drop a compliance-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
           <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
-          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</span>
-          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Contracts that comply before you sign." data-ar="عقود توظيف متوافقة قبل التوقيع.">Contracts that comply before you sign.</h3>
+          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#2E7EBE" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Contracts that comply before you sign" data-ar="عقود توظيف متوافقة قبل التوقيع">Contracts that comply before you sign</h3>
           <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Standard positions applied automatically." data-ar="تُطبَّق مواقفك المعتمدة تلقائيًا.">Standard positions applied automatically.</p>
         </article>
         <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
           <image-slot id="dept-procurement-bg" shape="rect" src="assets/dept-procurement.png" placeholder="Drop a procurement-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
           <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
-          <span style="position:relative;z-index:1;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE" data-en="Procurement" data-ar="المشتريات">Procurement</span>
-          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Agreements reviewed before the conversation ends." data-ar="اتفاقيات الموردين مراجَعة قبل أن ينتهي الاجتماع.">Agreements reviewed before the conversation ends.</h3>
+          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#2E7EBE" data-en="Procurement" data-ar="المشتريات">Procurement</span>
+          <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Agreements reviewed before the conversation ends" data-ar="مراجعة اتفاقيات الموردين قبل أن ينتهي الاجتماع">Agreements reviewed before the conversation ends</h3>
           <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Risk flagged. Deviations noted." data-ar="المخاطر مرصودة، والانحرافات مسجَّلة.">Risk flagged. Deviations noted.</p>
         </article>
       </div>
@@ -339,8 +339,8 @@ button,input,select,textarea{font:inherit;color:inherit}
                     <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">0 docs</span>
                     <span style="width:7px;height:7px;flex:none;border-radius:50%;background:rgba(244,246,252,.34)"></span>
                   </div>
-                  <div data-anim="clzDropIn .4s ease 2.5s both" style="position:absolute;top:14px;inset-inline-end:14px;padding:10px 14px;border-radius:8px;background:rgba(46,126,190,.9);font-size:13px;color:#F4F6FC">Bidder Group A — NDA Accepted ✓</div>
-                  <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;padding:12px 14px;background:rgba(107,176,224,.2);border-top:1px solid rgba(107,176,224,.4);font-size:12.5px;color:#F4F6FC">Phase 2 unlocked — 47 documents now visible</div>
+                  <div data-anim="clzDropIn .4s ease 2.5s both" style="position:absolute;top:14px;inset-inline-end:14px;padding:10px 14px;border-radius:8px;background:rgba(46,126,190,.9);font-size:13px;color:#F4F6FC">Bidder Group A, NDA Accepted ✓</div>
+                  <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;padding:12px 14px;background:rgba(107,176,224,.2);border-top:1px solid rgba(107,176,224,.4);font-size:12.5px;color:#F4F6FC">Phase 2 unlocked, 47 documents now visible</div>
                 </div>
               </div>
             </div>
@@ -349,7 +349,7 @@ button,input,select,textarea{font:inherit;color:inherit}
               <div style="position:relative;height:100%;padding:20px">
                 <div data-anim="clzFadeOut .4s ease 1.8s both" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px;border:1.5px dashed rgba(46,126,190,.5);border-radius:12px;background:rgba(46,126,190,.06)">
                   <span style="font-size:14px;color:#6BB0E0">📋 Drop IRL here</span>
-                  <span style="font-size:12px;color:rgba(244,246,252,.5)">Excel · Word · PDF — any language</span>
+                  <span style="font-size:12px;color:rgba(244,246,252,.5)">Excel · Word · PDF, any language</span>
                 </div>
                 <div data-anim="clzRowIn .3s ease .8s both" style="margin-top:12px;padding:10px 12px;border:1px solid rgba(244,246,252,.14);border-radius:8px;background:rgba(255,255,255,.06)">
                   <span style="font-size:12.5px;color:#F4F6FC">✓ GS_DD_Checklist_v3.xlsx · 67 items detected</span>
@@ -479,7 +479,7 @@ button,input,select,textarea{font:inherit;color:inherit}
                     <span style="margin-inline-start:auto;flex:none;font-size:11px;color:rgba(244,246,252,.5)">✦ Checked 3 entities · 147 objects</span>
                   </div>
                   <div style="margin-bottom:12px;padding:10px 12px;background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.3);border-radius:8px">
-                    <p style="margin:0 0 5px;font-size:12px;font-weight:600;color:#DC2626">⚡ Blocking — Exclusive territory conflict</p>
+                    <p style="margin:0 0 5px;font-size:12px;font-weight:600;color:#DC2626">⚡ Blocking, Exclusive territory conflict</p>
                     <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:rgba(252,165,165,.95)">Falcon Holding holds an exclusive distribution arrangement with Company X covering Saudi Arabia until 31 Dec 2028.</p>
                     <p style="margin:0;font-size:11px;color:rgba(244,246,252,.6)">Source: Distribution Agreement · Section 05 · cl.4.2 · Validated ✓</p>
                   </div>
@@ -504,14 +504,14 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div ref="{{ vdrGridRef }}" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
       <div>
         <p data-en="Due diligence" data-ar="الفحص القانوني" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Due diligence</p>
-        <h2 data-en="One workflow, from request list to data room." data-ar="مسار عمل واحد، من قائمة الطلبات إلى غرفة البيانات." style="margin:16px 0 0;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">One workflow, from request list to data room.</h2>
-        <p data-en="Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room — with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in." data-ar="يطابق كلوز قائمة الطلبات الواردة مع غرفة بيانات شركتك، ويرصد الناقص، وينظم الجاهز منها في غرفة بيانات عربية وإنجليزية مبنية لهذا الغرض — بتصنيفات سعودية مدمجة مثل شهادة الزكاة والضريبة، وشهادات التأمينات، وامتثال نطاقات، وموافقات الاستثمار." style="margin:20px 0 0;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room, with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in.</p>
+        <h2 data-en="One workflow, from request list to data room" data-ar="مسار عمل واحد، من قائمة الطلبات إلى غرفة البيانات" style="margin:16px 0 0;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">One workflow, from request list to data room</h2>
+        <p data-en="Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room, with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in." data-ar="يطابق كلوز قائمة الطلبات الواردة مع غرفة بيانات شركتك، ويرصد الناقص، وينظم الجاهز منها في غرفة بيانات عربية وإنجليزية مبنية لهذا الغرض، بتصنيفات سعودية مدمجة مثل شهادة الزكاة والضريبة، وشهادات التأمينات، وامتثال نطاقات، وموافقات الاستثمار." style="margin:20px 0 0;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room, with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in.</p>
         <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="display:inline-block;margin-top:32px;padding:17px 34px;background:#2E7EBE;border-radius:9px;color:#FFFFFF;font-size:16px;font-weight:600;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo →</a>
       </div>
 
       <div style="background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:16px;overflow:hidden">
         <div style="display:flex;align-items:center;gap:12px;min-height:44px;padding:10px 16px;background:#1C1A44;border-bottom:1px solid rgba(244,246,252,.14)">
-          <span data-en="Horizon Technologies Acquisition — VDR" data-ar="استحواذ هورايزون للتقنية — غرفة البيانات" style="font-size:13px;color:rgba(244,246,252,.76)">Horizon Technologies Acquisition — VDR</span>
+          <span data-en="Horizon Technologies Acquisition, VDR" data-ar="استحواذ هورايزون للتقنية، غرفة البيانات" style="font-size:13px;color:rgba(244,246,252,.76)">Horizon Technologies Acquisition, VDR</span>
           <span data-en="Phase 2 · 3 bidder groups" data-ar="المرحلة ٢ · ٣ مجموعات" style="margin-inline-start:auto;flex:none;font-size:11px;color:rgba(244,246,252,.5)">Phase 2 · 3 bidder groups</span>
         </div>
         <div style="display:flex;flex-direction:column;gap:6px;padding:16px">
@@ -547,7 +547,7 @@ button,input,select,textarea{font:inherit;color:inherit}
           </div>
           <div style="display:flex;align-items:center;gap:12px;height:36px;padding:0 12px;border:1px solid rgba(107,176,224,.22);border-radius:9px;animation:clzWake 5.4s linear infinite both;animation-delay:4.5s">
             <svg viewBox="0 0 24 24" fill="none" stroke="#6BB0E0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex:none"><path d="M3.5 6.5h6l1.6 2h9.4v9H3.5Z"></path></svg>
-            <span data-en="09 Q&amp;A Working Papers" data-ar="٠٩ أوراق الأسئلة والأجوبة" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both;animation-delay:4.5s">09 Q&amp;A Working Papers</span>
+            <span data-en="09 Q&amp;A Working Papers" data-ar="٠٩ أوراق الأسئلة والإجابات" style="font-size:13.5px;color:rgba(244,246,252,.5);animation:clzWakeText 5.4s linear infinite both;animation-delay:4.5s">09 Q&amp;A Working Papers</span>
             <span data-en="14 questions" data-ar="١٤ سؤالًا" style="margin-inline-start:auto;flex:none;font-size:12px;color:rgba(244,246,252,.5)">14 questions</span>
             <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#2E7EBE"></span>
           </div>
@@ -558,8 +558,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 
   <section id="knowledge" style="scroll-margin-top:84px;background:#26235A;color:#F4F6FC">
     <div style="max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
-      <h2 data-en="Legal reasoning you can audit." data-ar="استدلال قانوني قابل للتدقيق." style="margin:0;max-width:20ch;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Legal reasoning you can audit.</h2>
-      <p data-en="Clauze's knowledge base is versioned. Sources are labelled — verified by counsel, or automatically monitored. When the law behind an active contract changes, you are told which contracts are affected." data-ar="قاعدة معرفة كلوز مُصدَرة، ومصادرها موسومة — إما موثّقة من مستشار قانوني، أو مرصودة آليًا. وحين يتغيّر النظام الذي يقوم عليه عقد سارٍ، تعرف أي عقودك تأثّرت." style="margin:24px 0 0;max-width:60ch;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">قاعدة معرفة كلوز مُصدَرة، ومصادرها موسومة، إما موثّقة من مستشار قانوني، أو مرصودة آليًا. وحين يتغيّر النظام الذي يقوم عليه عقد سارٍ، تعرف أي عقودك تأثّرت.</p>
+      <h2 data-en="Legal reasoning you can audit" data-ar="استدلال قانوني قابل للتدقيق" style="margin:0;max-width:20ch;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Legal reasoning you can audit</h2>
+      <p data-en="Clauze's knowledge base is versioned. Sources are labelled, verified by counsel, or automatically monitored. When the law behind an active contract changes, you are told which contracts are affected." data-ar="قاعدة معرفة كلوز مُصدَرة، ومصادرها موسومة، إما موثّقة من مستشار قانوني، أو مرصودة آليًّا. وحين يتغيّر النظام الذي يقوم عليه عقد سارٍ، تعرف أي عقودك تأثّرت." style="margin:24px 0 0;max-width:60ch;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">قاعدة معرفة كلوز مُصدَرة، ومصادرها موسومة، إما موثّقة من مستشار قانوني، أو مرصودة آليًّا. وحين يتغيّر النظام الذي يقوم عليه عقد سارٍ، تعرف أي عقودك تأثّرت.</p>
       <div ref="{{ jurisRef }}" style="display:flex;flex-wrap:wrap;gap:28px;margin-top:38px;padding-top:30px;border-top:1px solid rgba(244,246,252,.14)">
         <div style="display:flex;flex-direction:column;gap:6px;min-width:200px">
           <span data-en="KSA" data-ar="السعودية" style="font-size:21px;font-weight:600;color:#F4F6FC">KSA</span>
@@ -573,14 +573,14 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.16"></div>
     <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
       <p data-en="Security and residency" data-ar="الأمان وموقع البيانات" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Security and residency</p>
-      <h2 data-en="Deployed where your data has to stay." data-ar="نشر في المكان الذي يجب أن تبقى فيه بياناتك." style="margin:16px 0 0;max-width:24ch;font-size:clamp(26px,3.8vw,46px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Deployed where your data has to stay.</h2>
+      <h2 data-en="Deployed where your data has to stay" data-ar="نشر في المكان الذي يجب أن تبقى فيه بياناتك" style="margin:16px 0 0;max-width:24ch;font-size:clamp(26px,3.8vw,46px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Deployed where your data has to stay</h2>
       <div ref="{{ securityGridRef }}" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,20px);margin-top:clamp(34px,4vw,54px)">
         <article style="display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.6vw,30px);background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:14px;transition:border-color .25s ease,background .25s ease" style-hover="border-color:rgba(107,176,224,.7);background:rgba(46,126,190,.1)">
           <span style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;border:1px solid rgba(107,176,224,.4);border-radius:10px;color:#6BB0E0">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><path d="M3 7.5 12 3l9 4.5-9 4.5Z"></path><path d="M3 12l9 4.5 9-4.5"></path><path d="M3 16.5 12 21l9-4.5"></path></svg>
           </span>
           <h3 data-en="Saudi-hosted" data-ar="مستضافة في السعودية" style="margin:0;font-size:16.5px;font-weight:600">Saudi-hosted</h3>
-          <p data-en="Data never leaves Saudi Arabia infrastructure." data-ar="لا تغادر البيانات البنية التحتية في السعودية." style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(244,246,252,.76)">Data never leaves KSA or Jordan infrastructure.</p>
+          <p data-en="Data never leaves Saudi Arabia infrastructure." data-ar="تبقى البيانات ضمن البنية التحتية في السعودية." style="margin:0;font-size:14.5px;line-height:1.6;color:rgba(244,246,252,.76)">Data never leaves KSA or Jordan infrastructure.</p>
         </article>
         <article style="display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.6vw,30px);background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:14px;transition:border-color .25s ease,background .25s ease" style-hover="border-color:rgba(107,176,224,.7);background:rgba(46,126,190,.1)">
           <span style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;border:1px solid rgba(107,176,224,.4);border-radius:10px;color:#6BB0E0">
@@ -611,7 +611,7 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.28"></div>
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 40% at 50% 50%,rgba(46,126,190,.25) 0%,transparent 70%),linear-gradient(180deg,#26235A 0%,transparent 30%,transparent 70%,#26235A 100%)"></div>
     <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
-      <h2 data-en="Ready to give your legal team an AI layer?" data-ar="جاهز لتزويد فريقك القانوني بطبقة ذكاء اصطناعي؟" style="margin:0 auto;max-width:28ch;font-size:clamp(28px,4vw,52px);font-weight:600;line-height:1.1;letter-spacing:-.025em;color:#F4F6FC">Ready to give your legal team an AI layer?</h2>
+      <h2 data-en="Ready to give your legal team an AI layer?" data-ar="جاهز لتمكين فريقك القانوني بالذكاء الاصطناعي؟" style="margin:0 auto;max-width:28ch;font-size:clamp(28px,4vw,52px);font-weight:600;line-height:1.1;letter-spacing:-.025em;color:#F4F6FC">Ready to give your legal team an AI layer?</h2>
       <p data-en="Join the Saudi enterprises running their legal work on Clauze." data-ar="انضم إلى المؤسسات السعودية التي تدير عملها القانوني على كلوز." style="margin:20px auto 0;max-width:56ch;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Join the Saudi enterprises running their legal work on Clauze.</p>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:40px">
         <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="padding:17px 34px;background:#2E7EBE;border-radius:9px;color:#FFFFFF;font-size:16px;font-weight:600;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo →</a>
@@ -668,7 +668,7 @@ button,input,select,textarea{font:inherit;color:inherit}
         <button onClick="{{ closeDemo }}" aria-label="Close" style="margin-inline-start:auto;width:40px;height:40px;flex:none;background:transparent;border:1px solid #E1E4EE;border-radius:9px;font-size:16px;color:#6B7390;cursor:pointer;transition:border-color .2s ease,color .2s ease" style-hover="border-color:#2E7EBE;color:#2E7EBE">✕</button>
       </div>
       <div ref="{{ formWrapRef }}">
-        <p data-en="Tell us who you are and our team will arrange a session on your own documents." data-ar="أخبرنا من أنت وسيرتّب فريقنا جلسة على وثائقك." style="margin:12px 0 22px;font-size:15px;line-height:1.55;color:#6B7390">Tell us who you are and our team will arrange a session on your own documents.</p>
+        <p data-en="Tell us who you are and our team will arrange a session on your own documents." data-ar="أخبرنا من أنت، وسينسّق فريقنا جلسةً مخصّصة تستند على وثائقك" style="margin:12px 0 22px;font-size:15px;line-height:1.55;color:#6B7390">Tell us who you are and our team will arrange a session on your own documents.</p>
         <form ref="{{ formRef }}" novalidate="novalidate" onSubmit="{{ submitDemo }}" style="display:flex;flex-direction:column;gap:14px">
           <label style="display:flex;flex-direction:column;gap:6px">
             <span data-en="Full name" data-ar="الاسم الكامل" style="font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2E7EBE">Full name</span>
@@ -1260,7 +1260,7 @@ class Component extends DCLogic {
     const lines = ['Name: ' + entry.name, 'Work email: ' + entry.email, 'Phone: ' + entry.phone,
       'Company: ' + entry.company, 'Jurisdiction: ' + entry.jurisdiction,
       'Notes: ' + (entry.notes || '—'), 'Submitted: ' + entry.submittedAt].join('\n');
-    return 'mailto:' + to + '?subject=' + encodeURIComponent('Demo request — ' + entry.company) + '&body=' + encodeURIComponent(lines);
+    return 'mailto:' + to + '?subject=' + encodeURIComponent('Demo request, ' + entry.company) + '&body=' + encodeURIComponent(lines);
   }
 
   submitDemo(e) {
@@ -1289,10 +1289,10 @@ class Component extends DCLogic {
       const msg = this.doneMsgRef.current;
       if (msg) {
         const en = mailFallback
-          ? 'Your email app has opened with the details — send it and our team will contact you.'
+          ? 'Your email app has opened with the details, send it and our team will contact you.'
           : 'Our team will contact you to arrange the session.';
         const ar = mailFallback
-          ? 'فتح تطبيق البريد لديك بالتفاصيل — أرسله وسيتواصل معك فريقنا.'
+          ? 'فتح تطبيق البريد لديك بالتفاصيل، أرسله وسيتواصل معك فريقنا.'
           : 'سيتواصل معك فريقنا لترتيب الجلسة.';
         msg.setAttribute('data-en', en); msg.setAttribute('data-ar', ar);
         msg.textContent = this.lang === 'ar' ? ar : en;
