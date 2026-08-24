@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<script src="./support.js"></script>
+<script src="/support.js"></script>
 </head>
 <body>
 @verbatim
@@ -30,17 +30,13 @@ a{color:#6BB0E0;text-decoration:none}
 a:hover{color:#AFD6EE}
 button,input,select,textarea{font:inherit;color:inherit}
 [dir="rtl"] body{font-family:'Noto Kufi Arabic','Zalando Sans',system-ui,sans-serif}
+[dir="rtl"] header nav{gap:2px !important}
+[dir="rtl"] header nav a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
 ::selection{background:#2E7EBE;color:#fff}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:#26235A}
 ::-webkit-scrollbar-thumb{background:#2E7EBE;border-radius:3px}
 
-.pp-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(38,35,90,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(244,246,252,.08);padding:0 clamp(20px,4vw,44px)}
-.pp-nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
-.pp-nav a{display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(244,246,252,.6);transition:color .2s ease}
-.pp-nav a:hover{color:#F4F6FC}
-.pp-lang-btn{background:none;border:1px solid rgba(244,246,252,.18);border-radius:6px;padding:6px 14px;font-size:13px;color:rgba(244,246,252,.7);cursor:pointer;transition:border-color .2s,color .2s}
-.pp-lang-btn:hover{border-color:#6BB0E0;color:#6BB0E0}
 
 .pp-wrap{max-width:860px;margin:0 auto;padding:0 clamp(20px,4vw,44px)}
 .pp-header{padding:100px 0 48px;text-align:center;border-bottom:1px solid rgba(244,246,252,.1)}
@@ -76,18 +72,13 @@ button,input,select,textarea{font:inherit;color:inherit}
 </style>
 </helmet>
 
-<!-- Navigation -->
-<nav class="pp-nav">
-  <div class="pp-nav-inner">
-    <a href="/">
-      <img src="assets/sm-clauze-wordmark-white.png" alt="Clauze" loading="lazy" width="86" height="18" style="height:18px;width:auto">
-      <span data-en="&#8592; Back to home" data-ar="&#8594; العودة للرئيسية">&#8592; Back to home</span>
-    </a>
-    <button class="pp-lang-btn" onClick="{{ toggleLang }}">العربية</button>
-  </div>
-</nav>
+@endverbatim
+@include('partials.header', ['linkPrefix' => '/', 'hideDemo' => true])
+@verbatim
 
-<div class="pp-wrap">
+<div style="position:relative;min-height:100vh">
+<div style="position:fixed;inset:0;z-index:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.06;pointer-events:none"></div>
+<div class="pp-wrap" style="position:relative;z-index:1">
 
   <!-- Header -->
   <header class="pp-header">
@@ -540,6 +531,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 
   </div>
 </div>
+</div>
 
 <!-- Footer -->
 <footer style="position:relative;background:#26235A;border-top:1px solid rgba(244,246,252,.1);overflow:hidden">
@@ -558,12 +550,63 @@ button,input,select,textarea{font:inherit;color:inherit}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
+    ['navRef','navLinksRef','burgerRef','langRef'].forEach(k => { this[k] = React.createRef(); });
     this.lang = props.startLang === 'ar' ? 'ar' : 'en';
+    this.menuOpen = false;
   }
 
   componentDidMount() {
     this.applyLang(this.lang);
     this.applyVariables();
+    this.layoutNav();
+    this.onResize = () => this.layoutNav();
+    window.addEventListener('resize', this.onResize);
+  }
+
+  componentWillUnmount() {
+    if (this.onResize) window.removeEventListener('resize', this.onResize);
+  }
+
+  sw(el, prop, val) { if (el) el.style[prop] = val; }
+
+  layoutNav() {
+    const links = this.navLinksRef.current, burger = this.burgerRef.current;
+    if (!links || !burger) return;
+    const mobile = window.innerWidth <= 720;
+    this.sw(burger, 'display', mobile ? 'flex' : 'none');
+    links.querySelectorAll('a').forEach(a => {
+      this.sw(a, 'minHeight', mobile ? '48px' : '');
+      this.sw(a, 'display', mobile ? 'flex' : '');
+      this.sw(a, 'alignItems', mobile ? 'center' : '');
+      this.sw(a, 'fontSize', mobile ? '16px' : '13.5px');
+      this.sw(a, 'padding', mobile ? '11px 4px' : '10px 16px');
+    });
+    if (!mobile) {
+      this.menuOpen = false;
+      burger.setAttribute('aria-expanded', 'false');
+      Object.assign(links.style, {
+        position: 'absolute', insetInlineStart: '50%',
+        transform: this.lang === 'ar' ? 'translateX(50%)' : 'translateX(-50%)',
+        display: 'flex', flexDirection: 'row', alignItems: 'center',
+        insetInlineEnd: '', top: '', padding: '', background: '',
+        backdropFilter: '', borderTop: '', gap: '8px', marginInlineStart: '', marginInlineEnd: ''
+      });
+      return;
+    }
+    Object.assign(links.style, {
+      position: 'absolute', top: '100%', insetInlineStart: '0', insetInlineEnd: '0', transform: '',
+      marginInlineEnd: '0', flexDirection: 'column', alignItems: 'stretch', gap: '2px',
+      padding: '10px clamp(20px,4vw,44px) 18px', background: 'rgba(6,11,24,.97)',
+      backdropFilter: 'blur(12px)', borderTop: '1px solid rgba(244,246,252,.1)',
+      display: this.menuOpen ? 'flex' : 'none'
+    });
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    const b = this.burgerRef.current;
+    if (b) b.setAttribute('aria-expanded', this.menuOpen ? 'true' : 'false');
+    this.layoutNav();
   }
 
   applyVariables() {
@@ -594,15 +637,17 @@ class Component extends DCLogic {
       const v = el.getAttribute('data-' + lang);
       if (v != null && v !== '') el.innerHTML = v;
     });
-    const btn = document.querySelector('.pp-lang-btn');
+    const btn = this.langRef.current;
     if (btn) btn.textContent = lang === 'ar' ? 'English' : 'العربية';
   }
 
-  toggleLang() { this.applyLang(this.lang === 'en' ? 'ar' : 'en'); }
+  toggleLang() { this.applyLang(this.lang === 'en' ? 'ar' : 'en'); this.layoutNav(); }
 
   renderVals() {
     return {
-      toggleLang: () => this.toggleLang()
+      navRef: this.navRef, navLinksRef: this.navLinksRef, burgerRef: this.burgerRef, langRef: this.langRef,
+      toggleLang: () => this.toggleLang(),
+      toggleMenu: () => this.toggleMenu()
     };
   }
 }

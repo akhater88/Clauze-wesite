@@ -109,24 +109,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 <div style="overflow-x:clip;background:#26235A">
 
-  <header ref="{{ navRef }}" style="position:fixed;top:0;inset-inline:0;z-index:1000;height:76px;background:transparent;border-bottom:1px solid rgba(244,246,252,0);transition:background .3s ease,border-color .3s ease,backdrop-filter .3s ease">
-    <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,44px);height:76px;display:flex;align-items:center;gap:clamp(14px,3vw,38px)">
-      <a href="#top" style="display:flex;align-items:center;flex:none"><img src="assets/sm-clauze-wordmark-white.png" alt="Clauze" style="height:21px;width:auto;display:block"></a>
-      <nav ref="{{ navLinksRef }}" style="display:flex;align-items:center;gap:8px;margin-inline-start:clamp(28px,5vw,64px);margin-inline-end:auto">
-        <a href="#product" data-en="Product" data-ar="المنتج" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Product</a>
-        <a href="#features" data-en="Features" data-ar="الإمكانات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Features</a>
-        <a href="#vdr" data-en="VDR" data-ar="غرفة البيانات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">VDR</a>
-        <a href="#security" data-en="Enterprise" data-ar="المؤسسات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Enterprise</a>
-      </nav>
-      <div style="display:flex;align-items:center;gap:12px;flex:none;margin-inline-start:auto">
-        <button ref="{{ langRef }}" onClick="{{ toggleLang }}" style="padding:10px 6px;min-height:40px;background:transparent;border:none;font-size:14.5px;color:rgba(244,246,252,.82);cursor:pointer;transition:color .2s ease" style-hover="color:#F4F6FC">العربية</button>
-        <a ref="{{ navDemoRef }}" href="#demo" onClick="{{ openDemo }}" data-en="Request a demo" data-ar="اطلب عرضًا" style="padding:12px 22px;background:#2E7EBE;border-radius:8px;color:#FFFFFF;font-size:14px;font-weight:600;white-space:nowrap;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo</a>
-        <button ref="{{ burgerRef }}" onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="false" style="display:none;align-items:center;justify-content:center;width:44px;height:44px;background:transparent;border:1.5px solid rgba(244,246,252,.26);border-radius:9px;cursor:pointer">
-          <span style="display:block;width:18px;height:1.5px;background:#F4F6FC;box-shadow:0 -6px 0 #F4F6FC,0 6px 0 #F4F6FC"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+  @endverbatim
+  @include('partials.header')
+  @verbatim
 
   <section id="top" style="position:relative;display:flex;align-items:center;min-height:min(88vh,900px);overflow:hidden;background:#26235A">
     <div ref="{{ heroArtRef }}" style="position:absolute;bottom:36px;inset-inline-end:0;width:min(100%);height:100%">
@@ -142,7 +127,7 @@ button,input,select,textarea{font:inherit;color:inherit}
         <span data-en="that understands your business" data-ar="يفهم أعمالك" style="display:block">that understands your business</span>
       </h1>
       <p style="margin:30px 0 0;max-width:64ch;font-size:clamp(17px,2vw,20px);line-height:1.6;color:rgba(244,246,252,.76);animation:clzUp .6s .08s ease both">
-        <span data-en="Legal AI trained on your agreements, your playbook, and the " data-ar="ذكاء اصطناعي قانوني مُدرَّب على عقودك، وسياساتك، و">Legal AI trained on your agreements, your playbook, and the </span><span data-en="Saudi law" data-ar="النظام السعودي" style="font-weight:700;font-size:1.15em;color:#FFFFFF">Saudi law</span>
+        <span data-en="Legal AI trained on your agreements, your playbook, and " data-ar="ذكاء اصطناعي قانوني مُدرَّب على عقودك، وسياساتك، و">Legal AI trained on your agreements, your playbook, and </span><span data-en="Saudi law" data-ar="النظام السعودي" style="font-weight:700;font-size:1.15em;color:#FFFFFF">Saudi law</span>
       </p>
       <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo" data-ar="اطلب عرضًا" style="display:inline-block;margin-top:40px;padding:17px 34px;background:#2E7EBE;color:#fff;border-radius:9px;font-size:16px;font-weight:600;animation:clzUp .6s .14s ease both;transition:background .2s ease" style-hover="background:#4A9AD1;color:#fff">Request a demo</a>
     </div>
@@ -163,10 +148,10 @@ button,input,select,textarea{font:inherit;color:inherit}
       </div>
       <div style="display:flex;flex-direction:column">
         <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M9 5H6.5v14H9"></path><path d="M15 5h2.5v14H15"></path><path d="M12 9v6"></path><circle cx="12" cy="7" r=".6" fill="currentColor" stroke="none"></circle></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M14 3v4a1 1 0 001 1h4"></path><path d="M17 21H7a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"></path><path d="M12 18v-6"></path><path d="M9.5 15.5L12 18l2.5-2.5"></path></svg>
         </span>
-        <h3 data-en="Every answer cited" data-ar="كل إجابة موثّقة" style="margin:0;font-size:17.5px;font-weight:600">Every answer cited</h3>
-        <p data-en="No unsupported legal response." data-ar="لا إجابات قانونية بلا مصادر." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">No unsupported legal response.</p>
+        <h3 data-en="Version control" data-ar="التحكم بالإصدارات" style="margin:0;font-size:17.5px;font-weight:600">Version control</h3>
+        <p data-en="Track every change, compare versions, and maintain a complete audit trail of all document revisions." data-ar="تتبّع كل تعديل، وقارن بين الإصدارات، واحتفظ بسجل كامل لجميع مراجعات المستندات." style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Track every change, compare versions, and maintain a complete audit trail of all document revisions.</p>
       </div>
       <div style="display:flex;flex-direction:column">
         <span style="display:flex;align-items:center;height:44px;margin-bottom:12px;font-size:22px;line-height:1;color:#2E7EBE">ع<span style="opacity:.5;margin:0 3px">/</span>A</span>
@@ -197,22 +182,22 @@ button,input,select,textarea{font:inherit;color:inherit}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.2vw,26px);margin-top:clamp(34px,4vw,54px)">
         <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
           <image-slot id="dept-legal-bg" shape="rect" src="assets/dept-legal.png" placeholder="Drop a legal-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
-          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
-          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#2E7EBE" data-en="Legal" data-ar="القانونية">Legal</span>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(255,255,255,.88) 55%,rgba(255,255,255,.95) 100%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#FFFFFF" data-en="Legal" data-ar="القانونية">Legal</span>
           <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Stop reading what you have already read" data-ar="كفى قراءةً لما قرأته من قبل">Stop reading what you have already read</h3>
           <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Documents arrive pre-reviewed. You see the deviations, not the boilerplate." data-ar="تصل إليك المستندات مراجَعة. ترى ما خرج عن المألوف، لا ما تكرر ألف مرة.">Documents arrive pre-reviewed. You see the deviations, not the boilerplate.</p>
         </article>
         <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
           <image-slot id="dept-compliance-bg" shape="rect" src="assets/dept-compliance.png" placeholder="Drop a compliance-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
-          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
-          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#2E7EBE" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</span>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(255,255,255,.88) 55%,rgba(255,255,255,.95) 100%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#FFFFFF" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</span>
           <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Contracts that comply before you sign" data-ar="عقود توظيف متوافقة قبل التوقيع">Contracts that comply before you sign</h3>
           <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Standard positions applied automatically." data-ar="تُطبَّق مواقفك المعتمدة تلقائيًا.">Standard positions applied automatically.</p>
         </article>
         <article style="position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.8vw,34px);background:#FFFFFF;border:1px solid #E1E4EE;border-radius:16px;transition:border-color .25s ease" style-hover="border-color:#2E7EBE">
           <image-slot id="dept-procurement-bg" shape="rect" src="assets/dept-procurement.png" placeholder="Drop a procurement-team image" style="position:absolute;inset:0;z-index:0"></image-slot>
-          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,.92) 92%);pointer-events:none"></div>
-          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#2E7EBE" data-en="Procurement" data-ar="المشتريات">Procurement</span>
+          <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(255,255,255,.88) 55%,rgba(255,255,255,.95) 100%);pointer-events:none"></div>
+          <span style="position:relative;z-index:1;font-size:clamp(18px,2vw,22px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#FFFFFF" data-en="Procurement" data-ar="المشتريات">Procurement</span>
           <h3 style="position:relative;z-index:1;margin:0;font-size:clamp(20px,2.2vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.015em" data-en="Agreements reviewed before the conversation ends" data-ar="مراجعة اتفاقيات الموردين قبل أن ينتهي الاجتماع">Agreements reviewed before the conversation ends</h3>
           <p style="position:relative;z-index:1;margin:0;font-size:15px;line-height:1.55;color:#6B7390" data-en="Risk flagged. Deviations noted." data-ar="المخاطر مرصودة، والانحرافات مسجَّلة.">Risk flagged. Deviations noted.</p>
         </article>
@@ -233,43 +218,43 @@ button,input,select,textarea{font:inherit;color:inherit}
         <div ref="{{ tabListRef }}" style="flex:none;width:260px;display:flex;flex-direction:column;gap:4px">
           <button data-tab="0" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
             <span style="display:flex;align-items:center;gap:10px">
-              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:#2E7EBE">✦</span>
-              <span data-tab-name="1" data-en="Intelligence" data-ar="الذكاء" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Intelligence</span>
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">▤</span>
+              <span data-tab-name="1" data-en="Onboarding" data-ar="التهيئة" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Onboarding</span>
             </span>
             <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
           </button>
           <button data-tab="1" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
-            <span style="display:flex;align-items:center;gap:10px">
-              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">◫</span>
-              <span data-tab-name="1" data-en="Virtual Data Room" data-ar="غرفة البيانات" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Virtual Data Room</span>
-            </span>
-            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
-          </button>
-          <button data-tab="2" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
-            <span style="display:flex;align-items:center;gap:10px">
-              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⧉</span>
-              <span data-tab-name="1" data-en="IRL-Driven DD" data-ar="الفحص وفق قائمة المشتري" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">IRL-Driven DD</span>
-            </span>
-            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
-          </button>
-          <button data-tab="3" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
             <span style="display:flex;align-items:center;gap:10px">
               <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⬡</span>
               <span data-tab-name="1" data-en="Knowledge Graph" data-ar="شبكة المعرفة" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Knowledge Graph</span>
             </span>
             <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
           </button>
+          <button data-tab="2" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:#2E7EBE">✦</span>
+              <span data-tab-name="1" data-en="Intelligence" data-ar="الذكاء" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Intelligence</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
+          <button data-tab="3" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
+            <span style="display:flex;align-items:center;gap:10px">
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⚡</span>
+              <span data-tab-name="1" data-en="Conflict Detection" data-ar="كشف التعارض" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Conflict Detection</span>
+            </span>
+            <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
+          </button>
           <button data-tab="4" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
             <span style="display:flex;align-items:center;gap:10px">
-              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">▤</span>
-              <span data-tab-name="1" data-en="Enterprise Onboarding" data-ar="تهيئة المؤسسة" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Enterprise Onboarding</span>
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">◫</span>
+              <span data-tab-name="1" data-en="Company Data Room" data-ar="غرفة بيانات الشركة" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Company Data Room</span>
             </span>
             <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
           </button>
           <button data-tab="5" onClick="{{ pickTab }}" style="display:flex;flex-direction:column;justify-content:center;gap:0;height:64px;padding:14px 16px;background:transparent;border:1px solid transparent;border-radius:10px;cursor:pointer;text-align:start;transition:background .2s ease,border-color .2s ease">
             <span style="display:flex;align-items:center;gap:10px">
-              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⚡</span>
-              <span data-tab-name="1" data-en="Conflict Detection" data-ar="كشف التعارض" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">Conflict Detection</span>
+              <span data-tab-icon="1" style="flex:none;width:16px;font-size:15px;line-height:1;color:rgba(244,246,252,.55);transition:color .2s ease">⧉</span>
+              <span data-tab-name="1" data-en="IRL-Driven Room" data-ar="الفحص وفق قائمة المشتري" style="font-size:13px;color:rgba(244,246,252,.55);transition:color .2s ease">IRL-Driven Room</span>
             </span>
             <span data-tab-track="1" style="display:none;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-tab-fill="1" style="display:block;height:100%;width:0%;background:#2E7EBE"></span></span>
           </button>
@@ -280,115 +265,36 @@ button,input,select,textarea{font:inherit;color:inherit}
             <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#EF4444"></span>
             <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#F59E0B"></span>
             <span style="width:8px;height:8px;flex:none;border-radius:50%;background:#22C55E"></span>
-            <span ref="{{ chromeTitleRef }}" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:13px;color:rgba(244,246,252,.55)">Intelligence</span>
+            <span ref="{{ chromeTitleRef }}" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:13px;color:rgba(244,246,252,.55)">Onboarding</span>
             <span ref="{{ chromePlatformRef }}" style="flex:none;font-size:12px;color:rgba(244,246,252,.3)">Clauze Platform</span>
           </div>
 
           <div ref="{{ panelAreaRef }}" style="position:relative;height:480px;overflow:hidden;width:100%;min-width:0">
 
             <div data-panel="0" style="position:absolute;inset:0;background:#1C1A44;opacity:1;transition:opacity .3s ease">
-              <video ref="{{ showcaseVideoRef }}" data-src="assets/clauze-demo-en.mp4" poster="assets/video-poster.png" muted="muted" loop="loop" playsinline="playsinline" preload="none" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></video>
-              <div style="position:absolute;inset-inline:0;bottom:0;display:flex;align-items:center;gap:10px;padding:26px 20px 16px;background:linear-gradient(to top,rgba(0,0,0,.7),transparent)">
-                <span style="flex:none;font-size:12px;color:#2E7EBE">✦</span>
-                <span style="flex:none;font-size:12px;font-weight:600;color:#F4F6FC">Intelligence</span>
-                <span style="font-size:12px;color:rgba(244,246,252,.8)">· AI-powered bilingual legal drafting and review</span>
+              <div ref="{{ chatPanelRef }}" style="display: flex; height: 100%; position: absolute; width: 100%">
+                <div ref="{{ phaseListRef }}" style="flex:none;width:35%;padding:12px;border-inline-end:1px solid rgba(244,246,252,.08);overflow:hidden">
+                  <p style="margin:0 0 8px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Onboarding</p>
+                </div>
+                <div style="position:relative;flex:1;min-width:0;display:flex;flex-direction:column;padding:12px 16px 0">
+                  <div data-anim="clzRowIn .3s ease .2s both" style="max-width:92%;padding:10px 12px;border-radius:8px;border-inline-start:3px solid rgba(46,126,190,.8);background:rgba(255,255,255,.06)">
+                    <span ref="{{ chat1Ref }}" style="font-size:12px;line-height:1.6;color:#F4F6FC;white-space:pre-line"></span>
+                  </div>
+                  <div ref="{{ chat2WrapRef }}" style="align-self:flex-end;max-width:70%;margin-top:10px;padding:10px 12px;border-radius:8px;background:#2E7EBE;opacity:0;transition:opacity .3s ease">
+                    <span ref="{{ chat2Ref }}" style="font-size:12px;line-height:1.6;color:#fff"></span>
+                  </div>
+                  <div ref="{{ chat3WrapRef }}" style="max-width:92%;margin-top:10px;padding:10px 12px;border-radius:8px;border-inline-start:3px solid #F59E0B;background:rgba(245,158,11,.08);opacity:0;transition:opacity .3s ease">
+                    <span ref="{{ chat3Ref }}" style="font-size:12px;line-height:1.6;color:#F4F6FC;white-space:pre-line"></span>
+                  </div>
+                  <div style="margin-top:auto;margin-inline:-16px;padding:10px 16px;background:rgba(46,126,190,.15);border-top:1px solid rgba(46,126,190,.3)">
+                    <span style="font-size:11.5px;color:#F4F6FC">Phase 5 of 16 · Knowledge Extraction · 38% complete</span>
+                    <span style="display:block;height:3px;margin-top:7px;border-radius:2px;background:rgba(244,246,252,.12);overflow:hidden"><span data-anim="clzGrow .8s ease .4s both" style="display:block;height:100%;width:38%;transform-origin:left center;background:#2E7EBE"></span></span>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div data-panel="1" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
-              <div ref="{{ vdrPanelRef }}" style="display:flex;height:100%">
-                <div style="flex:none;width:40%;padding:16px 14px;border-inline-end:1px solid rgba(244,246,252,.08);background:rgba(0,0,0,.2)">
-                  <p style="margin:0 0 12px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Entities</p>
-                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px;border-inline-start:3px solid #2E7EBE;border-radius:0 8px 8px 0;background:rgba(46,126,190,.14)">
-                    <span style="font-size:13px">🏢</span>
-                    <span style="font-size:12.5px;font-weight:600;color:#F4F6FC">Falcon Holding</span>
-                  </div>
-                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px 9px 26px;margin-top:4px">
-                    <span style="font-size:12px">🏗</span>
-                    <span style="font-size:12px;color:rgba(244,246,252,.6)">Falcon Tech LLC</span>
-                  </div>
-                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px 9px 26px">
-                    <span style="font-size:12px">🤝</span>
-                    <span style="font-size:12px;color:rgba(244,246,252,.6)">Falcon-NEOM Partners</span>
-                  </div>
-                </div>
-                <div style="position:relative;flex:1;min-width:0;padding:16px 0 0">
-                  <p style="margin:0 14px 10px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,246,252,.5)">DD Index</p>
-                  <div data-anim="clzRowIn .3s ease .2s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
-                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">01 Corporate Governance</span>
-                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">8 docs</span>
-                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
-                  </div>
-                  <div data-anim="clzRowIn .3s ease .4s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
-                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">02 Financial Information</span>
-                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">12 docs</span>
-                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
-                  </div>
-                  <div data-anim="clzRowIn .3s ease .6s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
-                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">06 Tax &amp; Regulatory (ZATCA, MISA)</span>
-                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">7 docs</span>
-                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#B45309"></span>
-                  </div>
-                  <div data-anim="clzRowIn .3s ease .8s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
-                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">07 Legal &amp; Litigation</span>
-                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">3 docs</span>
-                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
-                  </div>
-                  <div data-anim="clzRowIn .3s ease 1s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
-                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:rgba(244,246,252,.6)">08 IT &amp; Technology (PDPL)</span>
-                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">0 docs</span>
-                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:rgba(244,246,252,.34)"></span>
-                  </div>
-                  <div data-anim="clzDropIn .4s ease 2.5s both" style="position:absolute;top:14px;inset-inline-end:14px;padding:10px 14px;border-radius:8px;background:rgba(46,126,190,.9);font-size:13px;color:#F4F6FC">Bidder Group A, NDA Accepted ✓</div>
-                  <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;padding:12px 14px;background:rgba(107,176,224,.2);border-top:1px solid rgba(107,176,224,.4);font-size:12.5px;color:#F4F6FC">Phase 2 unlocked, 47 documents now visible</div>
-                </div>
-              </div>
-            </div>
-
-            <div data-panel="2" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
-              <div style="position:relative;height:100%;padding:20px">
-                <div data-anim="clzFadeOut .4s ease 1.8s both" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px;border:1.5px dashed rgba(46,126,190,.5);border-radius:12px;background:rgba(46,126,190,.06)">
-                  <span style="font-size:14px;color:#6BB0E0">📋 Drop IRL here</span>
-                  <span style="font-size:12px;color:rgba(244,246,252,.5)">Excel · Word · PDF, any language</span>
-                </div>
-                <div data-anim="clzRowIn .3s ease .8s both" style="margin-top:12px;padding:10px 12px;border:1px solid rgba(244,246,252,.14);border-radius:8px;background:rgba(255,255,255,.06)">
-                  <span style="font-size:12.5px;color:#F4F6FC">✓ GS_DD_Checklist_v3.xlsx · 67 items detected</span>
-                  <span style="display:block;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .8s ease 1s both" style="display:block;height:100%;width:100%;transform-origin:left center;background:#2E7EBE"></span></span>
-                </div>
-                <p data-anim="clzFadeIn .3s ease 1.8s both" style="margin:16px 0 8px;font-size:12px;font-style:italic;color:rgba(244,246,252,.55)">Matching 67 items against Company Data Room…</p>
-                <div data-anim="clzRowIn .3s ease 2s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
-                  <span style="flex:none;font-size:12px;color:#16A34A">✓</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">1.1</span>
-                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Certificate of Incorporation</span>
-                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#DCFCE7;font-size:10.5px;font-weight:600;color:#16A34A">matched</span>
-                </div>
-                <div data-anim="clzRowIn .3s ease 2.15s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
-                  <span style="flex:none;font-size:12px;color:#16A34A">✓</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">2.1</span>
-                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Audited Financial Statements</span>
-                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#DCFCE7;font-size:10.5px;font-weight:600;color:#16A34A">matched</span>
-                </div>
-                <div data-anim="clzRowIn .3s ease 2.3s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
-                  <span style="flex:none;font-size:12px;color:#B45309">~</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">2.3</span>
-                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Aged debtors list as at most recent month end</span>
-                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#FEF3C7;font-size:10.5px;font-weight:600;color:#B45309">partial</span>
-                </div>
-                <div data-anim="clzRowIn .3s ease 2.45s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
-                  <span style="flex:none;font-size:12px;color:#DC2626">✗</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">7.1</span>
-                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">ZATCA clearance certificate</span>
-                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#FEF2F2;font-size:10.5px;font-weight:600;color:#DC2626">missing</span>
-                </div>
-                <div data-anim="clzWake 4s linear 3s infinite both" style="display:flex;align-items:center;gap:10px;height:34px;margin-top:2px;padding:0 10px;border:1px solid rgba(107,176,224,.22);border-radius:8px">
-                  <span style="flex:none;font-size:12px;color:#2E7EBE">✦</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">4.3</span>
-                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Shareholder agreement</span>
-                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:rgba(46,126,190,.25);font-size:10.5px;font-weight:600;color:#AFD6EE">generate</span>
-                </div>
-                <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;display:flex;align-items:center;gap:12px;padding:12px 20px;background:rgba(46,126,190,.15);border-top:1px solid rgba(46,126,190,.4)">
-                  <span style="font-size:12.5px;color:#F4F6FC">67 items organized · 38 matched · 23 missing</span>
-                  <a href="#demo" onClick="{{ openDemo }}" style="margin-inline-start:auto;flex:none;padding:8px 14px;border-radius:8px;background:#2E7EBE;font-size:11px;font-weight:600;color:#fff" style-hover="background:#4A9AD1;color:#fff">Share with buyer →</a>
-                </div>
-              </div>
-            </div>
-
-            <div data-panel="3" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
               <div ref="{{ graphPanelRef }}" style="display:flex;height:100%">
                 <div style="flex:none;width:38%;display:flex;flex-direction:column;padding:12px;border-inline-end:1px solid rgba(244,246,252,.08)">
                   <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
@@ -441,30 +347,16 @@ button,input,select,textarea{font:inherit;color:inherit}
               </div>
             </div>
 
-            <div data-panel="4" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
-              <div ref="{{ chatPanelRef }}" style="display: flex; height: 100%; position: absolute; width: 100%">
-                <div ref="{{ phaseListRef }}" style="flex:none;width:35%;padding:12px;border-inline-end:1px solid rgba(244,246,252,.08);overflow:hidden">
-                  <p style="margin:0 0 8px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Onboarding</p>
-                </div>
-                <div style="position:relative;flex:1;min-width:0;display:flex;flex-direction:column;padding:12px 16px 0">
-                  <div data-anim="clzRowIn .3s ease .2s both" style="max-width:92%;padding:10px 12px;border-radius:8px;border-inline-start:3px solid rgba(46,126,190,.8);background:rgba(255,255,255,.06)">
-                    <span ref="{{ chat1Ref }}" style="font-size:12px;line-height:1.6;color:#F4F6FC;white-space:pre-line"></span>
-                  </div>
-                  <div ref="{{ chat2WrapRef }}" style="align-self:flex-end;max-width:70%;margin-top:10px;padding:10px 12px;border-radius:8px;background:#2E7EBE;opacity:0;transition:opacity .3s ease">
-                    <span ref="{{ chat2Ref }}" style="font-size:12px;line-height:1.6;color:#fff"></span>
-                  </div>
-                  <div ref="{{ chat3WrapRef }}" style="max-width:92%;margin-top:10px;padding:10px 12px;border-radius:8px;border-inline-start:3px solid #F59E0B;background:rgba(245,158,11,.08);opacity:0;transition:opacity .3s ease">
-                    <span ref="{{ chat3Ref }}" style="font-size:12px;line-height:1.6;color:#F4F6FC;white-space:pre-line"></span>
-                  </div>
-                  <div style="margin-top:auto;margin-inline:-16px;padding:10px 16px;background:rgba(46,126,190,.15);border-top:1px solid rgba(46,126,190,.3)">
-                    <span style="font-size:11.5px;color:#F4F6FC">Phase 5 of 16 · Knowledge Extraction · 38% complete</span>
-                    <span style="display:block;height:3px;margin-top:7px;border-radius:2px;background:rgba(244,246,252,.12);overflow:hidden"><span data-anim="clzGrow .8s ease .4s both" style="display:block;height:100%;width:38%;transform-origin:left center;background:#2E7EBE"></span></span>
-                  </div>
-                </div>
+            <div data-panel="2" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <video ref="{{ showcaseVideoRef }}" data-src="assets/clauze-demo-en.mp4" poster="assets/video-poster.png" muted="muted" loop="loop" playsinline="playsinline" preload="none" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></video>
+              <div style="position:absolute;inset-inline:0;bottom:0;display:flex;align-items:center;gap:10px;padding:26px 20px 16px;background:linear-gradient(to top,rgba(0,0,0,.7),transparent)">
+                <span style="flex:none;font-size:12px;color:#2E7EBE">✦</span>
+                <span style="flex:none;font-size:12px;font-weight:600;color:#F4F6FC">Intelligence</span>
+                <span style="font-size:12px;color:rgba(244,246,252,.8)">· AI-powered bilingual legal drafting and review</span>
               </div>
             </div>
 
-            <div data-panel="5" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+            <div data-panel="3" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
               <div style="position:relative;height:100%;padding:20px">
                 <p style="margin:0;font-size:12px;color:rgba(244,246,252,.5)">Clauze Prompts → Draft Distribution Agreement</p>
                 <div data-anim="clzFadeOut .4s ease .8s both" style="width:min(280px,100%);margin:26px auto 0;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(244,246,252,.14);border-radius:10px">
@@ -489,6 +381,99 @@ button,input,select,textarea{font:inherit;color:inherit}
                     <span style="padding:8px 14px;border:1px solid rgba(244,246,252,.2);border-radius:8px;font-size:11px;color:rgba(244,246,252,.6)">Cancel</span>
                   </div>
                   <p data-anim="clzFadeIn .4s ease 4s both" style="margin:10px 0 0;font-size:11px;font-style:italic;color:#16A34A">✓ Saved from a potential breach of cl.4.2</p>
+                </div>
+              </div>
+            </div>
+
+            <div data-panel="4" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <div ref="{{ vdrPanelRef }}" style="display:flex;height:100%">
+                <div style="flex:none;width:40%;padding:16px 14px;border-inline-end:1px solid rgba(244,246,252,.08);background:rgba(0,0,0,.2)">
+                  <p style="margin:0 0 12px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Entities</p>
+                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px;border-inline-start:3px solid #2E7EBE;border-radius:0 8px 8px 0;background:rgba(46,126,190,.14)">
+                    <span style="font-size:13px">🏢</span>
+                    <span style="font-size:12.5px;font-weight:600;color:#F4F6FC">Falcon Holding</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px 9px 26px;margin-top:4px">
+                    <span style="font-size:12px">🏗</span>
+                    <span style="font-size:12px;color:rgba(244,246,252,.6)">Falcon Tech LLC</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:9px;padding:9px 11px 9px 26px">
+                    <span style="font-size:12px">🤝</span>
+                    <span style="font-size:12px;color:rgba(244,246,252,.6)">Falcon-NEOM Partners</span>
+                  </div>
+                </div>
+                <div style="position:relative;flex:1;min-width:0;padding:16px 0 0">
+                  <p style="margin:0 14px 10px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,246,252,.5)">DD Index</p>
+                  <div data-anim="clzRowIn .3s ease .2s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">01 Corporate Governance</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">8 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease .4s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">02 Financial Information</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">12 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease .6s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">06 Tax &amp; Regulatory (ZATCA, MISA)</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">7 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#B45309"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease .8s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:#F4F6FC">07 Legal &amp; Litigation</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">3 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:#16A34A"></span>
+                  </div>
+                  <div data-anim="clzRowIn .3s ease 1s both" style="display:flex;align-items:center;gap:10px;height:36px;padding:0 14px;border-bottom:1px solid rgba(244,246,252,.06)">
+                    <span style="font-size:13px">📁</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12.5px;color:rgba(244,246,252,.6)">08 IT &amp; Technology (PDPL)</span>
+                    <span style="margin-inline-start:auto;flex:none;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.06);font-size:10.5px;color:rgba(244,246,252,.6)">0 docs</span>
+                    <span style="width:7px;height:7px;flex:none;border-radius:50%;background:rgba(244,246,252,.34)"></span>
+                  </div>
+                  <div data-anim="clzDropIn .4s ease 2.5s both" style="position:absolute;top:14px;inset-inline-end:14px;padding:10px 14px;border-radius:8px;background:rgba(46,126,190,.9);font-size:13px;color:#F4F6FC">Bidder Group A, NDA Accepted ✓</div>
+                  <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;padding:12px 14px;background:rgba(107,176,224,.2);border-top:1px solid rgba(107,176,224,.4);font-size:12.5px;color:#F4F6FC">Phase 2 unlocked, 47 documents now visible</div>
+                </div>
+              </div>
+            </div>
+
+            <div data-panel="5" style="position:absolute;inset:0;background:#1C1A44;display:none;opacity:0;transition:opacity .3s ease">
+              <div style="position:relative;height:100%;padding:20px">
+                <div data-anim="clzFadeOut .4s ease 1.8s both" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px;border:1.5px dashed rgba(46,126,190,.5);border-radius:12px;background:rgba(46,126,190,.06)">
+                  <span style="font-size:14px;color:#6BB0E0">📋 Drop IRL here</span>
+                  <span style="font-size:12px;color:rgba(244,246,252,.5)">Excel · Word · PDF, any language</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease .8s both" style="margin-top:12px;padding:10px 12px;border:1px solid rgba(244,246,252,.14);border-radius:8px;background:rgba(255,255,255,.06)">
+                  <span style="font-size:12.5px;color:#F4F6FC">✓ GS_DD_Checklist_v3.xlsx · 67 items detected</span>
+                  <span style="display:block;height:3px;margin-top:8px;border-radius:2px;background:rgba(244,246,252,.1);overflow:hidden"><span data-anim="clzGrow .8s ease 1s both" style="display:block;height:100%;width:100%;transform-origin:left center;background:#2E7EBE"></span></span>
+                </div>
+                <p data-anim="clzFadeIn .3s ease 1.8s both" style="margin:16px 0 8px;font-size:12px;font-style:italic;color:rgba(244,246,252,.55)">Matching 67 items against Company Data Room…</p>
+                <div data-anim="clzRowIn .3s ease 2s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#16A34A">✓</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">1.1</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Certificate of Incorporation</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#DCFCE7;font-size:10.5px;font-weight:600;color:#16A34A">matched</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease 2.15s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#16A34A">✓</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">2.1</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Audited Financial Statements</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#DCFCE7;font-size:10.5px;font-weight:600;color:#16A34A">matched</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease 2.3s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#B45309">~</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">2.3</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Aged debtors list as at most recent month end</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#FEF3C7;font-size:10.5px;font-weight:600;color:#B45309">partial</span>
+                </div>
+                <div data-anim="clzRowIn .3s ease 2.45s both" style="display:flex;align-items:center;gap:10px;height:32px;border-bottom:1px solid rgba(244,246,252,.06)">
+                  <span style="flex:none;font-size:12px;color:#DC2626">✗</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">7.1</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">ZATCA clearance certificate</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:#FEF2F2;font-size:10.5px;font-weight:600;color:#DC2626">missing</span>
+                </div>
+                <div data-anim="clzWake 4s linear 3s infinite both" style="display:flex;align-items:center;gap:10px;height:34px;margin-top:2px;padding:0 10px;border:1px solid rgba(107,176,224,.22);border-radius:8px">
+                  <span style="flex:none;font-size:12px;color:#2E7EBE">✦</span><span style="flex:none;font-size:11.5px;color:rgba(244,246,252,.5)">4.3</span>
+                  <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;color:#F4F6FC">Shareholder agreement</span>
+                  <span style="margin-inline-start:auto;flex:none;padding:2px 9px;border-radius:999px;background:rgba(46,126,190,.25);font-size:10.5px;font-weight:600;color:#AFD6EE">generate</span>
+                </div>
+                <div data-anim="clzRiseIn .4s ease 3.5s both" style="position:absolute;inset-inline:0;bottom:0;display:flex;align-items:center;gap:12px;padding:12px 20px;background:rgba(46,126,190,.15);border-top:1px solid rgba(46,126,190,.4)">
+                  <span style="font-size:12.5px;color:#F4F6FC">67 items organized · 38 matched · 23 missing</span>
+                  <a href="#demo" onClick="{{ openDemo }}" style="margin-inline-start:auto;flex:none;padding:8px 14px;border-radius:8px;background:#2E7EBE;font-size:11px;font-weight:600;color:#fff" style-hover="background:#4A9AD1;color:#fff">Share with buyer →</a>
                 </div>
               </div>
             </div>
@@ -632,10 +617,10 @@ button,input,select,textarea{font:inherit;color:inherit}
         <div>
           <p data-en="Product" data-ar="المنتج" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Product</p>
           <div style="display:flex;flex-direction:column;gap:9px">
-            <a href="#product" data-en="Intelligence" data-ar="الذكاء" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Intelligence</a>
+            <a href="#features" data-footer-tab="2" data-en="Intelligence" data-ar="الذكاء" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Intelligence</a>
             <a href="#vdr" data-en="VDR" data-ar="غرفة البيانات" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">VDR</a>
-            <a href="#knowledge" data-en="Company Data Room" data-ar="غرفة بيانات الشركة" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Company Data Room</a>
-            <a href="#security" data-en="Onboarding" data-ar="التهيئة" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Onboarding</a>
+            <a href="#features" data-footer-tab="4" data-en="Company Data Room" data-ar="غرفة بيانات الشركة" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Company Data Room</a>
+            <a href="#features" data-footer-tab="0" data-en="Onboarding" data-ar="التهيئة" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Onboarding</a>
           </div>
         </div>
         <div>
@@ -647,10 +632,9 @@ button,input,select,textarea{font:inherit;color:inherit}
         <div>
           <p data-en="Company" data-ar="الشركة" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Company</p>
           <div style="display:flex;flex-direction:column;gap:9px">
-            <a href="#top" data-en="About" data-ar="من نحن" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">About</a>
-            <a href="#top" data-en="Careers" data-ar="الوظائف" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Careers</a>
+            <a href="/careers" data-en="Careers" data-ar="الوظائف" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Careers</a>
             <a href="/privacy-policy" data-en="Privacy" data-ar="الخصوصية" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Privacy</a>
-            <a href="#top" data-en="Terms" data-ar="الشروط" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Terms</a>
+            <a href="/terms-of-service" data-en="Terms" data-ar="الشروط" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Terms</a>
           </div>
         </div>
       </div>
@@ -768,6 +752,16 @@ class Component extends DCLogic {
         if (ev.target === this.modalRef.current) this.closeDemo();
       });
     }
+    document.querySelectorAll('[data-footer-tab]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const tab = Number(a.getAttribute('data-footer-tab'));
+        const section = document.getElementById('features');
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
+        this.stopTabTimer();
+        setTimeout(() => { this.setTab(tab); this.startTabTimer(); }, 400);
+      });
+    });
   }
 
   componentWillUnmount() {
@@ -821,8 +815,8 @@ class Component extends DCLogic {
   }
 
   get tabTitles() {
-    return ['Intelligence', 'Virtual Data Room', 'IRL-Driven DD', 'Knowledge Graph',
-            'Enterprise Onboarding', 'Conflict Detection'];
+    return ['Onboarding', 'Knowledge Graph', 'Intelligence', 'Conflict Detection',
+            'Company Data Room', 'IRL-Driven Room'];
   }
 
   // 16 phases: 1–4 done, 5 active and pulsing, 6–16 pending
@@ -885,14 +879,14 @@ class Component extends DCLogic {
     if (this.chat2Ref.current) this.chat2Ref.current.textContent = '';
     if (this.chat3Ref.current) this.chat3Ref.current.textContent = '';
     this.typeInto(this.chat1Ref,
-      'From 2,000 documents I understand:\n· Shareholders: Rami 60% · Talal 25% · Investor A 15%\n· Signatory: CEO to USD 500,000 solo\nIs this correct?',
+      'From 2,000 documents I understand:\n· Shareholders: Khater 60% · Yahya 25% · Investor A 15%\n· Signatory: CEO to USD 500,000 solo\nIs this correct?',
       200, () => {
         this.sw(this.chat2WrapRef.current, 'opacity', '1');
-        this.typeInto(this.chat2Ref, 'Rami now owns 70%.', 0, () => {
+        this.typeInto(this.chat2Ref, 'Khater now owns 70%.', 0, () => {
           this.typeTimers.push(setTimeout(() => {
             this.sw(this.chat3WrapRef.current, 'opacity', '1');
             this.typeInto(this.chat3Ref,
-              '⚠ The Register of Members (14 Mar 2025) records Rami as 60%. Upload the updated register or I\'ll record 70% as Unverified.',
+              '⚠ The Register of Members (14 Mar 2025) records Khater as 60%. Upload the updated register or I\'ll record 70% as Unverified.',
               0);
           }, 150));
         });
@@ -969,7 +963,7 @@ class Component extends DCLogic {
         this.sw(p, 'opacity', '1');
         if (changed) {
           this.restartAnims(p);
-          if (n === 4) this.runChat();
+          if (n === 0) this.runChat();
         }
       } else {
         this.sw(p, 'opacity', '0');
@@ -978,11 +972,11 @@ class Component extends DCLogic {
         }, 220);
       }
     });
-    if (changed && n !== 4) this.clearTyping();
+    if (changed && n !== 0) this.clearTyping();
 
     const v = this.showcaseVideoRef.current;
     if (v && changed) {
-      if (n === 0) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+      if (n === 2) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
       else v.pause();
     }
     this.stx(this.chromeTitleRef.current, this.tabTitles[n]);
