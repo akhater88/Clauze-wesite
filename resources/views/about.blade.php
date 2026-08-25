@@ -205,9 +205,9 @@ main{flex:1}
     <div class="about-hero-gradient"></div>
     <div class="about-hero-inner">
       <div class="about-hero-content">
-        <p class="about-eyebrow" data-en="About" data-ar="عن كلوز">About</p>
-        <h1 class="about-headline" data-en="Every answer, with its authority." data-ar="كل اجابة مرفقة بسندها">Every answer, with its authority.</h1>
-        <p class="about-subtitle" data-en="Clauze is an AI legal workspace built in the Kingdom, for legal work that has to hold up in front of a court, a regulator, and the party on the other side of the table." data-ar="كلوز منصّة عمل قانونية مدعومة بالذكاء الاصطناعي، بُنيت في المملكة لعملٍ قانوني يصمد أمام المحكمة والجهة التنظيمية والطرف المقابل.">Clauze is an AI legal workspace built in the Kingdom, for legal work that has to hold up in front of a court, a regulator, and the party on the other side of the table.</p>
+        <p class="about-eyebrow" data-en="About Clauze" data-ar="عن كلوز">About Clauze</p>
+        <h1 class="about-headline" data-en="An AI legal workspace, built in the Kingdom" data-ar="منصّة عمل قانونية بالذكاء الاصطناعي، بُنيت في المملكة">An AI legal workspace, built in the Kingdom</h1>
+        <p class="about-subtitle" data-en="For legal work that gets checked by a regulator, by a counterparty, by a court. Every output traceable to its source. Arabic written natively, not translated." data-ar="لعملٍ قانوني يُراجَع من جهة تنظيمية، ومن طرف مقابل، ومن محكمة. كل مخرج قابل للتتبّع إلى مصدره. العربية تُكتب بأصالة، لا تُترجم.">For legal work that gets checked by a regulator, by a counterparty, by a court. Every output traceable to its source. Arabic written natively, not translated.</p>
       </div>
     </div>
   </section>
