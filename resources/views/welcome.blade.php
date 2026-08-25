@@ -4,6 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<title>Clauze — Legal review at the speed of the business</title>
+<meta name="description" content="Clauze drafts and reviews contracts against your playbook, your existing agreements, and the law, before they reach your legal team.">
+<meta property="og:title" content="Clauze — Legal review at the speed of the business">
+<meta property="og:description" content="The first Arabic-native VDR and AI legal workspace built for Saudi Arabia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.clauze.ai">
+<meta property="og:site_name" content="Clauze">
+<meta property="og:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clauze — Legal review at the speed of the business">
+<meta name="twitter:description" content="The first Arabic-native VDR and AI legal workspace built for Saudi Arabia.">
+<meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-64.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/favicon-512.png">
 <script src="./support.js"></script>
 </head>
 <body>
