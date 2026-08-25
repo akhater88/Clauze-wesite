@@ -14,6 +14,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-64.png">
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/favicon-512.png">
+<meta property="og:title" content="About — Clauze">
+<meta property="og:description" content="Clauze is an AI legal workspace built in the Kingdom, for legal work that has to hold up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.clauze.ai/about">
+<meta property="og:site_name" content="Clauze">
+<meta property="og:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
 <style>
 :root{
   --clz-primary:#26235A;
