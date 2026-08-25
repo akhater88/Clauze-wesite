@@ -17,3 +17,7 @@ Route::get('/terms-of-service', function () {
 Route::get('/careers', function () {
     return view('careers');
 })->name('careers');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
