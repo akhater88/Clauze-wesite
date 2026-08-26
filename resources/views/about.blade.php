@@ -191,7 +191,7 @@ main{flex:1}
   <div class="clz-header-inner">
     <a href="/" style="display:flex;align-items:center;flex:none"><img src="/assets/sm-clauze-wordmark-white.png" alt="Clauze" style="height:21px;width:auto;display:block"></a>
     <nav id="navLinks" class="clz-nav-links">
-      <a href="/#product" data-en="Product" data-ar="المنتج">Product</a>
+      <a href="/about" data-en="About Us" data-ar="من نحن">About Us</a>
       <a href="/#features" data-en="Features" data-ar="الإمكانات">Features</a>
       <a href="/#vdr" data-en="VDR" data-ar="غرفة البيانات">VDR</a>
       <a href="/#security" data-en="Security" data-ar="الأمان">Security</a>
@@ -224,7 +224,7 @@ main{flex:1}
   <section class="about-founder-section">
     <div class="about-founder-grid">
       <div class="about-founder-img-wrap reveal-left">
-        <img class="about-founder-img" src="/assets/founder-avatar.svg" alt="Waad Alkurini, Founder of Clauze" loading="eager">
+        <img class="about-founder-img" src="/assets/waad-alkurini.jpg" alt="Waad Alkurini, Founder of Clauze" loading="eager">
       </div>
       <div class="about-founder-info reveal-right">
         <p class="about-founder-eyebrow" data-en="Founder" data-ar="المؤسِّسة">Founder</p>

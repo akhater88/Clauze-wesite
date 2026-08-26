@@ -2,7 +2,7 @@
   <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,44px);height:76px;display:flex;align-items:center;gap:clamp(14px,3vw,38px)">
     <a href="{{ $linkPrefix ?? '' }}#top" style="display:flex;align-items:center;flex:none"><img src="/assets/sm-clauze-wordmark-white.png" alt="Clauze" style="height:21px;width:auto;display:block"></a>
     <nav ref="@{{ navLinksRef }}" style="display:flex;align-items:center;gap:8px;margin-inline-start:clamp(28px,5vw,64px);margin-inline-end:auto">
-      <a href="{{ $linkPrefix ?? '' }}#product" data-en="Product" data-ar="المنتج" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Product</a>
+      <a href="/about" data-en="About Us" data-ar="من نحن" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">About Us</a>
       <a href="{{ $linkPrefix ?? '' }}#features" data-en="Features" data-ar="الإمكانات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Features</a>
       <a href="{{ $linkPrefix ?? '' }}#vdr" data-en="VDR" data-ar="غرفة البيانات" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">VDR</a>
       <a href="{{ $linkPrefix ?? '' }}#security" data-en="Security" data-ar="الأمان" style="padding:10px 16px;font-size:13.5px;color:rgba(244,246,252,.82);transition:color .2s ease" style-hover="color:#F4F6FC">Security</a>

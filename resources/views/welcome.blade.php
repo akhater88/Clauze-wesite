@@ -653,6 +653,7 @@ button,input,select,textarea{font:inherit;color:inherit}
         <div>
           <h4 data-en="Company" data-ar="الشركة" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Company</h4>
           <div style="display:flex;flex-direction:column;gap:9px">
+            <a href="/about" data-en="About Us" data-ar="من نحن" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">About Us</a>
             <a href="/careers" data-en="Careers" data-ar="الوظائف" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Careers</a>
             <a href="/privacy-policy" data-en="Privacy" data-ar="الخصوصية" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Privacy</a>
             <a href="/terms-of-service" data-en="Terms" data-ar="الشروط" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Terms</a>
