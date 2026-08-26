@@ -103,6 +103,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 [dir="rtl"] header nav{gap:2px !important}
 [dir="rtl"] header nav a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
 [dir="rtl"] .clz-availability{font-size:11px !important}
+[dir="rtl"] h1{line-height:1.3 !important}
+[dir="rtl"] h2,[dir="rtl"] h4{text-transform:none !important;letter-spacing:0 !important}
 ::selection{background:#2E7EBE;color:#fff}
 @keyframes clzUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes clzTrace{to{stroke-dashoffset:-100}}
