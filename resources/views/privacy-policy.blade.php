@@ -562,11 +562,14 @@ class Component extends DCLogic {
     this.applyVariables();
     this.layoutNav();
     this.onResize = () => this.layoutNav();
+    this.onScroll = () => { if (this.menuOpen) this.toggleMenu(); };
     window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
   }
 
   componentWillUnmount() {
     if (this.onResize) window.removeEventListener('resize', this.onResize);
+    if (this.onScroll) window.removeEventListener('scroll', this.onScroll);
   }
 
   sw(el, prop, val) { if (el) el.style[prop] = val; }

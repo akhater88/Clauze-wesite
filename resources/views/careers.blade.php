@@ -173,6 +173,11 @@ main{flex:1}
     if (burger) burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   };
 
+  window.addEventListener('scroll', function() {
+    var nav = document.getElementById('navLinks');
+    if (nav && nav.classList.contains('open')) toggleMenu();
+  }, { passive: true });
+
   applyLang(lang);
 })();
 </script>

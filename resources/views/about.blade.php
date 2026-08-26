@@ -336,6 +336,11 @@ main{flex:1}
     observer.observe(el);
   });
 
+  window.addEventListener('scroll', function() {
+    var nav = document.getElementById('navLinks');
+    if (nav && nav.classList.contains('open')) toggleMenu();
+  }, { passive: true });
+
   applyLang(lang);
 })();
 </script>

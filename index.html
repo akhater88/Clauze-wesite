@@ -732,7 +732,7 @@ class Component extends DCLogic {
 
   componentDidMount() {
     // listeners first: a throw in the init block must never leave the page unscrolled
-    this.onScroll = () => this.layoutNavBar();
+    this.onScroll = () => { this.layoutNavBar(); if (this.menuOpen) this.toggleMenu(); };
     this.onResize = () => { this.layoutNav(); this.layoutGrids(); this.layoutVideo(); };
     window.addEventListener('scroll', this.onScroll, { passive: true });
     window.addEventListener('resize', this.onResize);
