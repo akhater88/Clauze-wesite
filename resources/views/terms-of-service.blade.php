@@ -464,7 +464,8 @@ class Component extends DCLogic {
   constructor(props) {
     super(props);
     ['navRef','navLinksRef','burgerRef','langRef'].forEach(k => { this[k] = React.createRef(); });
-    this.lang = props.startLang === 'ar' ? 'ar' : 'en';
+    var urlLang = new URLSearchParams(window.location.search).get('lang');
+    this.lang = urlLang === 'ar' ? 'ar' : (props.startLang === 'ar' ? 'ar' : 'en');
     this.menuOpen = false;
   }
 
@@ -550,6 +551,18 @@ class Component extends DCLogic {
     });
     const btn = this.langRef.current;
     if (btn) btn.textContent = lang === 'ar' ? 'English' : 'العربية';
+    var url = new URL(window.location);
+    if (lang === 'ar') { url.searchParams.set('lang', 'ar'); } else { url.searchParams.delete('lang'); }
+    history.replaceState(null, '', url);
+    document.querySelectorAll('a[href]').forEach(function(a) {
+      var h = a.getAttribute('href');
+      if (!h || h.startsWith('http') || h.startsWith('mailto')) return;
+      try {
+        var u = new URL(h, window.location.origin);
+        if (lang === 'ar') { u.searchParams.set('lang', 'ar'); } else { u.searchParams.delete('lang'); }
+        a.setAttribute('href', u.pathname + u.search + u.hash);
+      } catch(e) {}
+    });
   }
 
   toggleLang() { this.applyLang(this.lang === 'en' ? 'ar' : 'en'); this.layoutNav(); }

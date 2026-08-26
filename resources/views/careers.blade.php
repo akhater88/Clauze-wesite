@@ -136,7 +136,8 @@ main{flex:1}
 
 <script>
 (function(){
-  var lang = 'en';
+  var params = new URLSearchParams(window.location.search);
+  var lang = params.get('lang') === 'ar' ? 'ar' : 'en';
 
   function applyLang(l) {
     lang = l;
@@ -148,6 +149,18 @@ main{flex:1}
     });
     var btn = document.getElementById('langBtn');
     if (btn) btn.textContent = l === 'ar' ? 'English' : 'العربية';
+    var url = new URL(window.location);
+    if (l === 'ar') { url.searchParams.set('lang', 'ar'); } else { url.searchParams.delete('lang'); }
+    history.replaceState(null, '', url);
+    document.querySelectorAll('a[href]').forEach(function(a) {
+      var h = a.getAttribute('href');
+      if (!h || h.startsWith('http') || h.startsWith('mailto')) return;
+      try {
+        var u = new URL(h, window.location.origin);
+        if (l === 'ar') { u.searchParams.set('lang', 'ar'); } else { u.searchParams.delete('lang'); }
+        a.setAttribute('href', u.pathname + u.search + u.hash);
+      } catch(e) {}
+    });
   }
 
   window.toggleLang = function() {
@@ -163,7 +176,7 @@ main{flex:1}
     if (burger) burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   };
 
-  applyLang('en');
+  applyLang(lang);
 })();
 </script>
 </body>
