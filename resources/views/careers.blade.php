@@ -112,12 +112,8 @@ main{flex:1}
     <div class="careers-container">
       <div class="careers-content">
         <p class="careers-eyebrow" data-en="Careers" data-ar="الوظائف">Careers</p>
-        <h1 class="careers-headline" data-en="We're building a small team." data-ar="نبني فريقاً صغيراً.">We're building a small team.</h1>
-        <p class="careers-body" data-en="We don't have open positions listed right now. If you think you'd be a good fit for what we're building, we'd still like to hear from you, send us your CV and a short note about why." data-ar="ليست لدينا وظائف شاغرة معلنة في الوقت الحالي. وإن رأيت أنك تناسب ما نبنيه، فنودّ أن نسمع منك، أرسل لنا سيرتك الذاتية مع سطور قليلة عن السبب.">We don't have open positions listed right now. If you think you'd be a good fit for what we're building, we'd still like to hear from you, send us your CV and a short note about why.</p>
-        <hr class="careers-rule">
-        <p class="careers-label" data-en="Send your CV to" data-ar="أرسل سيرتك الذاتية إلى">Send your CV to</p>
-        <a class="careers-email" href="mailto:careers@clauze.ai" aria-label="Send email to careers at clauze dot ai"><bdi>careers@clauze.ai</bdi></a>
-        <p class="careers-closing" data-en="We read everything that comes in." data-ar="نقرأ كل ما يصلنا.">We read everything that comes in.</p>
+        <h1 class="careers-headline" data-en="Interested in joining Clauze?" data-ar="مهتم بالانضمام إلى كلوز؟">Interested in joining Clauze?</h1>
+        <p class="careers-body" data-en="We're always looking for exceptional people to join our team. Send your CV to <a href='mailto:careers@clauze.ai' style='color:var(--clz-tertiary)'>careers@clauze.ai</a> and tell us how you can help us shape the future of legal AI." data-ar="نبحث دائماً عن أشخاص استثنائيين للانضمام إلى فريقنا. أرسل سيرتك الذاتية إلى <a href='mailto:careers@clauze.ai' style='color:var(--clz-tertiary)'>careers@clauze.ai</a> وأخبرنا كيف يمكنك مساعدتنا في صياغة مستقبل الذكاء الاصطناعي القانوني.">We're always looking for exceptional people to join our team. Send your CV to <a href="mailto:careers@clauze.ai" style="color:var(--clz-tertiary)">careers@clauze.ai</a> and tell us how you can help us shape the future of legal AI.</p>
       </div>
     </div>
   </section>

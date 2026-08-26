@@ -615,12 +615,12 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 40% at 50% 50%,rgba(46,126,190,.25) 0%,transparent 70%),linear-gradient(180deg,#26235A 0%,transparent 30%,transparent 70%,#26235A 100%)"></div>
     <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
       <h2 data-en="Ready to give your legal team an AI layer?" data-ar="جاهز لتمكين فريقك القانوني بالذكاء الاصطناعي؟" style="margin:0 auto;max-width:28ch;font-size:clamp(28px,4vw,52px);font-weight:600;line-height:1.1;letter-spacing:-.025em;color:#F4F6FC">Ready to give your legal team an AI layer?</h2>
-      <p data-en="Join the Saudi enterprises running their legal work on Clauze." data-ar="انضم إلى المؤسسات السعودية التي تدير عملها القانوني على كلوز." style="margin:20px auto 0;max-width:56ch;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Join the Saudi enterprises running their legal work on Clauze.</p>
+      <p data-en="Join the Saudi enterprises running their legal work on Clauze" data-ar="انضم إلى المؤسسات السعودية التي تدير عملها القانوني على كلوز" style="margin:20px auto 0;max-width:56ch;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Join the Saudi enterprises running their legal work on Clauze</p>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:40px">
         <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="padding:17px 34px;background:#2E7EBE;border-radius:9px;color:#FFFFFF;font-size:16px;font-weight:600;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo →</a>
         <a href="#product" data-en="See the platform ↓" data-ar="شاهد المنصة ↓" style="padding:16px 32px;background:transparent;border:1.5px solid rgba(244,246,252,.26);border-radius:9px;color:#F4F6FC;font-size:15px;font-weight:500;transition:border-color .2s ease,background .2s ease" style-hover="border-color:rgba(244,246,252,.5);background:rgba(244,246,252,.05);color:#F4F6FC">See the platform ↓</a>
       </div>
-      <p data-en="Available for Saudi Arabia · PDPL compliant · Arabic and English" data-ar="متاح في السعودية · متوافق مع حماية البيانات · بالعربية والإنجليزية" style="margin:32px 0 0;font-size:13px;color:rgba(244,246,252,.5)">Available for KSA and Jordan · PDPL compliant · Arabic and English</p>
+      <p data-en="Available for Saudi Arabia &nbsp;|&nbsp; PDPL compliant &nbsp;|&nbsp; Arabic and English" data-ar="متاح في السعودية &nbsp;|&nbsp; متوافق مع حماية البيانات &nbsp;|&nbsp; بالعربية والإنجليزية" style="margin:32px 0 0;font-size:13px;color:rgba(244,246,252,.5);white-space:nowrap">Available for Saudi Arabia &nbsp;|&nbsp; PDPL compliant &nbsp;|&nbsp; Arabic and English</p>
     </div>
   </section>
 
