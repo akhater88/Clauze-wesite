@@ -634,7 +634,7 @@ button,input,select,textarea{font:inherit;color:inherit}
           <p data-en="AI Legal Workspace for Saudi Enterprises" data-ar="مساحة عمل قانونية ذكية للمؤسسات السعودية" style="margin:10px 0 0;font-size:13px;line-height:1.6;color:rgba(244,246,252,.6)">AI Legal Workspace for GCC Enterprises</p>
         </div>
         <div>
-          <p data-en="Product" data-ar="المنتج" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Product</p>
+          <p data-en="Product" data-ar="المنتج" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Product</p>
           <div style="display:flex;flex-direction:column;gap:9px">
             <a href="#features" data-footer-tab="2" data-en="Intelligence" data-ar="الذكاء" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Intelligence</a>
             <a href="#vdr" data-en="VDR" data-ar="غرفة البيانات" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">VDR</a>
@@ -643,13 +643,13 @@ button,input,select,textarea{font:inherit;color:inherit}
           </div>
         </div>
         <div>
-          <p data-en="Jurisdictions" data-ar="الاختصاصات" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Jurisdictions</p>
+          <p data-en="Jurisdictions" data-ar="الاختصاصات" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Jurisdictions</p>
           <div style="display:flex;flex-direction:column;gap:9px">
             <span data-en="Saudi Arabia" data-ar="السعودية" style="font-size:13.5px;color:rgba(244,246,252,.6)">Saudi Arabia</span>
           </div>
         </div>
         <div>
-          <p data-en="Company" data-ar="الشركة" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Company</p>
+          <p data-en="Company" data-ar="الشركة" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Company</p>
           <div style="display:flex;flex-direction:column;gap:9px">
             <a href="/careers" data-en="Careers" data-ar="الوظائف" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Careers</a>
             <a href="/privacy-policy" data-en="Privacy" data-ar="الخصوصية" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Privacy</a>
