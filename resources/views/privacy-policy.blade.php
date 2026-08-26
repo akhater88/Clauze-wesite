@@ -29,7 +29,7 @@ body{margin:0;background:#26235A;color:#F4F6FC;font-family:'Zalando Sans','Noto 
 a{color:#6BB0E0;text-decoration:none}
 a:hover{color:#AFD6EE}
 button,input,select,textarea{font:inherit;color:inherit}
-[dir="rtl"] body{font-family:'Noto Kufi Arabic','Zalando Sans',system-ui,sans-serif}
+[dir="rtl"] body{font-family:'Zalando Sans','Noto Kufi Arabic',system-ui,sans-serif}
 [dir="rtl"] header nav{gap:2px !important}
 [dir="rtl"] header nav a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
 ::selection{background:#2E7EBE;color:#fff}

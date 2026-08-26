@@ -31,7 +31,7 @@ body{margin:0;background:var(--clz-white);color:var(--clz-primary);font-family:'
 a{color:var(--clz-secondary);text-decoration:none}
 a:focus-visible{outline:2px solid var(--clz-tertiary);outline-offset:2px;border-radius:4px}
 button,input,select,textarea{font:inherit;color:inherit}
-[dir="rtl"] body{font-family:'Noto Kufi Arabic','Zalando Sans',system-ui,sans-serif}
+[dir="rtl"] body{font-family:'Zalando Sans','Noto Kufi Arabic',system-ui,sans-serif}
 [dir="rtl"] .clz-nav-links{gap:2px !important}
 [dir="rtl"] .clz-nav-links a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
 [dir="rtl"] .careers-headline{line-height:1.3 !important}
