@@ -224,7 +224,7 @@ main{flex:1}
   <section class="about-founder-section">
     <div class="about-founder-grid">
       <div class="about-founder-img-wrap reveal-left">
-        <img class="about-founder-img" src="/assets/waad-alkurini.jpg" alt="Waad Alkurini, Founder of Clauze" loading="eager">
+        <img class="about-founder-img" src="/assets/founder-waad.jpg" alt="Waad Alkurini, Founder of Clauze" loading="eager">
       </div>
       <div class="about-founder-info reveal-right">
         <p class="about-founder-eyebrow" data-en="Founder" data-ar="المؤسِّسة">Founder</p>
