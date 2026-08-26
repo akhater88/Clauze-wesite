@@ -102,6 +102,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 [dir="rtl"] body{font-family:'Noto Kufi Arabic','Zalando Sans',system-ui,sans-serif}
 [dir="rtl"] header nav{gap:2px !important}
 [dir="rtl"] header nav a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
+[dir="rtl"] .clz-availability{font-size:11px !important}
 ::selection{background:#2E7EBE;color:#fff}
 @keyframes clzUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes clzTrace{to{stroke-dashoffset:-100}}
@@ -620,7 +621,7 @@ button,input,select,textarea{font:inherit;color:inherit}
         <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="padding:17px 34px;background:#2E7EBE;border-radius:9px;color:#FFFFFF;font-size:16px;font-weight:600;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo →</a>
         <a href="#product" data-en="See the platform ↓" data-ar="شاهد المنصة ↓" style="padding:16px 32px;background:transparent;border:1.5px solid rgba(244,246,252,.26);border-radius:9px;color:#F4F6FC;font-size:15px;font-weight:500;transition:border-color .2s ease,background .2s ease" style-hover="border-color:rgba(244,246,252,.5);background:rgba(244,246,252,.05);color:#F4F6FC">See the platform ↓</a>
       </div>
-      <p data-en="Available for Saudi Arabia &nbsp;|&nbsp; PDPL compliant &nbsp;|&nbsp; Arabic and English" data-ar="متاح في السعودية &nbsp;|&nbsp; متوافق مع حماية البيانات &nbsp;|&nbsp; بالعربية والإنجليزية" style="margin:32px 0 0;font-size:13px;color:rgba(244,246,252,.5);white-space:nowrap">Available for Saudi Arabia &nbsp;|&nbsp; PDPL compliant &nbsp;|&nbsp; Arabic and English</p>
+      <p data-en="Available for Saudi Arabia &nbsp;|&nbsp; PDPL compliant &nbsp;|&nbsp; Arabic and English" data-ar="متاح في السعودية &nbsp;|&nbsp; متوافق مع حماية البيانات &nbsp;|&nbsp; بالعربية والإنجليزية" class="clz-availability" style="margin:32px 0 0;font-size:13px;color:rgba(244,246,252,.5);white-space:nowrap">Available for Saudi Arabia &nbsp;|&nbsp; PDPL compliant &nbsp;|&nbsp; Arabic and English</p>
     </div>
   </section>
 
