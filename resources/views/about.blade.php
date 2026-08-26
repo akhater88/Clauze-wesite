@@ -45,6 +45,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 [dir="rtl"] .clz-nav-links a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
 [dir="rtl"] .about-headline{line-height:1.3 !important}
 [dir="rtl"] .about-body,[dir="rtl"] .about-founder-text,[dir="rtl"] .about-region{line-height:1.8 !important;font-size:18px !important}
+[dir="rtl"] .about-eyebrow,[dir="rtl"] .about-founder-eyebrow,[dir="rtl"] h2,[dir="rtl"] h4{text-transform:none !important;letter-spacing:0 !important}
 ::selection{background:var(--clz-tertiary);color:var(--clz-white)}
 
 /* Header */

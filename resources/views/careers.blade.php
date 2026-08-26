@@ -34,6 +34,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 [dir="rtl"] body{font-family:'Zalando Sans','Noto Kufi Arabic',system-ui,sans-serif}
 [dir="rtl"] .clz-nav-links{gap:2px !important}
 [dir="rtl"] .clz-nav-links a{padding:10px 10px !important;font-size:12.5px !important;white-space:nowrap}
+[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3,[dir="rtl"] h4{text-transform:none !important;letter-spacing:0 !important}
 [dir="rtl"] .careers-headline{line-height:1.3 !important}
 [dir="rtl"] .careers-body,[dir="rtl"] .careers-label,[dir="rtl"] .careers-closing{line-height:1.8 !important;font-size:18px !important}
 ::selection{background:var(--clz-tertiary);color:var(--clz-white)}
