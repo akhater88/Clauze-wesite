@@ -97,6 +97,13 @@ main{flex:1}
   width:100%;height:100%;object-fit:cover;display:block;
   filter:saturate(.9);
 }
+.about-founder-avatar{
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  background:#EEEFF4;
+}
+.about-founder-avatar svg{
+  width:100%;height:100%;
+}
 .about-founder-info{display:flex;flex-direction:column;gap:24px}
 .about-founder-eyebrow{margin:0;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--clz-tertiary)}
 .about-founder-name{margin:0;font-size:clamp(32px,4vw,48px);font-weight:300;line-height:1.15;letter-spacing:-.02em;color:var(--clz-primary)}
@@ -216,7 +223,7 @@ main{flex:1}
   <section class="about-founder-section">
     <div class="about-founder-grid">
       <div class="about-founder-img-wrap reveal-left">
-        <img class="about-founder-img" src="/assets/waad-alkurini.jpg" alt="Waad Alkurini, Founder of Clauze" loading="eager">
+        <img class="about-founder-img" src="/assets/founder-avatar.svg" alt="Waad Alkurini, Founder of Clauze" loading="eager">
       </div>
       <div class="about-founder-info reveal-right">
         <p class="about-founder-eyebrow" data-en="Founder" data-ar="المؤسِّسة">Founder</p>
