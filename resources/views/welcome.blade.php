@@ -228,8 +228,8 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.16"></div>
     <div ref="{{ showcaseInnerRef }}" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px);overflow-x:hidden">
       <div ref="{{ showcaseHeaderRef }}" style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:clamp(40px,5vw,64px)">
-        <p data-en="Platform overview" data-ar="نظرة على المنصة" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Platform overview</p>
-        <h2 data-en="See Clauze in action" data-ar="شاهد كلوز أثناء العمل" style="margin:16px 0 0;font-size:clamp(28px,4vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.025em;color:#F4F6FC">See Clauze in action</h2>
+        <h2 data-en="Platform overview" data-ar="نظرة على المنصة" style="margin:0;font-size:clamp(14px,1.6vw,17px);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6BB0E0">Platform overview</h2>
+        <h3 data-en="See Clauze in action" data-ar="شاهد كلوز أثناء العمل" style="margin:16px 0 0;font-size:clamp(28px,4vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.025em;color:#F4F6FC">See Clauze in action</h3>
         <p data-en="Six core capabilities. One AI legal workspace." data-ar="ست إمكانات أساسية. مساحة عمل قانونية واحدة." style="margin:16px 0 0;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Six core capabilities. One AI legal workspace.</p>
       </div>
 
@@ -507,8 +507,8 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.16"></div>
     <div ref="{{ vdrGridRef }}" style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
       <div>
-        <p data-en="Due diligence" data-ar="الفحص القانوني" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Due diligence</p>
-        <h2 data-en="One workflow, from request list to data room" data-ar="مسار عمل واحد، من قائمة الطلبات إلى غرفة البيانات" style="margin:16px 0 0;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">One workflow, from request list to data room</h2>
+        <h2 data-en="Due diligence" data-ar="الفحص القانوني" style="margin:0;font-size:clamp(14px,1.6vw,17px);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6BB0E0">Due diligence</h2>
+        <h3 data-en="One workflow, from request list to data room" data-ar="مسار عمل واحد، من قائمة الطلبات إلى غرفة البيانات" style="margin:16px 0 0;font-size:clamp(30px,4.6vw,56px);font-weight:600;line-height:1.1;letter-spacing:-.025em">One workflow, from request list to data room</h3>
         <p data-en="Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room, with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in." data-ar="يطابق كلوز قائمة الطلبات الواردة مع غرفة بيانات شركتك، ويرصد الناقص، وينظم الجاهز منها في غرفة بيانات عربية وإنجليزية مبنية لهذا الغرض، بتصنيفات سعودية مدمجة مثل شهادة الزكاة والضريبة، وشهادات التأمينات، وامتثال نطاقات، وموافقات الاستثمار." style="margin:20px 0 0;font-size:clamp(16.5px,1.9vw,19.5px);line-height:1.65;color:rgba(244,246,252,.76)">Clauze matches an incoming information request list against your company data room, flags what is missing, and organizes what is ready into a purpose-built Arabic and English virtual data room, with KSA-specific categories such as ZATCA clearance, GOSI certificates, Nitaqat compliance, and MISA approvals built in.</p>
         <a href="#demo" onClick="{{ openDemo }}" data-en="Request a demo →" data-ar="اطلب عرضًا ←" style="display:inline-block;margin-top:32px;padding:17px 34px;background:#2E7EBE;border-radius:9px;color:#FFFFFF;font-size:16px;font-weight:600;transition:background .2s ease" style-hover="background:#4A9AD1;color:#FFFFFF">Request a demo →</a>
       </div>
@@ -576,8 +576,8 @@ button,input,select,textarea{font:inherit;color:inherit}
   <section id="security" style="scroll-margin-top:84px;position:relative;background:#2F308C;color:#F4F6FC;border-top:1px solid rgba(244,246,252,.1);overflow:hidden">
     <div style="position:absolute;inset:0;background-image:url('assets/brand-pattern.png');background-size:900px auto;background-repeat:repeat;opacity:.16"></div>
     <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(76px,9vw,124px) clamp(20px,4vw,44px)">
-      <p data-en="Security and residency" data-ar="الأمان وموقع البيانات" style="margin:0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0">Security and residency</p>
-      <h2 data-en="Deployed where your data has to stay" data-ar="نشر في المكان الذي يجب أن تبقى فيه بياناتك" style="margin:16px 0 0;max-width:24ch;font-size:clamp(26px,3.8vw,46px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Deployed where your data has to stay</h2>
+      <h2 data-en="Security and residency" data-ar="الأمان وموقع البيانات" style="margin:0;font-size:clamp(14px,1.6vw,17px);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6BB0E0">Security and residency</h2>
+      <h3 data-en="Deployed where your data has to stay" data-ar="نشر في المكان الذي يجب أن تبقى فيه بياناتك" style="margin:16px 0 0;max-width:24ch;font-size:clamp(26px,3.8vw,46px);font-weight:600;line-height:1.1;letter-spacing:-.025em">Deployed where your data has to stay</h3>
       <div ref="{{ securityGridRef }}" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,20px);margin-top:clamp(34px,4vw,54px)">
         <article style="display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.6vw,30px);background:rgba(255,255,255,.03);border:1px solid rgba(244,246,252,.14);border-radius:14px;transition:border-color .25s ease,background .25s ease" style-hover="border-color:rgba(107,176,224,.7);background:rgba(46,126,190,.1)">
           <span style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;border:1px solid rgba(107,176,224,.4);border-radius:10px;color:#6BB0E0">
@@ -634,7 +634,7 @@ button,input,select,textarea{font:inherit;color:inherit}
           <p data-en="AI Legal Workspace for Saudi Enterprises" data-ar="مساحة عمل قانونية ذكية للمؤسسات السعودية" style="margin:10px 0 0;font-size:13px;line-height:1.6;color:rgba(244,246,252,.6)">AI Legal Workspace for GCC Enterprises</p>
         </div>
         <div>
-          <p data-en="Product" data-ar="المنتج" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Product</p>
+          <h4 data-en="Product" data-ar="المنتج" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Product</h4>
           <div style="display:flex;flex-direction:column;gap:9px">
             <a href="#features" data-footer-tab="2" data-en="Intelligence" data-ar="الذكاء" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Intelligence</a>
             <a href="#vdr" data-en="VDR" data-ar="غرفة البيانات" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">VDR</a>
@@ -643,13 +643,13 @@ button,input,select,textarea{font:inherit;color:inherit}
           </div>
         </div>
         <div>
-          <p data-en="Jurisdictions" data-ar="الاختصاصات" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Jurisdictions</p>
+          <h4 data-en="Jurisdictions" data-ar="الاختصاصات" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Jurisdictions</h4>
           <div style="display:flex;flex-direction:column;gap:9px">
             <span data-en="Saudi Arabia" data-ar="السعودية" style="font-size:13.5px;color:rgba(244,246,252,.6)">Saudi Arabia</span>
           </div>
         </div>
         <div>
-          <p data-en="Company" data-ar="الشركة" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Company</p>
+          <h4 data-en="Company" data-ar="الشركة" style="margin:0 0 14px;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#6BB0E0;white-space:nowrap">Company</h4>
           <div style="display:flex;flex-direction:column;gap:9px">
             <a href="/careers" data-en="Careers" data-ar="الوظائف" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Careers</a>
             <a href="/privacy-policy" data-en="Privacy" data-ar="الخصوصية" style="font-size:13.5px;color:rgba(244,246,252,.6);transition:color .2s ease" style-hover="color:#F4F6FC">Privacy</a>
