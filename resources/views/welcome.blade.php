@@ -164,7 +164,7 @@ button,input,select,textarea{font:inherit;color:inherit}
         <span style="display:flex;align-items:center;width:44px;height:44px;margin-bottom:12px;color:#2E7EBE">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px"><path d="M12 4.5c-2 0-3.2 1.3-3.4 2.8-1.4.4-2.3 1.7-2.1 3.1-.9.7-1.3 1.9-.9 3 .3.9.6 1.9.6 2.9 0 1.7 1.4 3.2 3.2 3.2h.4"></path><path d="M12 4.5c2 0 3.2 1.3 3.4 2.8 1.4.4 2.3 1.7 2.1 3.1.9.7 1.3 1.9.9 3-.3.9-.6 1.9-.6 2.9 0 1.7-1.4 3.2-3.2 3.2h-.4"></path><path d="M12 4.5v15"></path><path d="M9.2 10.2h1.6"></path><path d="M13.2 10.2h1.6"></path><path d="M8.6 14.2h1.9"></path><path d="M13.5 14.2h1.9"></path></svg>
         </span>
-        <h3 data-en="Understands your organization" data-ar="يفهم مؤسستك" style="margin:0;font-size:17.5px;font-weight:600">Understands your organization</h3>
+        <h3 data-en="Understands your organization" data-ar="فَهم مؤسستك" style="margin:0;font-size:17.5px;font-weight:600">Understands your organization</h3>
         <p data-en="Clauze starts informed." data-ar="يبدأ كلوز وهو مُلم بمؤسستك وسياق عملها" style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#6B7390">Clauze starts informed.</p>
       </div>
       <div style="display:flex;flex-direction:column">
