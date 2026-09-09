@@ -42,17 +42,17 @@
 <meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
+  "@@context": "https://schema.org",
+  "@@type": "WebPage",
   "name": "Careers at Clauze",
   "description": "Join the team building the AI legal workspace for Saudi enterprises.",
   "url": "https://www.clauze.ai/careers",
   "publisher": {
-    "@type": "Organization",
+    "@@type": "Organization",
     "name": "Clauze",
     "url": "https://www.clauze.ai",
     "logo": {
-      "@type": "ImageObject",
+      "@@type": "ImageObject",
       "url": "https://www.clauze.ai/assets/favicon-512.png"
     }
   }

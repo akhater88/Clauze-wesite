@@ -42,17 +42,17 @@
 <link rel="alternate" hreflang="x-default" href="https://www.clauze.ai/about">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
+  "@@context": "https://schema.org",
+  "@@type": "AboutPage",
   "name": "About Clauze",
   "description": "Clauze is an AI legal workspace built in the Kingdom, for legal work that has to hold up.",
   "url": "https://www.clauze.ai/about",
   "publisher": {
-    "@type": "Organization",
+    "@@type": "Organization",
     "name": "Clauze",
     "url": "https://www.clauze.ai",
     "logo": {
-      "@type": "ImageObject",
+      "@@type": "ImageObject",
       "url": "https://www.clauze.ai/assets/favicon-512.png"
     }
   }
