@@ -31,6 +31,33 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About — Clauze">
+<meta name="twitter:description" content="Clauze is an AI legal workspace built in the Kingdom, for legal work that has to hold up.">
+<meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<link rel="canonical" href="https://www.clauze.ai/about">
+<link rel="alternate" hreflang="en" href="https://www.clauze.ai/about">
+<link rel="alternate" hreflang="x-default" href="https://www.clauze.ai/about">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Clauze",
+  "description": "Clauze is an AI legal workspace built in the Kingdom, for legal work that has to hold up.",
+  "url": "https://www.clauze.ai/about",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clauze",
+    "url": "https://www.clauze.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.clauze.ai/assets/favicon-512.png"
+    }
+  }
+}
+</script>
 <style>
 :root{
   --clz-primary:#26235A;

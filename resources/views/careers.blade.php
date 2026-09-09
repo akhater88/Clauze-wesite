@@ -22,6 +22,42 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-64.png">
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/favicon-512.png">
+<link rel="canonical" href="https://www.clauze.ai/careers">
+<link rel="alternate" hreflang="en" href="https://www.clauze.ai/careers">
+<link rel="alternate" hreflang="x-default" href="https://www.clauze.ai/careers">
+<meta property="og:title" content="Careers — Clauze">
+<meta property="og:description" content="Join the team building the AI legal workspace for Saudi enterprises.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.clauze.ai/careers">
+<meta property="og:site_name" content="Clauze">
+<meta property="og:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clauze — AI legal workspace for Saudi enterprises">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Careers — Clauze">
+<meta name="twitter:description" content="Join the team building the AI legal workspace for Saudi enterprises.">
+<meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Careers at Clauze",
+  "description": "Join the team building the AI legal workspace for Saudi enterprises.",
+  "url": "https://www.clauze.ai/careers",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clauze",
+    "url": "https://www.clauze.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.clauze.ai/assets/favicon-512.png"
+    }
+  }
+}
+</script>
 <style>
 :root{
   --clz-primary:#26235A;

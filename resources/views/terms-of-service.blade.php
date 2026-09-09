@@ -28,6 +28,21 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-64.png">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/favicon-512.png">
+<link rel="canonical" href="https://www.clauze.ai/terms-of-service">
+<link rel="alternate" hreflang="en" href="https://www.clauze.ai/terms-of-service">
+<link rel="alternate" hreflang="x-default" href="https://www.clauze.ai/terms-of-service">
+<meta property="og:title" content="Terms of Service — Clauze">
+<meta property="og:description" content="The agreement governing use of the Clauze platform.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.clauze.ai/terms-of-service">
+<meta property="og:site_name" content="Clauze">
+<meta property="og:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terms of Service — Clauze">
+<meta name="twitter:description" content="The agreement governing use of the Clauze platform.">
+<meta name="twitter:image" content="https://www.clauze.ai/assets/og-clauze-sm.png">
 <style>
 @font-face{font-family:'Zalando Sans';src:url('assets/fonts/ZalandoSans-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:'Zalando Sans';src:url('assets/fonts/ZalandoSans-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
